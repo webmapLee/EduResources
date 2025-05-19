@@ -1,0 +1,47 @@
+创建一个项目文件夹，开发一个小学出题判卷的AI智能出题系统网站，系统功能包括：
+1. 选择年纪，选择科目（数学、语文、英语），选择难易程度（简单、中等、复杂）调用AI模型自动出题，选择题目类型（根据不同的科目选择不同的题目类型，例如语文包括拼音、字形、选字填空等，数学包括选择题、算术题、填空题、应用题等，多选），题目以JSON数据输出
+2. 开发一个试卷组件，将JSON试卷数据加载到试卷组件中，支持用户在线答题
+3. 开发判断功能，调用AI大模型实现试卷在线判卷，并给出分数
+
+AI大模型使用jina.ai ，调用示例代码参考如下：
+// Import required libraries
+import fetch from 'node-fetch';
+
+// Define the request body
+const requestBody = {
+    "model": "jina-deepsearch-v1",
+    "messages": [
+        {
+            "role": "user",
+            "content": "Hi!"
+        },
+        {
+            "role": "assistant",
+            "content": "Hi, how can I help you?"
+        },
+        {
+            "role": "user",
+            "content": "what's the latest blog post from jina ai?"
+        }
+    ],
+    "stream": true,
+    "reasoning_effort": "medium",
+    "max_attempts": 1,
+    "no_direct_answer": false
+};
+
+// Define headers
+const headers = {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer jina_38d0f1ef8018441a8b2f89cad79cfc56L6nYIVOgKW3DbM8IVgvDe-cWzhaq"
+};
+
+// Make the POST request
+fetch('https://deepsearch.jina.ai/v1/chat/completions', {
+    method: 'POST',
+    headers: headers,
+    body: JSON.stringify(requestBody)
+})
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
