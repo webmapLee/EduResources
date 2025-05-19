@@ -1,0 +1,152 @@
+[
+  {
+    "word": "breakfast",
+    "translation": "早餐",
+    "difficulty": "daily"
+  },
+  {
+    "word": "lunch",
+    "translation": "午餐",
+    "difficulty": "daily"
+  },
+  {
+    "word": "dinner",
+    "translation": "晚餐",
+    "difficulty": "daily"
+  },
+  {
+    "word": "shopping",
+    "translation": "购物",
+    "difficulty": "daily"
+  },
+  {
+    "word": "weather",
+    "translation": "天气",
+    "difficulty": "daily"
+  },
+  {
+    "word": "sunny",
+    "translation": "晴朗的",
+    "difficulty": "daily"
+  },
+  {
+    "word": "rainy",
+    "translation": "下雨的",
+    "difficulty": "daily"
+  },
+  {
+    "word": "cloudy",
+    "translation": "多云的",
+    "difficulty": "daily"
+  },
+  {
+    "word": "windy",
+    "translation": "有风的",
+    "difficulty": "daily"
+  },
+  {
+    "word": "shower",
+    "translation": "淋浴",
+    "difficulty": "daily"
+  },
+  {
+    "word": "toothbrush",
+    "translation": "牙刷",
+    "difficulty": "daily"
+  },
+  {
+    "word": "toothpaste",
+    "translation": "牙膏",
+    "difficulty": "daily"
+  },
+  {
+    "word": "soap",
+    "translation": "肥皂",
+    "difficulty": "daily"
+  },
+  {
+    "word": "towel",
+    "translation": "毛巾",
+    "difficulty": "daily"
+  },
+  {
+    "word": "clothes",
+    "translation": "衣服",
+    "difficulty": "daily"
+  },
+  {
+    "word": "shirt",
+    "translation": "衬衫",
+    "difficulty": "daily"
+  },
+  {
+    "word": "pants",
+    "translation": "裤子",
+    "difficulty": "daily"
+  },
+  {
+    "word": "shoes",
+    "translation": "鞋子",
+    "difficulty": "daily"
+  },
+  {
+    "word": "socks",
+    "translation": "袜子",
+    "difficulty": "daily"
+  },
+  {
+    "word": "jacket",
+    "translation": "夹克",
+    "difficulty": "daily"
+  },
+  {
+    "word": "supermarket",
+    "translation": "超市",
+    "difficulty": "daily"
+  },
+  {
+    "word": "restaurant",
+    "translation": "餐厅",
+    "difficulty": "daily"
+  },
+  {
+    "word": "cinema",
+    "translation": "电影院",
+    "difficulty": "daily"
+  },
+  {
+    "word": "park",
+    "translation": "公园",
+    "difficulty": "daily"
+  },
+  {
+    "word": "library",
+    "translation": "图书馆",
+    "difficulty": "daily"
+  },
+  {
+    "word": "coffee",
+    "translation": "咖啡",
+    "difficulty": "daily"
+  },
+  {
+    "word": "tea",
+    "translation": "茶",
+    "difficulty": "daily"
+  },
+  {
+    "word": "juice",
+    "translation": "果汁",
+    "difficulty": "daily"
+  },
+  {
+    "word": "water",
+    "translation": "水",
+    "difficulty": "daily"
+  },
+  {
+    "word": "bread",
+    "translation": "面包",
+    "difficulty": "daily"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "g1_1",
+    "question": "1 + 1 = ?",
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g1_2",
+    "question": "2 + 2 = ?",
+    "answer": 4,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g1_3",
+    "question": "3 + 3 = ?",
+    "answer": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g1_4",
+    "question": "4 + 4 = ?",
+    "answer": 8,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g1_5",
+    "question": "5 + 5 = ?",
+    "answer": 10,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g1_6",
+    "question": "10 - 5 = ?",
+    "answer": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g1_7",
+    "question": "8 - 3 = ?",
+    "answer": 5,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g1_8",
+    "question": "7 + 2 = ?",
+    "answer": 9,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g1_9",
+    "question": "6 + 3 = ?",
+    "answer": 9,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g1_10",
+    "question": "9 - 4 = ?",
+    "answer": 5,
+    "difficulty": "easy"
+  }
+]

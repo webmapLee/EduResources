@@ -1,0 +1,202 @@
+[
+  {
+    "word": "school",
+    "translation": "学校",
+    "topic": "school"
+  },
+  {
+    "word": "classroom",
+    "translation": "教室",
+    "topic": "school"
+  },
+  {
+    "word": "teacher",
+    "translation": "老师",
+    "topic": "school"
+  },
+  {
+    "word": "student",
+    "translation": "学生",
+    "topic": "school"
+  },
+  {
+    "word": "principal",
+    "translation": "校长",
+    "topic": "school"
+  },
+  {
+    "word": "desk",
+    "translation": "课桌",
+    "topic": "school"
+  },
+  {
+    "word": "chair",
+    "translation": "椅子",
+    "topic": "school"
+  },
+  {
+    "word": "blackboard",
+    "translation": "黑板",
+    "topic": "school"
+  },
+  {
+    "word": "whiteboard",
+    "translation": "白板",
+    "topic": "school"
+  },
+  {
+    "word": "chalk",
+    "translation": "粉笔",
+    "topic": "school"
+  },
+  {
+    "word": "marker",
+    "translation": "记号笔",
+    "topic": "school"
+  },
+  {
+    "word": "eraser",
+    "translation": "橡皮擦",
+    "topic": "school"
+  },
+  {
+    "word": "pencil",
+    "translation": "铅笔",
+    "topic": "school"
+  },
+  {
+    "word": "pen",
+    "translation": "钢笔",
+    "topic": "school"
+  },
+  {
+    "word": "ruler",
+    "translation": "尺子",
+    "topic": "school"
+  },
+  {
+    "word": "scissors",
+    "translation": "剪刀",
+    "topic": "school"
+  },
+  {
+    "word": "glue",
+    "translation": "胶水",
+    "topic": "school"
+  },
+  {
+    "word": "notebook",
+    "translation": "笔记本",
+    "topic": "school"
+  },
+  {
+    "word": "textbook",
+    "translation": "教科书",
+    "topic": "school"
+  },
+  {
+    "word": "backpack",
+    "translation": "书包",
+    "topic": "school"
+  },
+  {
+    "word": "library",
+    "translation": "图书馆",
+    "topic": "school"
+  },
+  {
+    "word": "cafeteria",
+    "translation": "食堂",
+    "topic": "school"
+  },
+  {
+    "word": "gymnasium",
+    "translation": "体育馆",
+    "topic": "school"
+  },
+  {
+    "word": "playground",
+    "translation": "操场",
+    "topic": "school"
+  },
+  {
+    "word": "subject",
+    "translation": "学科",
+    "topic": "school"
+  },
+  {
+    "word": "mathematics",
+    "translation": "数学",
+    "topic": "school"
+  },
+  {
+    "word": "science",
+    "translation": "科学",
+    "topic": "school"
+  },
+  {
+    "word": "history",
+    "translation": "历史",
+    "topic": "school"
+  },
+  {
+    "word": "geography",
+    "translation": "地理",
+    "topic": "school"
+  },
+  {
+    "word": "English",
+    "translation": "英语",
+    "topic": "school"
+  },
+  {
+    "word": "art",
+    "translation": "美术",
+    "topic": "school"
+  },
+  {
+    "word": "music",
+    "translation": "音乐",
+    "topic": "school"
+  },
+  {
+    "word": "physical education",
+    "translation": "体育",
+    "topic": "school"
+  },
+  {
+    "word": "computer science",
+    "translation": "计算机科学",
+    "topic": "school"
+  },
+  {
+    "word": "homework",
+    "translation": "家庭作业",
+    "topic": "school"
+  },
+  {
+    "word": "exam",
+    "translation": "考试",
+    "topic": "school"
+  },
+  {
+    "word": "test",
+    "translation": "测试",
+    "topic": "school"
+  },
+  {
+    "word": "grade",
+    "translation": "成绩",
+    "topic": "school"
+  },
+  {
+    "word": "report card",
+    "translation": "成绩单",
+    "topic": "school"
+  },
+  {
+    "word": "semester",
+    "translation": "学期",
+    "topic": "school"
+  }
+]

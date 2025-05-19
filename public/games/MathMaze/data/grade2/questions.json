@@ -1,0 +1,62 @@
+[
+  {
+    "id": "g2_1",
+    "question": "12 + 15 = ?",
+    "answer": 27,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g2_2",
+    "question": "25 - 13 = ?",
+    "answer": 12,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g2_3",
+    "question": "2 × 3 = ?",
+    "answer": 6,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g2_4",
+    "question": "4 × 5 = ?",
+    "answer": 20,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g2_5",
+    "question": "30 + 45 = ?",
+    "answer": 75,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g2_6",
+    "question": "67 - 32 = ?",
+    "answer": 35,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g2_7",
+    "question": "3 × 4 = ?",
+    "answer": 12,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g2_8",
+    "question": "5 × 5 = ?",
+    "answer": 25,
+    "difficulty": "easy"
+  },
+  {
+    "id": "g2_9",
+    "question": "28 + 37 = ?",
+    "answer": 65,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g2_10",
+    "question": "50 - 25 = ?",
+    "answer": 25,
+    "difficulty": "easy"
+  }
+]

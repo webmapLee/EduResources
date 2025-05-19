@@ -1,0 +1,84 @@
+{
+  "categories": [
+    { "id": "math", "name": "数学游戏" },
+    { "id": "language", "name": "语文" },
+    { "id": "logic", "name": "逻辑思维" },
+    { "id": "spatial", "name": "空间想象" },
+    { "id": "memory", "name": "记忆力" },
+    { "id": "english", "name": "英语" }
+  ],
+  "games": [
+    {
+      "id": "math-puzzle",
+      "title": "数学拼图",
+      "description": "通过拖拽数字卡片，组成等式来解决数学难题！",
+      "categoryId": "math",
+      "ageRange": "6-12岁",
+      "url": "/games/math-puzzle.html"
+    },
+    {
+      "id": "word-chain",
+      "title": "词语接龙",
+      "description": "根据上一个词语的最后一个字，说出一个新词语！",
+      "categoryId": "language",
+      "ageRange": "7-12岁",
+      "url": "/games/word-chain.html"
+    },
+    {
+      "id": "knowledge-box",
+      "title": "爆米花知识盒",
+      "description": "通过选择正确的答案，来获取知识点！",
+      "categoryId": "language",
+      "ageRange": "7-12岁",
+      "url": "/games/popcorn_knowledge/popcorn-knowledge-box.html"
+    },
+    {
+      "id": "story-telling",
+      "title": "故事接龙",
+      "description": "根据前一个故事的情节，继续编写下去！",
+      "categoryId": "language",
+      "ageRange": "7-12岁",
+      "url": "/games/story_relay_game/index.html"
+    },
+    {
+      "id": "memory-match",
+      "title": "记忆配对",
+      "description": "翻开卡片，找到配对的图案！",
+      "categoryId": "memory",
+      "ageRange": "6-10岁",
+      "url": "#"
+    },
+    {
+      "id": "maze",
+      "title": "数学迷宫",
+      "description": "解决数学问题，找到迷宫的出口！",
+      "categoryId": "math",
+      "ageRange": "8-12岁",
+      "url": "/games/MathMaze/index.html"
+    },
+    {
+      "id": "puzzle",
+      "title": "拼图游戏",
+      "description": "将打乱的图片拼回原样！",
+      "categoryId": "logic",
+      "ageRange": "6-12岁",
+      "url": "#"
+    },
+    {
+      "id": "riddle",
+      "title": "猜谜语",
+      "description": "猜猜这些有趣的谜语！",
+      "categoryId": "language",
+      "ageRange": "7-12岁",
+      "url": "#"
+    },
+    {
+      "id": "englishCard",
+      "title": "英语单词卡片",
+      "description": "通过拖拽单词卡片，组成句子来解决英语难题！",
+      "categoryId": "english",
+      "ageRange": "7-12岁",
+      "url": "/games/WordMemoryCards/index.html"
+    }
+  ]
+}

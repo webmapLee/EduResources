@@ -1,0 +1,392 @@
+[
+  {
+    "word": "reading",
+    "translation": "阅读",
+    "topic": "hobbies"
+  },
+  {
+    "word": "writing",
+    "translation": "写作",
+    "topic": "hobbies"
+  },
+  {
+    "word": "drawing",
+    "translation": "绘画",
+    "topic": "hobbies"
+  },
+  {
+    "word": "painting",
+    "translation": "绘画",
+    "topic": "hobbies"
+  },
+  {
+    "word": "photography",
+    "translation": "摄影",
+    "topic": "hobbies"
+  },
+  {
+    "word": "gardening",
+    "translation": "园艺",
+    "topic": "hobbies"
+  },
+  {
+    "word": "cooking",
+    "translation": "烹饪",
+    "topic": "hobbies"
+  },
+  {
+    "word": "baking",
+    "translation": "烘焙",
+    "topic": "hobbies"
+  },
+  {
+    "word": "knitting",
+    "translation": "编织",
+    "topic": "hobbies"
+  },
+  {
+    "word": "sewing",
+    "translation": "缝纫",
+    "topic": "hobbies"
+  },
+  {
+    "word": "fishing",
+    "translation": "钓鱼",
+    "topic": "hobbies"
+  },
+  {
+    "word": "hunting",
+    "translation": "狩猎",
+    "topic": "hobbies"
+  },
+  {
+    "word": "camping",
+    "translation": "露营",
+    "topic": "hobbies"
+  },
+  {
+    "word": "hiking",
+    "translation": "徒步旅行",
+    "topic": "hobbies"
+  },
+  {
+    "word": "traveling",
+    "translation": "旅行",
+    "topic": "hobbies"
+  },
+  {
+    "word": "collecting",
+    "translation": "收藏",
+    "topic": "hobbies"
+  },
+  {
+    "word": "stamp collecting",
+    "translation": "集邮",
+    "topic": "hobbies"
+  },
+  {
+    "word": "coin collecting",
+    "translation": "集币",
+    "topic": "hobbies"
+  },
+  {
+    "word": "model building",
+    "translation": "模型制作",
+    "topic": "hobbies"
+  },
+  {
+    "word": "woodworking",
+    "translation": "木工",
+    "topic": "hobbies"
+  },
+  {
+    "word": "pottery",
+    "translation": "陶艺",
+    "topic": "hobbies"
+  },
+  {
+    "word": "sculpting",
+    "translation": "雕塑",
+    "topic": "hobbies"
+  },
+  {
+    "word": "origami",
+    "translation": "折纸",
+    "topic": "hobbies"
+  },
+  {
+    "word": "calligraphy",
+    "translation": "书法",
+    "topic": "hobbies"
+  },
+  {
+    "word": "dancing",
+    "translation": "跳舞",
+    "topic": "hobbies"
+  },
+  {
+    "word": "singing",
+    "translation": "唱歌",
+    "topic": "hobbies"
+  },
+  {
+    "word": "playing music",
+    "translation": "演奏音乐",
+    "topic": "hobbies"
+  },
+  {
+    "word": "playing guitar",
+    "translation": "弹吉他",
+    "topic": "hobbies"
+  },
+  {
+    "word": "playing piano",
+    "translation": "弹钢琴",
+    "topic": "hobbies"
+  },
+  {
+    "word": "playing violin",
+    "translation": "拉小提琴",
+    "topic": "hobbies"
+  },
+  {
+    "word": "playing drums",
+    "translation": "打鼓",
+    "topic": "hobbies"
+  },
+  {
+    "word": "bird watching",
+    "translation": "观鸟",
+    "topic": "hobbies"
+  },
+  {
+    "word": "stargazing",
+    "translation": "观星",
+    "topic": "hobbies"
+  },
+  {
+    "word": "astronomy",
+    "translation": "天文学",
+    "topic": "hobbies"
+  },
+  {
+    "word": "chess",
+    "translation": "国际象棋",
+    "topic": "hobbies"
+  },
+  {
+    "word": "checkers",
+    "translation": "跳棋",
+    "topic": "hobbies"
+  },
+  {
+    "word": "board games",
+    "translation": "桌游",
+    "topic": "hobbies"
+  },
+  {
+    "word": "card games",
+    "translation": "纸牌游戏",
+    "topic": "hobbies"
+  },
+  {
+    "word": "video games",
+    "translation": "电子游戏",
+    "topic": "hobbies"
+  },
+  {
+    "word": "puzzles",
+    "translation": "拼图",
+    "topic": "hobbies"
+  },
+  {
+    "word": "crosswords",
+    "translation": "填字游戏",
+    "topic": "hobbies"
+  },
+  {
+    "word": "sudoku",
+    "translation": "数独",
+    "topic": "hobbies"
+  },
+  {
+    "word": "yoga",
+    "translation": "瑜伽",
+    "topic": "hobbies"
+  },
+  {
+    "word": "meditation",
+    "translation": "冥想",
+    "topic": "hobbies"
+  },
+  {
+    "word": "martial arts",
+    "translation": "武术",
+    "topic": "hobbies"
+  },
+  {
+    "word": "tai chi",
+    "translation": "太极",
+    "topic": "hobbies"
+  },
+  {
+    "word": "blogging",
+    "translation": "写博客",
+    "topic": "hobbies"
+  },
+  {
+    "word": "vlogging",
+    "translation": "视频博客",
+    "topic": "hobbies"
+  },
+  {
+    "word": "podcasting",
+    "translation": "播客",
+    "topic": "hobbies"
+  },
+  {
+    "word": "social media",
+    "translation": "社交媒体",
+    "topic": "hobbies"
+  },
+  {
+    "word": "volunteering",
+    "translation": "志愿服务",
+    "topic": "hobbies"
+  },
+  {
+    "word": "community service",
+    "translation": "社区服务",
+    "topic": "hobbies"
+  },
+  {
+    "word": "DIY",
+    "translation": "自己动手做",
+    "topic": "hobbies"
+  },
+  {
+    "word": "home improvement",
+    "translation": "家居改善",
+    "topic": "hobbies"
+  },
+  {
+    "word": "shopping",
+    "translation": "购物",
+    "topic": "hobbies"
+  },
+  {
+    "word": "antiquing",
+    "translation": "古董收藏",
+    "topic": "hobbies"
+  },
+  {
+    "word": "thrift shopping",
+    "translation": "二手购物",
+    "topic": "hobbies"
+  },
+  {
+    "word": "wine tasting",
+    "translation": "品酒",
+    "topic": "hobbies"
+  },
+  {
+    "word": "beer brewing",
+    "translation": "酿啤酒",
+    "topic": "hobbies"
+  },
+  {
+    "word": "coffee roasting",
+    "translation": "烘焙咖啡",
+    "topic": "hobbies"
+  },
+  {
+    "word": "pet care",
+    "translation": "宠物护理",
+    "topic": "hobbies"
+  },
+  {
+    "word": "dog training",
+    "translation": "训犬",
+    "topic": "hobbies"
+  },
+  {
+    "word": "horseback riding",
+    "translation": "骑马",
+    "topic": "hobbies"
+  },
+  {
+    "word": "beekeeping",
+    "translation": "养蜂",
+    "topic": "hobbies"
+  },
+  {
+    "word": "aquarium keeping",
+    "translation": "养鱼",
+    "topic": "hobbies"
+  },
+  {
+    "word": "genealogy",
+    "translation": "家谱研究",
+    "topic": "hobbies"
+  },
+  {
+    "word": "history",
+    "translation": "历史研究",
+    "topic": "hobbies"
+  },
+  {
+    "word": "archaeology",
+    "translation": "考古学",
+    "topic": "hobbies"
+  },
+  {
+    "word": "language learning",
+    "translation": "语言学习",
+    "topic": "hobbies"
+  },
+  {
+    "word": "coding",
+    "translation": "编程",
+    "topic": "hobbies"
+  },
+  {
+    "word": "robotics",
+    "translation": "机器人技术",
+    "topic": "hobbies"
+  },
+  {
+    "word": "electronics",
+    "translation": "电子技术",
+    "topic": "hobbies"
+  },
+  {
+    "word": "magic tricks",
+    "translation": "魔术",
+    "topic": "hobbies"
+  },
+  {
+    "word": "juggling",
+    "translation": "杂耍",
+    "topic": "hobbies"
+  },
+  {
+    "word": "stand-up comedy",
+    "translation": "单口相声",
+    "topic": "hobbies"
+  },
+  {
+    "word": "acting",
+    "translation": "表演",
+    "topic": "hobbies"
+  },
+  {
+    "word": "filmmaking",
+    "translation": "电影制作",
+    "topic": "hobbies"
+  },
+  {
+    "word": "animation",
+    "translation": "动画制作",
+    "topic": "hobbies"
+  }
+]

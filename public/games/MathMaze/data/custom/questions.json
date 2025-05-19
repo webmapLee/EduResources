@@ -1,0 +1,92 @@
+[
+  {
+    "id": "custom_1",
+    "question": "如果一个正方形的边长是6厘米，它的面积是多少平方厘米？",
+    "answer": 36,
+    "difficulty": "medium"
+  },
+  {
+    "id": "custom_2",
+    "question": "一个圆的直径是10厘米，它的周长约等于多少厘米？(使用π=3.14)",
+    "answer": 31.4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "custom_3",
+    "question": "一个数的25%是15，这个数是多少？",
+    "answer": 60,
+    "difficulty": "medium"
+  },
+  {
+    "id": "custom_4",
+    "question": "如果3x + 7 = 22，那么x的值是多少？",
+    "answer": 5,
+    "difficulty": "medium"
+  },
+  {
+    "id": "custom_5",
+    "question": "一个长方形的长是8米，宽是5米，它的周长是多少米？",
+    "answer": 26,
+    "difficulty": "easy"
+  },
+  {
+    "id": "custom_6",
+    "question": "一个三角形的三个内角之和等于多少度？",
+    "answer": 180,
+    "difficulty": "easy"
+  },
+  {
+    "id": "custom_7",
+    "question": "如果一个立方体的边长是4厘米，它的体积是多少立方厘米？",
+    "answer": 64,
+    "difficulty": "medium"
+  },
+  {
+    "id": "custom_8",
+    "question": "一个梯形的上底是5厘米，下底是9厘米，高是4厘米，它的面积是多少平方厘米？",
+    "answer": 28,
+    "difficulty": "hard"
+  },
+  {
+    "id": "custom_9",
+    "question": "一列数的平均值是15，如果再加入一个数20，新的平均值是多少？",
+    "answer": 16,
+    "difficulty": "hard"
+  },
+  {
+    "id": "custom_10",
+    "question": "一个圆的面积是78.5平方厘米，它的半径是多少厘米？(使用π=3.14)",
+    "answer": 5,
+    "difficulty": "hard"
+  },
+  {
+    "id": "custom_11",
+    "question": "如果2/5 + x = 3/4，那么x等于多少？(答案用小数表示)",
+    "answer": 0.35,
+    "difficulty": "hard"
+  },
+  {
+    "id": "custom_12",
+    "question": "一个正六边形的每个内角等于多少度？",
+    "answer": 120,
+    "difficulty": "medium"
+  },
+  {
+    "id": "custom_13",
+    "question": "如果一个数的平方是144，这个数是多少？",
+    "answer": 12,
+    "difficulty": "easy"
+  },
+  {
+    "id": "custom_14",
+    "question": "一个长方体的长是6厘米，宽是4厘米，高是5厘米，它的表面积是多少平方厘米？",
+    "answer": 148,
+    "difficulty": "hard"
+  },
+  {
+    "id": "custom_15",
+    "question": "如果一个等腰三角形的两个相等边长都是5厘米，底边是6厘米，它的面积是多少平方厘米？",
+    "answer": 12,
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爆米花知识盒</title>
+    <link rel="stylesheet" href="popcorn-knowledge-box.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>爆米花知识盒</h1>
+            <div class="score-container">
+                <div class="team">
+                    <h3>队伍一</h3>
+                    <div class="score" id="team1-score">0</div>
+                </div>
+                <div class="team">
+                    <h3>队伍二</h3>
+                    <div class="score" id="team2-score">0</div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="game-area">
+                <div class="popcorn-box">
+                    <div class="box-top"></div>
+                    <div class="box-content" id="popcorn-container">
+                        <div class="empty-box-message">爆米花盒是空的！请添加知识点</div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div class="control-panel">
+                        <h3>游戏控制</h3>
+                        <button id="draw-popcorn" class="pulse-button">抽取爆米花</button>
+                        <button id="reset-game">重置游戏</button>
+                        <button id="show-tutorial" class="help-button">游戏教程</button>
+                    </div>
+                    
+                    <div class="question-panel">
+                        <h3>题目</h3>
+                        <div class="question-display" id="question-display">
+                            <p>点击"抽取爆米花"开始游戏</p>
+                        </div>
+                        <div class="answer-controls">
+                            <button id="correct-answer">回答正确</button>
+                            <button id="wrong-answer">回答错误</button>
+                        </div>
+                        <div class="hint-toggle">
+                            <button id="toggle-hint">显示提示</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-setup">
+                <h3>添加知识点</h3>
+                <div class="input-group">
+                    <label for="question-type">类型：</label>
+                    <select id="question-type">
+                        <option value="古诗-填词">古诗-填词</option>
+                        <option value="古诗-接龙">古诗-接龙</option>
+                        <option value="古诗-猜作者">古诗-猜作者</option>
+                        <option value="成语-填词">成语-填词</option>
+                        <option value="成语-接龙">成语-接龙</option>
+                        <option value="成语-渊源">成语-渊源</option>
+                        <option value="生字-识别">生字-识别</option>
+                        <option value="生字-读音">生字-读音</option>
+                        <option value="自定义">自定义</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="question-content">内容：</label>
+                    <textarea id="question-content" placeholder="输入题目内容，如古诗名称、成语或生字"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="question-hint">提示（可选）：</label>
+                    <textarea id="question-hint" placeholder="输入提示信息，如古诗的前两句、成语的释义等"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="question-answer">答案：</label>
+                    <textarea id="question-answer" placeholder="输入正确答案"></textarea>
+                </div>
+                <div class="input-group" id="custom-rule-group" style="display: none;">
+                    <label for="custom-rule">自定义规则：</label>
+                    <textarea id="custom-rule" placeholder="描述自定义游戏规则"></textarea>
+                </div>
+                <button id="add-question">添加到爆米花盒</button>
+                <button id="add-sample-questions">添加示例题目</button>
+                <button id="load-question-bank" class="resource-button">导入题库资源</button>
+                <button id="reset-qingkong" class="reset-button">重置青空题目</button>
+            </div>
+
+            <div class="game-rules">
+                <h3>游戏规则</h3>
+                <div class="rules-tabs">
+                    <button class="tab-button active" data-tab="general-rules">基本规则</button>
+                    <button class="tab-button" data-tab="poetry-rules">古诗规则</button>
+                    <button class="tab-button" data-tab="idiom-rules">成语规则</button>
+                    <button class="tab-button" data-tab="character-rules">生字规则</button>
+                    <button class="tab-button" data-tab="custom-rules">自定义规则</button>
+                </div>
+                
+                <div class="tab-content active" id="general-rules">
+                    <ol>
+                        <li>将知识点添加到爆米花盒中</li>
+                        <li>学生通过猜拳或抽签决定答题顺序</li>
+                        <li>点击"抽取爆米花"按钮抽取题目</li>
+                        <li>学生回答题目，老师或家长判断对错</li>
+                        <li>答对加分，可积分兑换奖励</li>
+                    </ol>
+                </div>
+                
+                <div class="tab-content" id="poetry-rules">
+                    <h4>古诗答题规则</h4>
+                    <ul>
+                        <li><strong>填词：</strong>根据提供的古诗部分内容，填写缺失的词语</li>
+                        <li><strong>接龙：</strong>根据上一句诗句的最后一个字，说出以该字开头的诗句</li>
+                        <li><strong>猜作者：</strong>根据提供的诗句，猜测作者是谁</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="idiom-rules">
+                    <h4>成语答题规则</h4>
+                    <ul>
+                        <li><strong>填词：</strong>根据提供的成语部分，填写完整成语</li>
+                        <li><strong>接龙：</strong>根据上一个成语的最后一个字，说出以该字开头的成语</li>
+                        <li><strong>渊源：</strong>说出成语的历史来源或典故</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="character-rules">
+                    <h4>生字答题规则</h4>
+                    <ul>
+                        <li><strong>识别：</strong>根据提供的字形特征或部首，识别出对应的生字</li>
+                        <li><strong>读音：</strong>正确读出生字的读音，包括声调</li>
+                    </ul>
+                </div>
+                
+                <div class="tab-content" id="custom-rules">
+                    <h4>自定义答题规则</h4>
+                    <p>可以根据学生年龄和学习需求，自定义题目内容和答题规则。例如：</p>
+                    <ul>
+                        <li>英语单词拼写</li>
+                        <li>数学计算题</li>
+                        <li>科学知识问答</li>
+                        <li>历史事件年代</li>
+                    </ul>
+                </div>
+                
+                <div class="game-tips">
+                    <h4>游戏小贴士</h4>
+                    <ul>
+                        <li>可以根据学生年龄调整题目难度</li>
+                        <li>家长可以加入运动或家务任务增加趣味性</li>
+                        <li>积分可以兑换小奖品或特权，增强学习动力</li>
+                        <li>可以使用"题库资源"按钮快速导入大量题目</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <!-- 爆米花题目模态框 -->
+        <div class="modal" id="popcorn-modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="popcorn-animation">
+                    <div class="popcorn"></div>
+                </div>
+                <h2 id="modal-question-type"></h2>
+                <p id="modal-question-content"></p>
+                <p id="modal-question-hint" class="hint"></p>
+                <div class="modal-buttons">
+                    <button id="modal-show-hint">显示提示</button>
+                    <button id="modal-close">开始答题</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 教程模态框 -->
+        <div class="modal" id="tutorial-modal">
+            <div class="modal-content tutorial-content">
+                <span class="close-button">&times;</span>
+                <h2>爆米花知识盒 - 游戏教程</h2>
+                
+                <div class="tutorial-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>准备知识点</h3>
+                        <p>在"添加知识点"区域输入古诗、成语或生字，点击"添加到爆米花盒"。每个知识点会变成一颗爆米花放入盒中。</p>
+                        <img src="tutorial-1.png" alt="添加知识点示意图" class="tutorial-image">
+                    </div>
+                </div>
+                
+                <div class="tutorial-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>分组准备</h3>
+                        <p>将学生分为两队，通过猜拳或抽签决定先答题的队伍。</p>
+                    </div>
+                </div>
+                
+                <div class="tutorial-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>抽取题目</h3>
+                        <p>点击"抽取爆米花"按钮，随机抽取一个知识点题目。</p>
+                    </div>
+                </div>
+                
+                <div class="tutorial-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>回答问题</h3>
+                        <p>当前队伍回答题目，如需提示可点击"显示提示"按钮。</p>
+                    </div>
+                </div>
+                
+                <div class="tutorial-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>记录结果</h3>
+                        <p>根据回答情况，点击"回答正确"或"回答错误"按钮。答对的队伍获得1分。</p>
+                    </div>
+                </div>
+                
+                <div class="tutorial-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>继续游戏</h3>
+                        <p>轮到另一队抽取爆米花，重复步骤3-5，直到爆米花盒为空或达到预定分数。</p>
+                    </div>
+                </div>
+                
+                <div class="tutorial-step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>奖励兑换</h3>
+                        <p>游戏结束后，根据积分情况给予相应奖励，如小礼品、特权或减免家务等。</p>
+                    </div>
+                </div>
+                
+                <button id="close-tutorial" class="primary-button">开始游戏</button>
+            </div>
+        </div>
+
+        <!-- 提示模态框 -->
+        <div class="modal" id="hint-modal">
+            <div class="modal-content hint-content">
+                <span class="close-button">&times;</span>
+                <h2>提示</h2>
+                <p id="hint-text"></p>
+                <button id="close-hint" class="primary-button">我知道了</button>
+            </div>
+        </div>
+
+        <!-- 成功答题模态框 -->
+        <div class="modal" id="success-modal">
+            <div class="modal-content success-content">
+                <span class="close-button">&times;</span>
+                <div class="success-animation">
+                    <div class="star-burst"></div>
+                </div>
+                <h2>回答正确！</h2>
+                <p id="success-message"></p>
+                <div class="points-animation">+1</div>
+                <button id="close-success" class="primary-button">继续</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="popcorn-knowledge-box.js"></script>
+</body>
+</html>

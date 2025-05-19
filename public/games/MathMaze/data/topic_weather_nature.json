@@ -1,0 +1,367 @@
+[
+  {
+    "word": "sun",
+    "translation": "太阳",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "moon",
+    "translation": "月亮",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "star",
+    "translation": "星星",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "sky",
+    "translation": "天空",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "cloud",
+    "translation": "云",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "rain",
+    "translation": "雨",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "snow",
+    "translation": "雪",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "wind",
+    "translation": "风",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "storm",
+    "translation": "暴风雨",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "thunder",
+    "translation": "雷",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "lightning",
+    "translation": "闪电",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "rainbow",
+    "translation": "彩虹",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "fog",
+    "translation": "雾",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "mist",
+    "translation": "薄雾",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "frost",
+    "translation": "霜",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "ice",
+    "translation": "冰",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "hail",
+    "translation": "冰雹",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "drought",
+    "translation": "干旱",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "flood",
+    "translation": "洪水",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "hurricane",
+    "translation": "飓风",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "tornado",
+    "translation": "龙卷风",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "earthquake",
+    "translation": "地震",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "volcano",
+    "translation": "火山",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "tsunami",
+    "translation": "海啸",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "temperature",
+    "translation": "温度",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "hot",
+    "translation": "热的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "cold",
+    "translation": "冷的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "warm",
+    "translation": "温暖的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "cool",
+    "translation": "凉爽的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "humid",
+    "translation": "潮湿的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "dry",
+    "translation": "干燥的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "sunny",
+    "translation": "晴朗的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "cloudy",
+    "translation": "多云的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "rainy",
+    "translation": "下雨的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "snowy",
+    "translation": "下雪的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "windy",
+    "translation": "有风的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "stormy",
+    "translation": "暴风雨的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "foggy",
+    "translation": "有雾的",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "mountain",
+    "translation": "山",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "hill",
+    "translation": "小山",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "valley",
+    "translation": "山谷",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "cliff",
+    "translation": "悬崖",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "cave",
+    "translation": "洞穴",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "forest",
+    "translation": "森林",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "jungle",
+    "translation": "丛林",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "desert",
+    "translation": "沙漠",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "beach",
+    "translation": "海滩",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "coast",
+    "translation": "海岸",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "island",
+    "translation": "岛屿",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "ocean",
+    "translation": "海洋",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "sea",
+    "translation": "海",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "lake",
+    "translation": "湖",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "river",
+    "translation": "河流",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "stream",
+    "translation": "小溪",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "waterfall",
+    "translation": "瀑布",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "pond",
+    "translation": "池塘",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "swamp",
+    "translation": "沼泽",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "marsh",
+    "translation": "湿地",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "meadow",
+    "translation": "草地",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "field",
+    "translation": "田野",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "plain",
+    "translation": "平原",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "grassland",
+    "translation": "草原",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "tundra",
+    "translation": "苔原",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "tree",
+    "translation": "树",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "flower",
+    "translation": "花",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "grass",
+    "translation": "草",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "bush",
+    "translation": "灌木",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "plant",
+    "translation": "植物",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "leaf",
+    "translation": "叶子",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "root",
+    "translation": "根",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "branch",
+    "translation": "树枝",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "trunk",
+    "translation": "树干",
+    "topic": "weather_nature"
+  },
+  {
+    "word": "bark",
+    "translation": "树皮",
+    "topic": "weather_nature"
+  }
+]

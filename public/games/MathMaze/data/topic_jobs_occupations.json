@@ -1,0 +1,392 @@
+[
+  {
+    "word": "teacher",
+    "translation": "教师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "doctor",
+    "translation": "医生",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "nurse",
+    "translation": "护士",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "dentist",
+    "translation": "牙医",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "pharmacist",
+    "translation": "药剂师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "veterinarian",
+    "translation": "兽医",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "engineer",
+    "translation": "工程师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "architect",
+    "translation": "建筑师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "scientist",
+    "translation": "科学家",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "researcher",
+    "translation": "研究员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "programmer",
+    "translation": "程序员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "developer",
+    "translation": "开发人员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "designer",
+    "translation": "设计师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "artist",
+    "translation": "艺术家",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "musician",
+    "translation": "音乐家",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "actor",
+    "translation": "演员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "actress",
+    "translation": "女演员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "singer",
+    "translation": "歌手",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "dancer",
+    "translation": "舞者",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "writer",
+    "translation": "作家",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "journalist",
+    "translation": "记者",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "reporter",
+    "translation": "记者",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "editor",
+    "translation": "编辑",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "photographer",
+    "translation": "摄影师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "chef",
+    "translation": "厨师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "baker",
+    "translation": "面包师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "waiter",
+    "translation": "服务员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "waitress",
+    "translation": "女服务员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "bartender",
+    "translation": "调酒师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "receptionist",
+    "translation": "接待员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "secretary",
+    "translation": "秘书",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "manager",
+    "translation": "经理",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "director",
+    "translation": "主管",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "CEO",
+    "translation": "首席执行官",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "president",
+    "translation": "总裁",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "businessman",
+    "translation": "商人",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "businesswoman",
+    "translation": "女商人",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "entrepreneur",
+    "translation": "企业家",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "salesperson",
+    "translation": "销售人员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "cashier",
+    "translation": "收银员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "accountant",
+    "translation": "会计",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "banker",
+    "translation": "银行家",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "financial advisor",
+    "translation": "理财顾问",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "lawyer",
+    "translation": "律师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "judge",
+    "translation": "法官",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "police officer",
+    "translation": "警察",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "detective",
+    "translation": "侦探",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "firefighter",
+    "translation": "消防员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "soldier",
+    "translation": "士兵",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "pilot",
+    "translation": "飞行员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "flight attendant",
+    "translation": "空乘人员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "captain",
+    "translation": "船长",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "sailor",
+    "translation": "水手",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "driver",
+    "translation": "司机",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "taxi driver",
+    "translation": "出租车司机",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "bus driver",
+    "translation": "公交车司机",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "mechanic",
+    "translation": "机械师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "electrician",
+    "translation": "电工",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "plumber",
+    "translation": "水管工",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "carpenter",
+    "translation": "木匠",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "construction worker",
+    "translation": "建筑工人",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "farmer",
+    "translation": "农民",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "fisherman",
+    "translation": "渔民",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "gardener",
+    "translation": "园丁",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "cleaner",
+    "translation": "清洁工",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "janitor",
+    "translation": "看门人",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "housekeeper",
+    "translation": "管家",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "babysitter",
+    "translation": "保姆",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "nanny",
+    "translation": "保姆",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "hairdresser",
+    "translation": "理发师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "barber",
+    "translation": "理发师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "beautician",
+    "translation": "美容师",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "tailor",
+    "translation": "裁缝",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "shopkeeper",
+    "translation": "店主",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "librarian",
+    "translation": "图书管理员",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "tour guide",
+    "translation": "导游",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "translator",
+    "translation": "翻译",
+    "topic": "jobs_occupations"
+  },
+  {
+    "word": "interpreter",
+    "translation": "口译员",
+    "topic": "jobs_occupations"
+  }
+]

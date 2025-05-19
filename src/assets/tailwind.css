@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局样式 */
+body {
+  @apply bg-secondary-50 text-gray-800;
+  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+/* 导航菜单过渡效果 */
+.nav-dropdown-enter-active,
+.nav-dropdown-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav-dropdown-enter-from,
+.nav-dropdown-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* 卡通风格样式 */
+.cartoon-shadow {
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.cartoon-button {
+  @apply bg-primary-500 text-white font-bold py-2 px-4 rounded-full cartoon-shadow transition-transform;
+}
+
+.cartoon-button:hover {
+  @apply transform -translate-y-1;
+}
+
+/* 可爱风格按钮 */
+.cute-button {
+  @apply bg-primary-500 text-white font-bold py-2 px-6 rounded-full shadow-cute transition-all duration-300;
+}
+
+.cute-button:hover {
+  @apply bg-primary-600 transform -translate-y-1 shadow-cute-lg;
+}
+
+/* 卡片样式 */
+.cute-card {
+  @apply bg-white rounded-2xl shadow-cute p-6 transition-all duration-300;
+}
+
+.cute-card:hover {
+  @apply shadow-cute-lg transform -translate-y-1;
+}
+
+/* 3D倾斜效果 - 仅在非触摸设备上启用 */
+@media (hover: hover) {
+  .tilt-card {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+
+  .tilt-card:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+  }
+}
+
+/* 动画效果 */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 波浪效果 */
+.wave-animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.wave-animation::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+  animation: wave 8s linear infinite;
+  opacity: 0.3;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 页面过渡效果 */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(20px);
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "transport_1",
+    "word": "car",
+    "phonetic": "/kɑː/",
+    "translation": "汽车",
+    "example": "I drive my car to work every day."
+  },
+  {
+    "id": "transport_2",
+    "word": "bus",
+    "phonetic": "/bʌs/",
+    "translation": "公共汽车",
+    "example": "I take the bus to school."
+  },
+  {
+    "id": "transport_3",
+    "word": "train",
+    "phonetic": "/treɪn/",
+    "translation": "火车",
+    "example": "The train arrives at 9 o'clock."
+  },
+  {
+    "id": "transport_4",
+    "word": "airplane",
+    "phonetic": "/ˈeəpleɪn/",
+    "translation": "飞机",
+    "example": "We traveled by airplane to Paris."
+  },
+  {
+    "id": "transport_5",
+    "word": "bicycle",
+    "phonetic": "/ˈbaɪsɪkl/",
+    "translation": "自行车",
+    "example": "I ride my bicycle to the park."
+  },
+  {
+    "id": "transport_6",
+    "word": "subway",
+    "phonetic": "/ˈsʌbweɪ/",
+    "translation": "地铁",
+    "example": "The subway is the fastest way to travel in the city."
+  },
+  {
+    "id": "transport_7",
+    "word": "taxi",
+    "phonetic": "/ˈtæksi/",
+    "translation": "出租车",
+    "example": "I took a taxi to the airport."
+  },
+  {
+    "id": "transport_8",
+    "word": "ship",
+    "phonetic": "/ʃɪp/",
+    "translation": "轮船",
+    "example": "The ship sailed across the ocean."
+  },
+  {
+    "id": "transport_9",
+    "word": "motorcycle",
+    "phonetic": "/ˈməʊtəsaɪkl/",
+    "translation": "摩托车",
+    "example": "He rides a motorcycle to work."
+  },
+  {
+    "id": "transport_10",
+    "word": "airport",
+    "phonetic": "/ˈeəpɔːt/",
+    "translation": "机场",
+    "example": "We arrived at the airport two hours before our flight."
+  }
+]

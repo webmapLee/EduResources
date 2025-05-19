@@ -1,0 +1,152 @@
+[
+  {
+    "word": "apple",
+    "translation": "苹果",
+    "difficulty": "basic"
+  },
+  {
+    "word": "book",
+    "translation": "书",
+    "difficulty": "basic"
+  },
+  {
+    "word": "cat",
+    "translation": "猫",
+    "difficulty": "basic"
+  },
+  {
+    "word": "dog",
+    "translation": "狗",
+    "difficulty": "basic"
+  },
+  {
+    "word": "egg",
+    "translation": "鸡蛋",
+    "difficulty": "basic"
+  },
+  {
+    "word": "fish",
+    "translation": "鱼",
+    "difficulty": "basic"
+  },
+  {
+    "word": "girl",
+    "translation": "女孩",
+    "difficulty": "basic"
+  },
+  {
+    "word": "house",
+    "translation": "房子",
+    "difficulty": "basic"
+  },
+  {
+    "word": "ice",
+    "translation": "冰",
+    "difficulty": "basic"
+  },
+  {
+    "word": "jump",
+    "translation": "跳",
+    "difficulty": "basic"
+  },
+  {
+    "word": "king",
+    "translation": "国王",
+    "difficulty": "basic"
+  },
+  {
+    "word": "love",
+    "translation": "爱",
+    "difficulty": "basic"
+  },
+  {
+    "word": "milk",
+    "translation": "牛奶",
+    "difficulty": "basic"
+  },
+  {
+    "word": "name",
+    "translation": "名字",
+    "difficulty": "basic"
+  },
+  {
+    "word": "open",
+    "translation": "打开",
+    "difficulty": "basic"
+  },
+  {
+    "word": "pen",
+    "translation": "钢笔",
+    "difficulty": "basic"
+  },
+  {
+    "word": "queen",
+    "translation": "女王",
+    "difficulty": "basic"
+  },
+  {
+    "word": "red",
+    "translation": "红色",
+    "difficulty": "basic"
+  },
+  {
+    "word": "sun",
+    "translation": "太阳",
+    "difficulty": "basic"
+  },
+  {
+    "word": "tree",
+    "translation": "树",
+    "difficulty": "basic"
+  },
+  {
+    "word": "up",
+    "translation": "向上",
+    "difficulty": "basic"
+  },
+  {
+    "word": "very",
+    "translation": "非常",
+    "difficulty": "basic"
+  },
+  {
+    "word": "water",
+    "translation": "水",
+    "difficulty": "basic"
+  },
+  {
+    "word": "box",
+    "translation": "盒子",
+    "difficulty": "basic"
+  },
+  {
+    "word": "yes",
+    "translation": "是",
+    "difficulty": "basic"
+  },
+  {
+    "word": "zoo",
+    "translation": "动物园",
+    "difficulty": "basic"
+  },
+  {
+    "word": "big",
+    "translation": "大的",
+    "difficulty": "basic"
+  },
+  {
+    "word": "small",
+    "translation": "小的",
+    "difficulty": "basic"
+  },
+  {
+    "word": "good",
+    "translation": "好的",
+    "difficulty": "basic"
+  },
+  {
+    "word": "bad",
+    "translation": "坏的",
+    "difficulty": "basic"
+  }
+]

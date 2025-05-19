@@ -1,0 +1,62 @@
+[
+  {
+    "id": "g4_1",
+    "question": "(15 × 4) ÷ 3 = ?",
+    "answer": 20,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g4_2",
+    "question": "2.5 + 3.7 = ?",
+    "answer": 6.2,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g4_3",
+    "question": "1/4 + 2/4 是否大于1？(是=1, 否=0)",
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g4_4",
+    "question": "(20 × 5) ÷ 4 = ?",
+    "answer": 25,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g4_5",
+    "question": "5.6 + 2.8 = ?",
+    "answer": 8.4,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g4_6",
+    "question": "3/5 + 3/5 是否大于1？(是=1, 否=0)",
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g4_7",
+    "question": "(12 × 6) ÷ 3 = ?",
+    "answer": 24,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g4_8",
+    "question": "4.2 + 3.9 = ?",
+    "answer": 8.1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g4_9",
+    "question": "2/6 + 5/6 是否大于1？(是=1, 否=0)",
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "id": "g4_10",
+    "question": "(18 × 5) ÷ 6 = ?",
+    "answer": 15,
+    "difficulty": "hard"
+  }
+]

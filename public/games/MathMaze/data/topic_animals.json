@@ -1,0 +1,417 @@
+[
+  {
+    "word": "dog",
+    "translation": "狗",
+    "topic": "animals"
+  },
+  {
+    "word": "cat",
+    "translation": "猫",
+    "topic": "animals"
+  },
+  {
+    "word": "bird",
+    "translation": "鸟",
+    "topic": "animals"
+  },
+  {
+    "word": "fish",
+    "translation": "鱼",
+    "topic": "animals"
+  },
+  {
+    "word": "horse",
+    "translation": "马",
+    "topic": "animals"
+  },
+  {
+    "word": "cow",
+    "translation": "牛",
+    "topic": "animals"
+  },
+  {
+    "word": "pig",
+    "translation": "猪",
+    "topic": "animals"
+  },
+  {
+    "word": "sheep",
+    "translation": "羊",
+    "topic": "animals"
+  },
+  {
+    "word": "chicken",
+    "translation": "鸡",
+    "topic": "animals"
+  },
+  {
+    "word": "duck",
+    "translation": "鸭子",
+    "topic": "animals"
+  },
+  {
+    "word": "goose",
+    "translation": "鹅",
+    "topic": "animals"
+  },
+  {
+    "word": "rabbit",
+    "translation": "兔子",
+    "topic": "animals"
+  },
+  {
+    "word": "mouse",
+    "translation": "老鼠",
+    "topic": "animals"
+  },
+  {
+    "word": "rat",
+    "translation": "大鼠",
+    "topic": "animals"
+  },
+  {
+    "word": "hamster",
+    "translation": "仓鼠",
+    "topic": "animals"
+  },
+  {
+    "word": "guinea pig",
+    "translation": "豚鼠",
+    "topic": "animals"
+  },
+  {
+    "word": "tiger",
+    "translation": "老虎",
+    "topic": "animals"
+  },
+  {
+    "word": "lion",
+    "translation": "狮子",
+    "topic": "animals"
+  },
+  {
+    "word": "elephant",
+    "translation": "大象",
+    "topic": "animals"
+  },
+  {
+    "word": "giraffe",
+    "translation": "长颈鹿",
+    "topic": "animals"
+  },
+  {
+    "word": "monkey",
+    "translation": "猴子",
+    "topic": "animals"
+  },
+  {
+    "word": "gorilla",
+    "translation": "大猩猩",
+    "topic": "animals"
+  },
+  {
+    "word": "chimpanzee",
+    "translation": "黑猩猩",
+    "topic": "animals"
+  },
+  {
+    "word": "panda",
+    "translation": "熊猫",
+    "topic": "animals"
+  },
+  {
+    "word": "bear",
+    "translation": "熊",
+    "topic": "animals"
+  },
+  {
+    "word": "wolf",
+    "translation": "狼",
+    "topic": "animals"
+  },
+  {
+    "word": "fox",
+    "translation": "狐狸",
+    "topic": "animals"
+  },
+  {
+    "word": "deer",
+    "translation": "鹿",
+    "topic": "animals"
+  },
+  {
+    "word": "zebra",
+    "translation": "斑马",
+    "topic": "animals"
+  },
+  {
+    "word": "hippo",
+    "translation": "河马",
+    "topic": "animals"
+  },
+  {
+    "word": "rhino",
+    "translation": "犀牛",
+    "topic": "animals"
+  },
+  {
+    "word": "camel",
+    "translation": "骆驼",
+    "topic": "animals"
+  },
+  {
+    "word": "kangaroo",
+    "translation": "袋鼠",
+    "topic": "animals"
+  },
+  {
+    "word": "koala",
+    "translation": "考拉",
+    "topic": "animals"
+  },
+  {
+    "word": "penguin",
+    "translation": "企鹅",
+    "topic": "animals"
+  },
+  {
+    "word": "dolphin",
+    "translation": "海豚",
+    "topic": "animals"
+  },
+  {
+    "word": "whale",
+    "translation": "鲸鱼",
+    "topic": "animals"
+  },
+  {
+    "word": "shark",
+    "translation": "鲨鱼",
+    "topic": "animals"
+  },
+  {
+    "word": "octopus",
+    "translation": "章鱼",
+    "topic": "animals"
+  },
+  {
+    "word": "squid",
+    "translation": "鱿鱼",
+    "topic": "animals"
+  },
+  {
+    "word": "crab",
+    "translation": "螃蟹",
+    "topic": "animals"
+  },
+  {
+    "word": "lobster",
+    "translation": "龙虾",
+    "topic": "animals"
+  },
+  {
+    "word": "shrimp",
+    "translation": "虾",
+    "topic": "animals"
+  },
+  {
+    "word": "snake",
+    "translation": "蛇",
+    "topic": "animals"
+  },
+  {
+    "word": "lizard",
+    "translation": "蜥蜴",
+    "topic": "animals"
+  },
+  {
+    "word": "turtle",
+    "translation": "乌龟",
+    "topic": "animals"
+  },
+  {
+    "word": "crocodile",
+    "translation": "鳄鱼",
+    "topic": "animals"
+  },
+  {
+    "word": "frog",
+    "translation": "青蛙",
+    "topic": "animals"
+  },
+  {
+    "word": "toad",
+    "translation": "蟾蜍",
+    "topic": "animals"
+  },
+  {
+    "word": "butterfly",
+    "translation": "蝴蝶",
+    "topic": "animals"
+  },
+  {
+    "word": "bee",
+    "translation": "蜜蜂",
+    "topic": "animals"
+  },
+  {
+    "word": "ant",
+    "translation": "蚂蚁",
+    "topic": "animals"
+  },
+  {
+    "word": "spider",
+    "translation": "蜘蛛",
+    "topic": "animals"
+  },
+  {
+    "word": "beetle",
+    "translation": "甲虫",
+    "topic": "animals"
+  },
+  {
+    "word": "dragonfly",
+    "translation": "蜻蜓",
+    "topic": "animals"
+  },
+  {
+    "word": "mosquito",
+    "translation": "蚊子",
+    "topic": "animals"
+  },
+  {
+    "word": "fly",
+    "translation": "苍蝇",
+    "topic": "animals"
+  },
+  {
+    "word": "worm",
+    "translation": "蠕虫",
+    "topic": "animals"
+  },
+  {
+    "word": "snail",
+    "translation": "蜗牛",
+    "topic": "animals"
+  },
+  {
+    "word": "owl",
+    "translation": "猫头鹰",
+    "topic": "animals"
+  },
+  {
+    "word": "eagle",
+    "translation": "鹰",
+    "topic": "animals"
+  },
+  {
+    "word": "hawk",
+    "translation": "鹰",
+    "topic": "animals"
+  },
+  {
+    "word": "parrot",
+    "translation": "鹦鹉",
+    "topic": "animals"
+  },
+  {
+    "word": "peacock",
+    "translation": "孔雀",
+    "topic": "animals"
+  },
+  {
+    "word": "swan",
+    "translation": "天鹅",
+    "topic": "animals"
+  },
+  {
+    "word": "flamingo",
+    "translation": "火烈鸟",
+    "topic": "animals"
+  },
+  {
+    "word": "ostrich",
+    "translation": "鸵鸟",
+    "topic": "animals"
+  },
+  {
+    "word": "bat",
+    "translation": "蝙蝠",
+    "topic": "animals"
+  },
+  {
+    "word": "squirrel",
+    "translation": "松鼠",
+    "topic": "animals"
+  },
+  {
+    "word": "hedgehog",
+    "translation": "刺猬",
+    "topic": "animals"
+  },
+  {
+    "word": "raccoon",
+    "translation": "浣熊",
+    "topic": "animals"
+  },
+  {
+    "word": "skunk",
+    "translation": "臭鼬",
+    "topic": "animals"
+  },
+  {
+    "word": "badger",
+    "translation": "獾",
+    "topic": "animals"
+  },
+  {
+    "word": "otter",
+    "translation": "水獭",
+    "topic": "animals"
+  },
+  {
+    "word": "seal",
+    "translation": "海豹",
+    "topic": "animals"
+  },
+  {
+    "word": "walrus",
+    "translation": "海象",
+    "topic": "animals"
+  },
+  {
+    "word": "polar bear",
+    "translation": "北极熊",
+    "topic": "animals"
+  },
+  {
+    "word": "reindeer",
+    "translation": "驯鹿",
+    "topic": "animals"
+  },
+  {
+    "word": "moose",
+    "translation": "驼鹿",
+    "topic": "animals"
+  },
+  {
+    "word": "buffalo",
+    "translation": "水牛",
+    "topic": "animals"
+  },
+  {
+    "word": "goat",
+    "translation": "山羊",
+    "topic": "animals"
+  },
+  {
+    "word": "donkey",
+    "translation": "驴",
+    "topic": "animals"
+  },
+  {
+    "word": "mule",
+    "translation": "骡子",
+    "topic": "animals"
+  }
+]

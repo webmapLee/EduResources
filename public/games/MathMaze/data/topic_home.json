@@ -1,0 +1,202 @@
+[
+  {
+    "word": "house",
+    "translation": "房子",
+    "topic": "home"
+  },
+  {
+    "word": "apartment",
+    "translation": "公寓",
+    "topic": "home"
+  },
+  {
+    "word": "room",
+    "translation": "房间",
+    "topic": "home"
+  },
+  {
+    "word": "living room",
+    "translation": "客厅",
+    "topic": "home"
+  },
+  {
+    "word": "bedroom",
+    "translation": "卧室",
+    "topic": "home"
+  },
+  {
+    "word": "bathroom",
+    "translation": "浴室",
+    "topic": "home"
+  },
+  {
+    "word": "kitchen",
+    "translation": "厨房",
+    "topic": "home"
+  },
+  {
+    "word": "dining room",
+    "translation": "餐厅",
+    "topic": "home"
+  },
+  {
+    "word": "study",
+    "translation": "书房",
+    "topic": "home"
+  },
+  {
+    "word": "garage",
+    "translation": "车库",
+    "topic": "home"
+  },
+  {
+    "word": "garden",
+    "translation": "花园",
+    "topic": "home"
+  },
+  {
+    "word": "balcony",
+    "translation": "阳台",
+    "topic": "home"
+  },
+  {
+    "word": "basement",
+    "translation": "地下室",
+    "topic": "home"
+  },
+  {
+    "word": "attic",
+    "translation": "阁楼",
+    "topic": "home"
+  },
+  {
+    "word": "stairs",
+    "translation": "楼梯",
+    "topic": "home"
+  },
+  {
+    "word": "door",
+    "translation": "门",
+    "topic": "home"
+  },
+  {
+    "word": "window",
+    "translation": "窗户",
+    "topic": "home"
+  },
+  {
+    "word": "wall",
+    "translation": "墙",
+    "topic": "home"
+  },
+  {
+    "word": "floor",
+    "translation": "地板",
+    "topic": "home"
+  },
+  {
+    "word": "ceiling",
+    "translation": "天花板",
+    "topic": "home"
+  },
+  {
+    "word": "roof",
+    "translation": "屋顶",
+    "topic": "home"
+  },
+  {
+    "word": "furniture",
+    "translation": "家具",
+    "topic": "home"
+  },
+  {
+    "word": "sofa",
+    "translation": "沙发",
+    "topic": "home"
+  },
+  {
+    "word": "chair",
+    "translation": "椅子",
+    "topic": "home"
+  },
+  {
+    "word": "table",
+    "translation": "桌子",
+    "topic": "home"
+  },
+  {
+    "word": "bed",
+    "translation": "床",
+    "topic": "home"
+  },
+  {
+    "word": "wardrobe",
+    "translation": "衣柜",
+    "topic": "home"
+  },
+  {
+    "word": "bookshelf",
+    "translation": "书架",
+    "topic": "home"
+  },
+  {
+    "word": "desk",
+    "translation": "书桌",
+    "topic": "home"
+  },
+  {
+    "word": "lamp",
+    "translation": "台灯",
+    "topic": "home"
+  },
+  {
+    "word": "mirror",
+    "translation": "镜子",
+    "topic": "home"
+  },
+  {
+    "word": "carpet",
+    "translation": "地毯",
+    "topic": "home"
+  },
+  {
+    "word": "curtain",
+    "translation": "窗帘",
+    "topic": "home"
+  },
+  {
+    "word": "pillow",
+    "translation": "枕头",
+    "topic": "home"
+  },
+  {
+    "word": "blanket",
+    "translation": "毯子",
+    "topic": "home"
+  },
+  {
+    "word": "refrigerator",
+    "translation": "冰箱",
+    "topic": "home"
+  },
+  {
+    "word": "stove",
+    "translation": "炉子",
+    "topic": "home"
+  },
+  {
+    "word": "oven",
+    "translation": "烤箱",
+    "topic": "home"
+  },
+  {
+    "word": "microwave",
+    "translation": "微波炉",
+    "topic": "home"
+  },
+  {
+    "word": "sink",
+    "translation": "水槽",
+    "topic": "home"
+  }
+]

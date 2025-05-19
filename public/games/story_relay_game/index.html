@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故事接力棒 - 创意写作游戏</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-book-open"></i> 故事接力棒</h1>
+            <p class="subtitle">激发想象力，共同创作精彩故事</p>
+        </header>
+
+        <section class="game-intro">
+            <h2><i class="fas fa-magic"></i> 游戏介绍</h2>
+            <p>欢迎来到"故事接力棒"！这是一个全班共同参与的创意写作游戏。每位同学轮流续写故事的一部分，让我们一起创造出精彩纷呈的故事世界！</p>
+            
+            <div class="game-rules">
+                <h3><i class="fas fa-scroll"></i> 游戏规则：</h3>
+                <ol>
+                    <li>每位同学轮流续写故事的一段</li>
+                    <li>续写内容必须与前文保持连贯</li>
+                    <li>每人限时3分钟完成创作</li>
+                    <li>故事完成后，全班投票选出"最佳创意奖"</li>
+                </ol>
+            </div>
+            
+            <div class="game-controls">
+                <button id="random-story-btn" class="special-btn">
+                    <i class="fas fa-random"></i> 随机故事开头
+                </button>
+            </div>
+        </section>
+
+        <section class="game-area">
+            <div class="story-container">
+                <h2><i class="fas fa-feather-alt"></i> 故事内容</h2>
+                <div id="story-display">
+                    <p class="story-starter">从前，在一座神秘的森林里，有一棵会说话的大树...</p>
+                </div>
+                
+                <div class="story-input">
+                    <textarea id="story-continuation" placeholder="请在这里续写故事..."></textarea>
+                    <div class="controls">
+                        <span id="timer"><i class="fas fa-hourglass-half"></i> 03:00</span>
+                        <div class="button-group">
+                            <button id="submit-btn"><i class="fas fa-paper-plane"></i> 提交</button>
+                            <button id="pass-btn"><i class="fas fa-forward"></i> 传递</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="participants">
+                <h3><i class="fas fa-users"></i> 参与者</h3>
+                <ul id="participant-list">
+                    <!-- 参与者列表将通过JavaScript动态生成 -->
+                </ul>
+                <div class="add-participant">
+                    <input type="text" id="new-participant" placeholder="输入参与者姓名">
+                    <button id="add-participant-btn"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="voting-section" style="display: none;">
+            <h2><i class="fas fa-award"></i> 投票选出最佳创意</h2>
+            <p class="section-desc">请选择你认为最有创意的故事片段：</p>
+            <div id="voting-options">
+                <!-- 投票选项将通过JavaScript动态生成 -->
+            </div>
+            <button id="finish-voting"><i class="fas fa-check-circle"></i> 完成投票</button>
+        </section>
+
+        <section class="results-section" style="display: none;">
+            <h2><i class="fas fa-trophy"></i> 投票结果</h2>
+            <div id="voting-results">
+                <!-- 投票结果将通过JavaScript动态生成 -->
+            </div>
+            <div class="final-story">
+                <h3><i class="fas fa-book"></i> 完整故事</h3>
+                <div id="complete-story">
+                    <!-- 完整故事将通过JavaScript动态生成 -->
+                </div>
+                <div class="story-actions">
+                    <button id="save-story"><i class="fas fa-download"></i> 保存故事</button>
+                    <button id="new-game"><i class="fas fa-redo"></i> 开始新游戏</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>故事接力棒 &copy; 2025 - 激发创意，培养写作能力</p>
+        <div class="footer-icons">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-cloud"></i>
+            <i class="fas fa-star"></i>
+        </div>
+    </footer>
+
+    <!-- 引入故事开头数据文件 -->
+    <script src="js/story_starters_part1.js"></script>
+    <script src="js/story_starters_part2.js"></script>
+    <script src="js/story_starters_part3.js"></script>
+    <script src="js/story_starters_part4.js"></script>
+    <script src="js/story_starters_part5.js"></script>
+    <script src="js/story_starters.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

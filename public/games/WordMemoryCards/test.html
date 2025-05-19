@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试单词记忆卡片游戏</title>
+    <script>
+        function testGame() {
+            // 创建一个简单的单词数据
+            const mockData = [
+                {
+                    id: "test_1",
+                    word: "hello",
+                    phonetic: "/həˈləʊ/",
+                    translation: "你好",
+                    example: "Hello, how are you?"
+                },
+                {
+                    id: "test_2",
+                    word: "world",
+                    phonetic: "/wɜːld/",
+                    translation: "世界",
+                    example: "Hello, world!"
+                }
+            ];
+            
+            // 打印到控制台
+            console.log("测试数据:", mockData);
+            
+            // 显示在页面上
+            const container = document.getElementById('result');
+            container.innerHTML = `
+                <h3>测试数据</h3>
+                <pre>${JSON.stringify(mockData, null, 2)}</pre>
+            `;
+        }
+    </script>
+</head>
+<body>
+    <h1>测试单词记忆卡片游戏</h1>
+    <button onclick="testGame()">测试游戏</button>
+    <div id="result"></div>
+</body>
+</html>

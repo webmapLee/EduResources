@@ -1,0 +1,72 @@
+[
+  {
+    "id": "basic_1",
+    "word": "people",
+    "phonetic": "/ˈpiːpl/",
+    "translation": "人们",
+    "example": "There were many people at the concert."
+  },
+  {
+    "id": "basic_2",
+    "word": "time",
+    "phonetic": "/taɪm/",
+    "translation": "时间",
+    "example": "What time is it now?"
+  },
+  {
+    "id": "basic_3",
+    "word": "way",
+    "phonetic": "/weɪ/",
+    "translation": "方式",
+    "example": "This is the way to do it."
+  },
+  {
+    "id": "basic_4",
+    "word": "day",
+    "phonetic": "/deɪ/",
+    "translation": "日子",
+    "example": "It's been a long day."
+  },
+  {
+    "id": "basic_5",
+    "word": "man",
+    "phonetic": "/mæn/",
+    "translation": "男人",
+    "example": "The man is wearing a blue shirt."
+  },
+  {
+    "id": "basic_6",
+    "word": "thing",
+    "phonetic": "/θɪŋ/",
+    "translation": "事物",
+    "example": "I need to tell you something important."
+  },
+  {
+    "id": "basic_7",
+    "word": "woman",
+    "phonetic": "/ˈwʊmən/",
+    "translation": "女人",
+    "example": "The woman is reading a book."
+  },
+  {
+    "id": "basic_8",
+    "word": "life",
+    "phonetic": "/laɪf/",
+    "translation": "生活",
+    "example": "He has had an interesting life."
+  },
+  {
+    "id": "basic_9",
+    "word": "child",
+    "phonetic": "/tʃaɪld/",
+    "translation": "孩子",
+    "example": "The child is playing in the park."
+  },
+  {
+    "id": "basic_10",
+    "word": "world",
+    "phonetic": "/wɜːld/",
+    "translation": "世界",
+    "example": "She wants to travel around the world."
+  }
+]

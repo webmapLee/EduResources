@@ -1,0 +1,312 @@
+[
+  {
+    "word": "bread",
+    "translation": "面包",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "rice",
+    "translation": "米饭",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "noodles",
+    "translation": "面条",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "pasta",
+    "translation": "意大利面",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "pizza",
+    "translation": "披萨",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "hamburger",
+    "translation": "汉堡",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "sandwich",
+    "translation": "三明治",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "hot dog",
+    "translation": "热狗",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "salad",
+    "translation": "沙拉",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "soup",
+    "translation": "汤",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "stew",
+    "translation": "炖菜",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "meat",
+    "translation": "肉",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "beef",
+    "translation": "牛肉",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "pork",
+    "translation": "猪肉",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "chicken",
+    "translation": "鸡肉",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "lamb",
+    "translation": "羊肉",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "fish",
+    "translation": "鱼",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "seafood",
+    "translation": "海鲜",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "shrimp",
+    "translation": "虾",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "crab",
+    "translation": "螃蟹",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "lobster",
+    "translation": "龙虾",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "egg",
+    "translation": "鸡蛋",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "cheese",
+    "translation": "奶酪",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "butter",
+    "translation": "黄油",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "yogurt",
+    "translation": "酸奶",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "ice cream",
+    "translation": "冰淇淋",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "chocolate",
+    "translation": "巧克力",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "candy",
+    "translation": "糖果",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "cake",
+    "translation": "蛋糕",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "cookie",
+    "translation": "饼干",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "pie",
+    "translation": "派",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "dessert",
+    "translation": "甜点",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "breakfast",
+    "translation": "早餐",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "lunch",
+    "translation": "午餐",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "dinner",
+    "translation": "晚餐",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "snack",
+    "translation": "小吃",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "appetizer",
+    "translation": "开胃菜",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "main course",
+    "translation": "主菜",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "side dish",
+    "translation": "配菜",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "sauce",
+    "translation": "酱汁",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "spice",
+    "translation": "香料",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "salt",
+    "translation": "盐",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "pepper",
+    "translation": "胡椒",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "sugar",
+    "translation": "糖",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "honey",
+    "translation": "蜂蜜",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "jam",
+    "translation": "果酱",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "water",
+    "translation": "水",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "milk",
+    "translation": "牛奶",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "coffee",
+    "translation": "咖啡",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "tea",
+    "translation": "茶",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "juice",
+    "translation": "果汁",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "soda",
+    "translation": "汽水",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "beer",
+    "translation": "啤酒",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "wine",
+    "translation": "葡萄酒",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "cocktail",
+    "translation": "鸡尾酒",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "smoothie",
+    "translation": "冰沙",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "milkshake",
+    "translation": "奶昔",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "lemonade",
+    "translation": "柠檬水",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "hot chocolate",
+    "translation": "热巧克力",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "espresso",
+    "translation": "浓缩咖啡",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "cappuccino",
+    "translation": "卡布奇诺",
+    "topic": "food_drinks"
+  },
+  {
+    "word": "latte",
+    "translation": "拿铁",
+    "topic": "food_drinks"
+  }
+]

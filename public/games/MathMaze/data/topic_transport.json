@@ -1,0 +1,152 @@
+[
+  {
+    "word": "car",
+    "translation": "汽车",
+    "topic": "transport"
+  },
+  {
+    "word": "bus",
+    "translation": "公共汽车",
+    "topic": "transport"
+  },
+  {
+    "word": "train",
+    "translation": "火车",
+    "topic": "transport"
+  },
+  {
+    "word": "airplane",
+    "translation": "飞机",
+    "topic": "transport"
+  },
+  {
+    "word": "ship",
+    "translation": "轮船",
+    "topic": "transport"
+  },
+  {
+    "word": "bicycle",
+    "translation": "自行车",
+    "topic": "transport"
+  },
+  {
+    "word": "motorcycle",
+    "translation": "摩托车",
+    "topic": "transport"
+  },
+  {
+    "word": "taxi",
+    "translation": "出租车",
+    "topic": "transport"
+  },
+  {
+    "word": "subway",
+    "translation": "地铁",
+    "topic": "transport"
+  },
+  {
+    "word": "tram",
+    "translation": "有轨电车",
+    "topic": "transport"
+  },
+  {
+    "word": "ferry",
+    "translation": "渡船",
+    "topic": "transport"
+  },
+  {
+    "word": "helicopter",
+    "translation": "直升机",
+    "topic": "transport"
+  },
+  {
+    "word": "scooter",
+    "translation": "滑板车",
+    "topic": "transport"
+  },
+  {
+    "word": "truck",
+    "translation": "卡车",
+    "topic": "transport"
+  },
+  {
+    "word": "van",
+    "translation": "厢式货车",
+    "topic": "transport"
+  },
+  {
+    "word": "ambulance",
+    "translation": "救护车",
+    "topic": "transport"
+  },
+  {
+    "word": "police car",
+    "translation": "警车",
+    "topic": "transport"
+  },
+  {
+    "word": "fire engine",
+    "translation": "消防车",
+    "topic": "transport"
+  },
+  {
+    "word": "boat",
+    "translation": "小船",
+    "topic": "transport"
+  },
+  {
+    "word": "yacht",
+    "translation": "游艇",
+    "topic": "transport"
+  },
+  {
+    "word": "cruise ship",
+    "translation": "游轮",
+    "topic": "transport"
+  },
+  {
+    "word": "jet",
+    "translation": "喷气式飞机",
+    "topic": "transport"
+  },
+  {
+    "word": "rocket",
+    "translation": "火箭",
+    "topic": "transport"
+  },
+  {
+    "word": "spaceship",
+    "translation": "宇宙飞船",
+    "topic": "transport"
+  },
+  {
+    "word": "driver",
+    "translation": "司机",
+    "topic": "transport"
+  },
+  {
+    "word": "pilot",
+    "translation": "飞行员",
+    "topic": "transport"
+  },
+  {
+    "word": "captain",
+    "translation": "船长",
+    "topic": "transport"
+  },
+  {
+    "word": "passenger",
+    "translation": "乘客",
+    "topic": "transport"
+  },
+  {
+    "word": "ticket",
+    "translation": "票",
+    "topic": "transport"
+  },
+  {
+    "word": "journey",
+    "translation": "旅程",
+    "topic": "transport"
+  }
+]

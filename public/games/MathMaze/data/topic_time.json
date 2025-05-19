@@ -1,0 +1,217 @@
+[
+  {
+    "word": "second",
+    "translation": "秒",
+    "topic": "time"
+  },
+  {
+    "word": "minute",
+    "translation": "分钟",
+    "topic": "time"
+  },
+  {
+    "word": "hour",
+    "translation": "小时",
+    "topic": "time"
+  },
+  {
+    "word": "day",
+    "translation": "天",
+    "topic": "time"
+  },
+  {
+    "word": "week",
+    "translation": "周",
+    "topic": "time"
+  },
+  {
+    "word": "month",
+    "translation": "月",
+    "topic": "time"
+  },
+  {
+    "word": "year",
+    "translation": "年",
+    "topic": "time"
+  },
+  {
+    "word": "decade",
+    "translation": "十年",
+    "topic": "time"
+  },
+  {
+    "word": "century",
+    "translation": "世纪",
+    "topic": "time"
+  },
+  {
+    "word": "millennium",
+    "translation": "千年",
+    "topic": "time"
+  },
+  {
+    "word": "morning",
+    "translation": "早晨",
+    "topic": "time"
+  },
+  {
+    "word": "noon",
+    "translation": "中午",
+    "topic": "time"
+  },
+  {
+    "word": "afternoon",
+    "translation": "下午",
+    "topic": "time"
+  },
+  {
+    "word": "evening",
+    "translation": "傍晚",
+    "topic": "time"
+  },
+  {
+    "word": "night",
+    "translation": "夜晚",
+    "topic": "time"
+  },
+  {
+    "word": "midnight",
+    "translation": "午夜",
+    "topic": "time"
+  },
+  {
+    "word": "today",
+    "translation": "今天",
+    "topic": "time"
+  },
+  {
+    "word": "tomorrow",
+    "translation": "明天",
+    "topic": "time"
+  },
+  {
+    "word": "yesterday",
+    "translation": "昨天",
+    "topic": "time"
+  },
+  {
+    "word": "Monday",
+    "translation": "星期一",
+    "topic": "time"
+  },
+  {
+    "word": "Tuesday",
+    "translation": "星期二",
+    "topic": "time"
+  },
+  {
+    "word": "Wednesday",
+    "translation": "星期三",
+    "topic": "time"
+  },
+  {
+    "word": "Thursday",
+    "translation": "星期四",
+    "topic": "time"
+  },
+  {
+    "word": "Friday",
+    "translation": "星期五",
+    "topic": "time"
+  },
+  {
+    "word": "Saturday",
+    "translation": "星期六",
+    "topic": "time"
+  },
+  {
+    "word": "Sunday",
+    "translation": "星期日",
+    "topic": "time"
+  },
+  {
+    "word": "January",
+    "translation": "一月",
+    "topic": "time"
+  },
+  {
+    "word": "February",
+    "translation": "二月",
+    "topic": "time"
+  },
+  {
+    "word": "March",
+    "translation": "三月",
+    "topic": "time"
+  },
+  {
+    "word": "April",
+    "translation": "四月",
+    "topic": "time"
+  },
+  {
+    "word": "May",
+    "translation": "五月",
+    "topic": "time"
+  },
+  {
+    "word": "June",
+    "translation": "六月",
+    "topic": "time"
+  },
+  {
+    "word": "July",
+    "translation": "七月",
+    "topic": "time"
+  },
+  {
+    "word": "August",
+    "translation": "八月",
+    "topic": "time"
+  },
+  {
+    "word": "September",
+    "translation": "九月",
+    "topic": "time"
+  },
+  {
+    "word": "October",
+    "translation": "十月",
+    "topic": "time"
+  },
+  {
+    "word": "November",
+    "translation": "十一月",
+    "topic": "time"
+  },
+  {
+    "word": "December",
+    "translation": "十二月",
+    "topic": "time"
+  },
+  {
+    "word": "season",
+    "translation": "季节",
+    "topic": "time"
+  },
+  {
+    "word": "spring",
+    "translation": "春季",
+    "topic": "time"
+  },
+  {
+    "word": "summer",
+    "translation": "夏季",
+    "topic": "time"
+  },
+  {
+    "word": "autumn",
+    "translation": "秋季",
+    "topic": "time"
+  },
+  {
+    "word": "winter",
+    "translation": "冬季",
+    "topic": "time"
+  }
+]

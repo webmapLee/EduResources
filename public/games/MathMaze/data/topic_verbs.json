@@ -1,0 +1,502 @@
+[
+  {
+    "word": "walk",
+    "translation": "走路",
+    "topic": "verbs"
+  },
+  {
+    "word": "run",
+    "translation": "跑步",
+    "topic": "verbs"
+  },
+  {
+    "word": "jump",
+    "translation": "跳跃",
+    "topic": "verbs"
+  },
+  {
+    "word": "swim",
+    "translation": "游泳",
+    "topic": "verbs"
+  },
+  {
+    "word": "fly",
+    "translation": "飞行",
+    "topic": "verbs"
+  },
+  {
+    "word": "climb",
+    "translation": "攀爬",
+    "topic": "verbs"
+  },
+  {
+    "word": "dance",
+    "translation": "跳舞",
+    "topic": "verbs"
+  },
+  {
+    "word": "sing",
+    "translation": "唱歌",
+    "topic": "verbs"
+  },
+  {
+    "word": "play",
+    "translation": "玩耍",
+    "topic": "verbs"
+  },
+  {
+    "word": "read",
+    "translation": "阅读",
+    "topic": "verbs"
+  },
+  {
+    "word": "write",
+    "translation": "写作",
+    "topic": "verbs"
+  },
+  {
+    "word": "draw",
+    "translation": "绘画",
+    "topic": "verbs"
+  },
+  {
+    "word": "paint",
+    "translation": "绘画",
+    "topic": "verbs"
+  },
+  {
+    "word": "cook",
+    "translation": "烹饪",
+    "topic": "verbs"
+  },
+  {
+    "word": "eat",
+    "translation": "吃",
+    "topic": "verbs"
+  },
+  {
+    "word": "drink",
+    "translation": "喝",
+    "topic": "verbs"
+  },
+  {
+    "word": "sleep",
+    "translation": "睡觉",
+    "topic": "verbs"
+  },
+  {
+    "word": "wake up",
+    "translation": "醒来",
+    "topic": "verbs"
+  },
+  {
+    "word": "wash",
+    "translation": "洗",
+    "topic": "verbs"
+  },
+  {
+    "word": "clean",
+    "translation": "清洁",
+    "topic": "verbs"
+  },
+  {
+    "word": "dress",
+    "translation": "穿衣",
+    "topic": "verbs"
+  },
+  {
+    "word": "wear",
+    "translation": "穿戴",
+    "topic": "verbs"
+  },
+  {
+    "word": "buy",
+    "translation": "购买",
+    "topic": "verbs"
+  },
+  {
+    "word": "sell",
+    "translation": "出售",
+    "topic": "verbs"
+  },
+  {
+    "word": "pay",
+    "translation": "支付",
+    "topic": "verbs"
+  },
+  {
+    "word": "spend",
+    "translation": "花费",
+    "topic": "verbs"
+  },
+  {
+    "word": "save",
+    "translation": "储蓄",
+    "topic": "verbs"
+  },
+  {
+    "word": "give",
+    "translation": "给予",
+    "topic": "verbs"
+  },
+  {
+    "word": "take",
+    "translation": "拿取",
+    "topic": "verbs"
+  },
+  {
+    "word": "bring",
+    "translation": "带来",
+    "topic": "verbs"
+  },
+  {
+    "word": "carry",
+    "translation": "携带",
+    "topic": "verbs"
+  },
+  {
+    "word": "lift",
+    "translation": "举起",
+    "topic": "verbs"
+  },
+  {
+    "word": "push",
+    "translation": "推",
+    "topic": "verbs"
+  },
+  {
+    "word": "pull",
+    "translation": "拉",
+    "topic": "verbs"
+  },
+  {
+    "word": "throw",
+    "translation": "投掷",
+    "topic": "verbs"
+  },
+  {
+    "word": "catch",
+    "translation": "接住",
+    "topic": "verbs"
+  },
+  {
+    "word": "open",
+    "translation": "打开",
+    "topic": "verbs"
+  },
+  {
+    "word": "close",
+    "translation": "关闭",
+    "topic": "verbs"
+  },
+  {
+    "word": "start",
+    "translation": "开始",
+    "topic": "verbs"
+  },
+  {
+    "word": "finish",
+    "translation": "完成",
+    "topic": "verbs"
+  },
+  {
+    "word": "stop",
+    "translation": "停止",
+    "topic": "verbs"
+  },
+  {
+    "word": "wait",
+    "translation": "等待",
+    "topic": "verbs"
+  },
+  {
+    "word": "move",
+    "translation": "移动",
+    "topic": "verbs"
+  },
+  {
+    "word": "stay",
+    "translation": "停留",
+    "topic": "verbs"
+  },
+  {
+    "word": "sit",
+    "translation": "坐",
+    "topic": "verbs"
+  },
+  {
+    "word": "stand",
+    "translation": "站立",
+    "topic": "verbs"
+  },
+  {
+    "word": "lie",
+    "translation": "躺",
+    "topic": "verbs"
+  },
+  {
+    "word": "rise",
+    "translation": "上升",
+    "topic": "verbs"
+  },
+  {
+    "word": "fall",
+    "translation": "下降",
+    "topic": "verbs"
+  },
+  {
+    "word": "turn",
+    "translation": "转动",
+    "topic": "verbs"
+  },
+  {
+    "word": "bend",
+    "translation": "弯曲",
+    "topic": "verbs"
+  },
+  {
+    "word": "fold",
+    "translation": "折叠",
+    "topic": "verbs"
+  },
+  {
+    "word": "cut",
+    "translation": "切割",
+    "topic": "verbs"
+  },
+  {
+    "word": "break",
+    "translation": "打破",
+    "topic": "verbs"
+  },
+  {
+    "word": "fix",
+    "translation": "修理",
+    "topic": "verbs"
+  },
+  {
+    "word": "build",
+    "translation": "建造",
+    "topic": "verbs"
+  },
+  {
+    "word": "make",
+    "translation": "制作",
+    "topic": "verbs"
+  },
+  {
+    "word": "create",
+    "translation": "创造",
+    "topic": "verbs"
+  },
+  {
+    "word": "design",
+    "translation": "设计",
+    "topic": "verbs"
+  },
+  {
+    "word": "plan",
+    "translation": "计划",
+    "topic": "verbs"
+  },
+  {
+    "word": "think",
+    "translation": "思考",
+    "topic": "verbs"
+  },
+  {
+    "word": "know",
+    "translation": "知道",
+    "topic": "verbs"
+  },
+  {
+    "word": "understand",
+    "translation": "理解",
+    "topic": "verbs"
+  },
+  {
+    "word": "learn",
+    "translation": "学习",
+    "topic": "verbs"
+  },
+  {
+    "word": "teach",
+    "translation": "教导",
+    "topic": "verbs"
+  },
+  {
+    "word": "study",
+    "translation": "学习",
+    "topic": "verbs"
+  },
+  {
+    "word": "practice",
+    "translation": "练习",
+    "topic": "verbs"
+  },
+  {
+    "word": "try",
+    "translation": "尝试",
+    "topic": "verbs"
+  },
+  {
+    "word": "succeed",
+    "translation": "成功",
+    "topic": "verbs"
+  },
+  {
+    "word": "fail",
+    "translation": "失败",
+    "topic": "verbs"
+  },
+  {
+    "word": "win",
+    "translation": "赢",
+    "topic": "verbs"
+  },
+  {
+    "word": "lose",
+    "translation": "输",
+    "topic": "verbs"
+  },
+  {
+    "word": "work",
+    "translation": "工作",
+    "topic": "verbs"
+  },
+  {
+    "word": "rest",
+    "translation": "休息",
+    "topic": "verbs"
+  },
+  {
+    "word": "relax",
+    "translation": "放松",
+    "topic": "verbs"
+  },
+  {
+    "word": "enjoy",
+    "translation": "享受",
+    "topic": "verbs"
+  },
+  {
+    "word": "like",
+    "translation": "喜欢",
+    "topic": "verbs"
+  },
+  {
+    "word": "love",
+    "translation": "爱",
+    "topic": "verbs"
+  },
+  {
+    "word": "hate",
+    "translation": "讨厌",
+    "topic": "verbs"
+  },
+  {
+    "word": "feel",
+    "translation": "感觉",
+    "topic": "verbs"
+  },
+  {
+    "word": "see",
+    "translation": "看见",
+    "topic": "verbs"
+  },
+  {
+    "word": "hear",
+    "translation": "听见",
+    "topic": "verbs"
+  },
+  {
+    "word": "smell",
+    "translation": "闻",
+    "topic": "verbs"
+  },
+  {
+    "word": "taste",
+    "translation": "品尝",
+    "topic": "verbs"
+  },
+  {
+    "word": "touch",
+    "translation": "触摸",
+    "topic": "verbs"
+  },
+  {
+    "word": "talk",
+    "translation": "谈话",
+    "topic": "verbs"
+  },
+  {
+    "word": "speak",
+    "translation": "说话",
+    "topic": "verbs"
+  },
+  {
+    "word": "listen",
+    "translation": "听",
+    "topic": "verbs"
+  },
+  {
+    "word": "say",
+    "translation": "说",
+    "topic": "verbs"
+  },
+  {
+    "word": "tell",
+    "translation": "告诉",
+    "topic": "verbs"
+  },
+  {
+    "word": "ask",
+    "translation": "问",
+    "topic": "verbs"
+  },
+  {
+    "word": "answer",
+    "translation": "回答",
+    "topic": "verbs"
+  },
+  {
+    "word": "call",
+    "translation": "打电话",
+    "topic": "verbs"
+  },
+  {
+    "word": "send",
+    "translation": "发送",
+    "topic": "verbs"
+  },
+  {
+    "word": "receive",
+    "translation": "接收",
+    "topic": "verbs"
+  },
+  {
+    "word": "meet",
+    "translation": "见面",
+    "topic": "verbs"
+  },
+  {
+    "word": "visit",
+    "translation": "拜访",
+    "topic": "verbs"
+  },
+  {
+    "word": "travel",
+    "translation": "旅行",
+    "topic": "verbs"
+  },
+  {
+    "word": "drive",
+    "translation": "开车",
+    "topic": "verbs"
+  },
+  {
+    "word": "ride",
+    "translation": "骑行",
+    "topic": "verbs"
+  }
+]

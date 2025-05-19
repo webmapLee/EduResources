@@ -1,0 +1,58 @@
+{
+  "categories": [
+    "语文工具", 
+    "数学工具", 
+    "英语工具", 
+    "综合工具"
+  ],
+  "tools": [
+    {
+      "id": "pinyin",
+      "name": "汉字拼音查询",
+      "description": "查询汉字的拼音、部首和笔画",
+      "category": "语文工具",
+      "url": "#",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-blue-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129\" /></svg>"
+    },
+    {
+      "id": "word-chain",
+      "name": "词语接龙",
+      "description": "根据上一个词语的最后一个字，接新的词语",
+      "category": "语文工具",
+      "url": "/games/word-chain.html",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-green-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1\" /></svg>"
+    },
+    {
+      "id": "multiplication-table",
+      "name": "乘法口诀表",
+      "description": "九九乘法表，帮助记忆乘法口诀",
+      "category": "数学工具",
+      "url": "/tools/multiplication-table.html",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-red-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4\" /></svg>"
+    },
+    {
+      "id": "calculator",
+      "name": "口算练习器",
+      "description": "生成加减乘除口算题，提高计算能力",
+      "category": "数学工具",
+      "url": "/tools/calculator.html",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-purple-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z\" /></svg>"
+    },
+    {
+      "id": "english-words",
+      "name": "英语单词卡片",
+      "description": "常用英语单词卡片，帮助记忆单词",
+      "category": "英语工具",
+      "url": "#",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-yellow-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129\" /></svg>"
+    },
+    {
+      "id": "timetable",
+      "name": "课程表生成器",
+      "description": "创建和打印个性化课程表",
+      "category": "综合工具",
+      "url": "#",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-indigo-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z\" /></svg>"
+    }
+  ]
+}

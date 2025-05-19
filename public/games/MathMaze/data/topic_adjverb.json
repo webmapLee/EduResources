@@ -1,0 +1,242 @@
+[
+  {
+    "word": "big",
+    "translation": "大的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "small",
+    "translation": "小的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "tall",
+    "translation": "高的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "short",
+    "translation": "矮的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "long",
+    "translation": "长的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "wide",
+    "translation": "宽的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "narrow",
+    "translation": "窄的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "heavy",
+    "translation": "重的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "light",
+    "translation": "轻的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "fast",
+    "translation": "快的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "slow",
+    "translation": "慢的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "hot",
+    "translation": "热的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "cold",
+    "translation": "冷的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "new",
+    "translation": "新的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "old",
+    "translation": "旧的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "young",
+    "translation": "年轻的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "beautiful",
+    "translation": "美丽的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "ugly",
+    "translation": "丑陋的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "clean",
+    "translation": "干净的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "dirty",
+    "translation": "脏的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "easy",
+    "translation": "容易的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "difficult",
+    "translation": "困难的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "happy",
+    "translation": "快乐的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "sad",
+    "translation": "悲伤的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "angry",
+    "translation": "生气的",
+    "topic": "adjverb",
+    "type": "adjective"
+  },
+  {
+    "word": "quickly",
+    "translation": "快速地",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "slowly",
+    "translation": "缓慢地",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "carefully",
+    "translation": "小心地",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "carelessly",
+    "translation": "粗心地",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "loudly",
+    "translation": "大声地",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "quietly",
+    "translation": "安静地",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "well",
+    "translation": "好地",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "badly",
+    "translation": "糟糕地",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "easily",
+    "translation": "容易地",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "hard",
+    "translation": "努力地",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "always",
+    "translation": "总是",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "never",
+    "translation": "从不",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "often",
+    "translation": "经常",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "sometimes",
+    "translation": "有时",
+    "topic": "adjverb",
+    "type": "adverb"
+  },
+  {
+    "word": "rarely",
+    "translation": "很少",
+    "topic": "adjverb",
+    "type": "adverb"
+  }
+]

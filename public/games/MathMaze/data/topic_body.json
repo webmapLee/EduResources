@@ -1,0 +1,177 @@
+[
+  {
+    "word": "head",
+    "translation": "头",
+    "topic": "body"
+  },
+  {
+    "word": "face",
+    "translation": "脸",
+    "topic": "body"
+  },
+  {
+    "word": "eye",
+    "translation": "眼睛",
+    "topic": "body"
+  },
+  {
+    "word": "ear",
+    "translation": "耳朵",
+    "topic": "body"
+  },
+  {
+    "word": "nose",
+    "translation": "鼻子",
+    "topic": "body"
+  },
+  {
+    "word": "mouth",
+    "translation": "嘴",
+    "topic": "body"
+  },
+  {
+    "word": "lip",
+    "translation": "嘴唇",
+    "topic": "body"
+  },
+  {
+    "word": "tongue",
+    "translation": "舌头",
+    "topic": "body"
+  },
+  {
+    "word": "tooth",
+    "translation": "牙齿",
+    "topic": "body"
+  },
+  {
+    "word": "chin",
+    "translation": "下巴",
+    "topic": "body"
+  },
+  {
+    "word": "cheek",
+    "translation": "脸颊",
+    "topic": "body"
+  },
+  {
+    "word": "forehead",
+    "translation": "前额",
+    "topic": "body"
+  },
+  {
+    "word": "hair",
+    "translation": "头发",
+    "topic": "body"
+  },
+  {
+    "word": "neck",
+    "translation": "脖子",
+    "topic": "body"
+  },
+  {
+    "word": "shoulder",
+    "translation": "肩膀",
+    "topic": "body"
+  },
+  {
+    "word": "arm",
+    "translation": "手臂",
+    "topic": "body"
+  },
+  {
+    "word": "elbow",
+    "translation": "肘部",
+    "topic": "body"
+  },
+  {
+    "word": "wrist",
+    "translation": "手腕",
+    "topic": "body"
+  },
+  {
+    "word": "hand",
+    "translation": "手",
+    "topic": "body"
+  },
+  {
+    "word": "finger",
+    "translation": "手指",
+    "topic": "body"
+  },
+  {
+    "word": "thumb",
+    "translation": "拇指",
+    "topic": "body"
+  },
+  {
+    "word": "nail",
+    "translation": "指甲",
+    "topic": "body"
+  },
+  {
+    "word": "chest",
+    "translation": "胸部",
+    "topic": "body"
+  },
+  {
+    "word": "back",
+    "translation": "背部",
+    "topic": "body"
+  },
+  {
+    "word": "stomach",
+    "translation": "胃，腹部",
+    "topic": "body"
+  },
+  {
+    "word": "waist",
+    "translation": "腰部",
+    "topic": "body"
+  },
+  {
+    "word": "hip",
+    "translation": "臀部",
+    "topic": "body"
+  },
+  {
+    "word": "leg",
+    "translation": "腿",
+    "topic": "body"
+  },
+  {
+    "word": "knee",
+    "translation": "膝盖",
+    "topic": "body"
+  },
+  {
+    "word": "ankle",
+    "translation": "脚踝",
+    "topic": "body"
+  },
+  {
+    "word": "foot",
+    "translation": "脚",
+    "topic": "body"
+  },
+  {
+    "word": "toe",
+    "translation": "脚趾",
+    "topic": "body"
+  },
+  {
+    "word": "skin",
+    "translation": "皮肤",
+    "topic": "body"
+  },
+  {
+    "word": "bone",
+    "translation": "骨头",
+    "topic": "body"
+  },
+  {
+    "word": "muscle",
+    "translation": "肌肉",
+    "topic": "body"
+  }
+]

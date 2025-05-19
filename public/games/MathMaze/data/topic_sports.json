@@ -1,0 +1,202 @@
+[
+  {
+    "word": "football",
+    "translation": "足球",
+    "topic": "sports"
+  },
+  {
+    "word": "basketball",
+    "translation": "篮球",
+    "topic": "sports"
+  },
+  {
+    "word": "baseball",
+    "translation": "棒球",
+    "topic": "sports"
+  },
+  {
+    "word": "tennis",
+    "translation": "网球",
+    "topic": "sports"
+  },
+  {
+    "word": "volleyball",
+    "translation": "排球",
+    "topic": "sports"
+  },
+  {
+    "word": "golf",
+    "translation": "高尔夫",
+    "topic": "sports"
+  },
+  {
+    "word": "swimming",
+    "translation": "游泳",
+    "topic": "sports"
+  },
+  {
+    "word": "running",
+    "translation": "跑步",
+    "topic": "sports"
+  },
+  {
+    "word": "cycling",
+    "translation": "骑自行车",
+    "topic": "sports"
+  },
+  {
+    "word": "skiing",
+    "translation": "滑雪",
+    "topic": "sports"
+  },
+  {
+    "word": "skating",
+    "translation": "滑冰",
+    "topic": "sports"
+  },
+  {
+    "word": "boxing",
+    "translation": "拳击",
+    "topic": "sports"
+  },
+  {
+    "word": "wrestling",
+    "translation": "摔跤",
+    "topic": "sports"
+  },
+  {
+    "word": "gymnastics",
+    "translation": "体操",
+    "topic": "sports"
+  },
+  {
+    "word": "diving",
+    "translation": "跳水",
+    "topic": "sports"
+  },
+  {
+    "word": "surfing",
+    "translation": "冲浪",
+    "topic": "sports"
+  },
+  {
+    "word": "hockey",
+    "translation": "曲棍球",
+    "topic": "sports"
+  },
+  {
+    "word": "rugby",
+    "translation": "橄榄球",
+    "topic": "sports"
+  },
+  {
+    "word": "badminton",
+    "translation": "羽毛球",
+    "topic": "sports"
+  },
+  {
+    "word": "table tennis",
+    "translation": "乒乓球",
+    "topic": "sports"
+  },
+  {
+    "word": "martial arts",
+    "translation": "武术",
+    "topic": "sports"
+  },
+  {
+    "word": "karate",
+    "translation": "空手道",
+    "topic": "sports"
+  },
+  {
+    "word": "judo",
+    "translation": "柔道",
+    "topic": "sports"
+  },
+  {
+    "word": "taekwondo",
+    "translation": "跆拳道",
+    "topic": "sports"
+  },
+  {
+    "word": "archery",
+    "translation": "射箭",
+    "topic": "sports"
+  },
+  {
+    "word": "fencing",
+    "translation": "击剑",
+    "topic": "sports"
+  },
+  {
+    "word": "rowing",
+    "translation": "划船",
+    "topic": "sports"
+  },
+  {
+    "word": "sailing",
+    "translation": "帆船",
+    "topic": "sports"
+  },
+  {
+    "word": "climbing",
+    "translation": "攀岩",
+    "topic": "sports"
+  },
+  {
+    "word": "hiking",
+    "translation": "徒步旅行",
+    "topic": "sports"
+  },
+  {
+    "word": "athlete",
+    "translation": "运动员",
+    "topic": "sports"
+  },
+  {
+    "word": "coach",
+    "translation": "教练",
+    "topic": "sports"
+  },
+  {
+    "word": "referee",
+    "translation": "裁判",
+    "topic": "sports"
+  },
+  {
+    "word": "team",
+    "translation": "队伍",
+    "topic": "sports"
+  },
+  {
+    "word": "match",
+    "translation": "比赛",
+    "topic": "sports"
+  },
+  {
+    "word": "tournament",
+    "translation": "锦标赛",
+    "topic": "sports"
+  },
+  {
+    "word": "championship",
+    "translation": "冠军赛",
+    "topic": "sports"
+  },
+  {
+    "word": "Olympic Games",
+    "translation": "奥运会",
+    "topic": "sports"
+  },
+  {
+    "word": "medal",
+    "translation": "奖牌",
+    "topic": "sports"
+  },
+  {
+    "word": "trophy",
+    "translation": "奖杯",
+    "topic": "sports"
+  }
+]

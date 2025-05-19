@@ -1,0 +1,307 @@
+[
+  {
+    "word": "carrot",
+    "translation": "胡萝卜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "potato",
+    "translation": "土豆",
+    "topic": "vegetables"
+  },
+  {
+    "word": "tomato",
+    "translation": "番茄",
+    "topic": "vegetables"
+  },
+  {
+    "word": "cucumber",
+    "translation": "黄瓜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "lettuce",
+    "translation": "生菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "cabbage",
+    "translation": "卷心菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "broccoli",
+    "translation": "西兰花",
+    "topic": "vegetables"
+  },
+  {
+    "word": "cauliflower",
+    "translation": "花椰菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "spinach",
+    "translation": "菠菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "onion",
+    "translation": "洋葱",
+    "topic": "vegetables"
+  },
+  {
+    "word": "garlic",
+    "translation": "大蒜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "ginger",
+    "translation": "姜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "pepper",
+    "translation": "辣椒",
+    "topic": "vegetables"
+  },
+  {
+    "word": "bell pepper",
+    "translation": "甜椒",
+    "topic": "vegetables"
+  },
+  {
+    "word": "eggplant",
+    "translation": "茄子",
+    "topic": "vegetables"
+  },
+  {
+    "word": "zucchini",
+    "translation": "西葫芦",
+    "topic": "vegetables"
+  },
+  {
+    "word": "pumpkin",
+    "translation": "南瓜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "squash",
+    "translation": "南瓜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "corn",
+    "translation": "玉米",
+    "topic": "vegetables"
+  },
+  {
+    "word": "pea",
+    "translation": "豌豆",
+    "topic": "vegetables"
+  },
+  {
+    "word": "bean",
+    "translation": "豆",
+    "topic": "vegetables"
+  },
+  {
+    "word": "green bean",
+    "translation": "青豆",
+    "topic": "vegetables"
+  },
+  {
+    "word": "string bean",
+    "translation": "四季豆",
+    "topic": "vegetables"
+  },
+  {
+    "word": "kidney bean",
+    "translation": "红豆",
+    "topic": "vegetables"
+  },
+  {
+    "word": "soybean",
+    "translation": "大豆",
+    "topic": "vegetables"
+  },
+  {
+    "word": "lentil",
+    "translation": "小扁豆",
+    "topic": "vegetables"
+  },
+  {
+    "word": "chickpea",
+    "translation": "鹰嘴豆",
+    "topic": "vegetables"
+  },
+  {
+    "word": "mushroom",
+    "translation": "蘑菇",
+    "topic": "vegetables"
+  },
+  {
+    "word": "celery",
+    "translation": "芹菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "asparagus",
+    "translation": "芦笋",
+    "topic": "vegetables"
+  },
+  {
+    "word": "radish",
+    "translation": "萝卜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "turnip",
+    "translation": "萝卜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "beet",
+    "translation": "甜菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "sweet potato",
+    "translation": "红薯",
+    "topic": "vegetables"
+  },
+  {
+    "word": "yam",
+    "translation": "山药",
+    "topic": "vegetables"
+  },
+  {
+    "word": "kale",
+    "translation": "羽衣甘蓝",
+    "topic": "vegetables"
+  },
+  {
+    "word": "brussels sprout",
+    "translation": "抱子甘蓝",
+    "topic": "vegetables"
+  },
+  {
+    "word": "artichoke",
+    "translation": "洋蓟",
+    "topic": "vegetables"
+  },
+  {
+    "word": "leek",
+    "translation": "韭葱",
+    "topic": "vegetables"
+  },
+  {
+    "word": "scallion",
+    "translation": "葱",
+    "topic": "vegetables"
+  },
+  {
+    "word": "shallot",
+    "translation": "小葱",
+    "topic": "vegetables"
+  },
+  {
+    "word": "chive",
+    "translation": "细香葱",
+    "topic": "vegetables"
+  },
+  {
+    "word": "parsley",
+    "translation": "欧芹",
+    "topic": "vegetables"
+  },
+  {
+    "word": "cilantro",
+    "translation": "香菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "basil",
+    "translation": "罗勒",
+    "topic": "vegetables"
+  },
+  {
+    "word": "mint",
+    "translation": "薄荷",
+    "topic": "vegetables"
+  },
+  {
+    "word": "rosemary",
+    "translation": "迷迭香",
+    "topic": "vegetables"
+  },
+  {
+    "word": "thyme",
+    "translation": "百里香",
+    "topic": "vegetables"
+  },
+  {
+    "word": "sage",
+    "translation": "鼠尾草",
+    "topic": "vegetables"
+  },
+  {
+    "word": "dill",
+    "translation": "莳萝",
+    "topic": "vegetables"
+  },
+  {
+    "word": "fennel",
+    "translation": "茴香",
+    "topic": "vegetables"
+  },
+  {
+    "word": "okra",
+    "translation": "秋葵",
+    "topic": "vegetables"
+  },
+  {
+    "word": "watercress",
+    "translation": "西洋菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "arugula",
+    "translation": "芝麻菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "endive",
+    "translation": "菊苣",
+    "topic": "vegetables"
+  },
+  {
+    "word": "bok choy",
+    "translation": "白菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "napa cabbage",
+    "translation": "大白菜",
+    "topic": "vegetables"
+  },
+  {
+    "word": "bamboo shoot",
+    "translation": "竹笋",
+    "topic": "vegetables"
+  },
+  {
+    "word": "water chestnut",
+    "translation": "荸荠",
+    "topic": "vegetables"
+  },
+  {
+    "word": "lotus root",
+    "translation": "莲藕",
+    "topic": "vegetables"
+  },
+  {
+    "word": "taro",
+    "translation": "芋头",
+    "topic": "vegetables"
+  }
+]

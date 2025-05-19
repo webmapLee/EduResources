@@ -1,0 +1,72 @@
+[
+  {
+    "id": "body_1",
+    "word": "head",
+    "phonetic": "/hed/",
+    "translation": "头",
+    "example": "She has a pain in her head."
+  },
+  {
+    "id": "body_2",
+    "word": "eye",
+    "phonetic": "/aɪ/",
+    "translation": "眼睛",
+    "example": "She has beautiful blue eyes."
+  },
+  {
+    "id": "body_3",
+    "word": "nose",
+    "phonetic": "/nəʊz/",
+    "translation": "鼻子",
+    "example": "My nose is blocked because I have a cold."
+  },
+  {
+    "id": "body_4",
+    "word": "mouth",
+    "phonetic": "/maʊθ/",
+    "translation": "嘴",
+    "example": "Open your mouth wide and say 'ah'."
+  },
+  {
+    "id": "body_5",
+    "word": "ear",
+    "phonetic": "/ɪə/",
+    "translation": "耳朵",
+    "example": "I can't hear well with my left ear."
+  },
+  {
+    "id": "body_6",
+    "word": "hand",
+    "phonetic": "/hænd/",
+    "translation": "手",
+    "example": "She held the baby in her hands."
+  },
+  {
+    "id": "body_7",
+    "word": "foot",
+    "phonetic": "/fʊt/",
+    "translation": "脚",
+    "example": "My feet are tired from walking all day."
+  },
+  {
+    "id": "body_8",
+    "word": "leg",
+    "phonetic": "/leɡ/",
+    "translation": "腿",
+    "example": "He broke his leg while skiing."
+  },
+  {
+    "id": "body_9",
+    "word": "arm",
+    "phonetic": "/ɑːm/",
+    "translation": "手臂",
+    "example": "She has strong arms from swimming."
+  },
+  {
+    "id": "body_10",
+    "word": "shirt",
+    "phonetic": "/ʃɜːt/",
+    "translation": "衬衫",
+    "example": "He wore a blue shirt to the interview."
+  }
+]

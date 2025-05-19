@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数学迷宫 - Math Maze</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="menu-screen active" id="main-menu">
+            <h1 class="game-title">数学迷宫</h1>
+            <div class="menu-options">
+                <button id="start-game">开始游戏</button>
+                <button id="manage-questions">题库管理</button>
+                <button id="wrong-questions">错题本</button>
+                <button id="settings">设置</button>
+            </div>
+        </div>
+
+        <div class="menu-screen" id="grade-select">
+            <h2>选择年级</h2>
+            <div class="grade-buttons">
+                <button class="grade-btn" data-grade="1">1年级</button>
+                <button class="grade-btn" data-grade="2">2年级</button>
+                <button class="grade-btn" data-grade="3">3年级</button>
+                <button class="grade-btn" data-grade="4">4年级</button>
+                <button class="grade-btn" data-grade="5">5年级</button>
+                <button class="grade-btn" data-grade="6">6年级</button>
+            </div>
+            <button class="back-btn">返回</button>
+        </div>
+
+        <div class="menu-screen" id="theme-select">
+            <h2>选择主题</h2>
+            <div class="theme-options">
+                <div class="theme-card" data-theme="space">
+                    <img src="images/theme-space.png" alt="太空主题">
+                    <span>太空迷宫</span>
+                </div>
+                <div class="theme-card" data-theme="jungle">
+                    <img src="images/theme-jungle.png" alt="丛林主题">
+                    <span>丛林迷宫</span>
+                </div>
+                <div class="theme-card" data-theme="underwater">
+                    <img src="images/theme-underwater.png" alt="海底主题">
+                    <span>海底迷宫</span>
+                </div>
+            </div>
+            <button class="back-btn">返回</button>
+        </div>
+
+        <div class="game-screen" id="maze-game">
+            <div class="game-header">
+                <div class="level-info">
+                    <span id="current-level">关卡: 1</span>
+                    <span id="current-grade">年级: 1</span>
+                </div>
+                <div class="score-info">
+                    <span id="score">分数: 0</span>
+                    <span id="keys">钥匙: 0/3</span>
+                </div>
+                <button id="pause-btn">暂停</button>
+            </div>
+            
+            <div class="maze-container">
+                <canvas id="maze-canvas"></canvas>
+                <div id="question-popup" class="hidden">
+                    <div class="question-content">
+                        <h3>解决这个问题获得钥匙！</h3>
+                        <p id="question-text">1 + 1 = ?</p>
+                        <input type="number" id="answer-input" placeholder="输入答案">
+                        <button id="submit-answer">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-screen" id="question-manager">
+            <h2>题库管理</h2>
+            <div class="manager-options">
+                <div class="grade-selector">
+                    <label for="manage-grade">选择年级:</label>
+                    <select id="manage-grade">
+                        <option value="1">1年级</option>
+                        <option value="2">2年级</option>
+                        <option value="3">3年级</option>
+                        <option value="4">4年级</option>
+                        <option value="5">5年级</option>
+                        <option value="6">6年级</option>
+                        <option value="custom">自定义</option>
+                    </select>
+                </div>
+                <button id="add-question">添加问题</button>
+                <button id="view-questions">查看问题</button>
+                <button id="import-questions">导入问题</button>
+                <button id="export-questions">导出问题</button>
+            </div>
+            <div id="question-list" class="hidden">
+                <!-- 问题列表将在这里动态生成 -->
+            </div>
+            <div id="add-question-form" class="hidden">
+                <h3>添加新问题</h3>
+                <div class="form-group">
+                    <label for="question-text-input">问题:</label>
+                    <input type="text" id="question-text-input" placeholder="例如: 5 + 3 = ?">
+                </div>
+                <div class="form-group">
+                    <label for="correct-answer">正确答案:</label>
+                    <input type="number" id="correct-answer" placeholder="例如: 8">
+                </div>
+                <div class="form-group">
+                    <label for="difficulty">难度:</label>
+                    <select id="difficulty">
+                        <option value="easy">简单</option>
+                        <option value="medium">中等</option>
+                        <option value="hard">困难</option>
+                    </select>
+                </div>
+                <button id="save-question">保存问题</button>
+                <button id="cancel-add">取消</button>
+            </div>
+            <button class="back-btn">返回</button>
+        </div>
+
+        <div class="menu-screen" id="wrong-questions-book">
+            <h2>错题本</h2>
+            <div class="wrong-questions-list">
+                <!-- 错题将在这里动态生成 -->
+            </div>
+            <button class="back-btn">返回</button>
+        </div>
+
+        <div class="menu-screen" id="settings-screen">
+            <h2>设置</h2>
+            <div class="settings-options">
+                <div class="setting-item">
+                    <label for="sound-toggle">音效:</label>
+                    <label class="switch">
+                        <input type="checkbox" id="sound-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label for="music-toggle">音乐:</label>
+                    <label class="switch">
+                        <input type="checkbox" id="music-toggle" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label for="difficulty-select">游戏难度:</label>
+                    <select id="difficulty-select">
+                        <option value="easy">简单</option>
+                        <option value="normal" selected>普通</option>
+                        <option value="hard">困难</option>
+                    </select>
+                </div>
+            </div>
+            <button class="back-btn">返回</button>
+        </div>
+
+        <div id="pause-menu" class="hidden">
+            <div class="pause-content">
+                <h2>游戏暂停</h2>
+                <button id="resume-game">继续游戏</button>
+                <button id="restart-level">重新开始</button>
+                <button id="exit-to-menu">返回主菜单</button>
+            </div>
+        </div>
+
+        <div id="level-complete" class="hidden">
+            <div class="level-complete-content">
+                <h2>关卡完成！</h2>
+                <div class="level-stats">
+                    <p>用时: <span id="time-taken">00:00</span></p>
+                    <p>正确答案: <span id="correct-answers">0</span></p>
+                    <p>错误答案: <span id="wrong-answers">0</span></p>
+                    <p>得分: <span id="level-score">0</span></p>
+                </div>
+                <button id="next-level">下一关</button>
+                <button id="replay-level">重玩本关</button>
+                <button id="level-exit">返回主菜单</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="character" class="character hidden">
+        <img src="images/math-sprite.png" alt="数学精灵">
+    </div>
+
+    <div id="key-animation" class="key-animation hidden">
+        <!-- 数字粒子动画将在这里生成 -->
+    </div>
+
+    <script src="js/imageGenerator.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/maze.js"></script>
+    <script src="js/character.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+[
+  {
+    "word": "apple",
+    "translation": "苹果",
+    "topic": "fruits"
+  },
+  {
+    "word": "banana",
+    "translation": "香蕉",
+    "topic": "fruits"
+  },
+  {
+    "word": "orange",
+    "translation": "橙子",
+    "topic": "fruits"
+  },
+  {
+    "word": "grape",
+    "translation": "葡萄",
+    "topic": "fruits"
+  },
+  {
+    "word": "strawberry",
+    "translation": "草莓",
+    "topic": "fruits"
+  },
+  {
+    "word": "watermelon",
+    "translation": "西瓜",
+    "topic": "fruits"
+  },
+  {
+    "word": "pear",
+    "translation": "梨",
+    "topic": "fruits"
+  },
+  {
+    "word": "peach",
+    "translation": "桃子",
+    "topic": "fruits"
+  },
+  {
+    "word": "pineapple",
+    "translation": "菠萝",
+    "topic": "fruits"
+  },
+  {
+    "word": "mango",
+    "translation": "芒果",
+    "topic": "fruits"
+  },
+  {
+    "word": "kiwi",
+    "translation": "猕猴桃",
+    "topic": "fruits"
+  },
+  {
+    "word": "lemon",
+    "translation": "柠檬",
+    "topic": "fruits"
+  },
+  {
+    "word": "lime",
+    "translation": "青柠",
+    "topic": "fruits"
+  },
+  {
+    "word": "coconut",
+    "translation": "椰子",
+    "topic": "fruits"
+  },
+  {
+    "word": "cherry",
+    "translation": "樱桃",
+    "topic": "fruits"
+  },
+  {
+    "word": "blueberry",
+    "translation": "蓝莓",
+    "topic": "fruits"
+  },
+  {
+    "word": "raspberry",
+    "translation": "覆盆子",
+    "topic": "fruits"
+  },
+  {
+    "word": "blackberry",
+    "translation": "黑莓",
+    "topic": "fruits"
+  },
+  {
+    "word": "plum",
+    "translation": "李子",
+    "topic": "fruits"
+  },
+  {
+    "word": "apricot",
+    "translation": "杏",
+    "topic": "fruits"
+  },
+  {
+    "word": "avocado",
+    "translation": "牛油果",
+    "topic": "fruits"
+  },
+  {
+    "word": "fig",
+    "translation": "无花果",
+    "topic": "fruits"
+  },
+  {
+    "word": "grapefruit",
+    "translation": "葡萄柚",
+    "topic": "fruits"
+  },
+  {
+    "word": "guava",
+    "translation": "番石榴",
+    "topic": "fruits"
+  },
+  {
+    "word": "lychee",
+    "translation": "荔枝",
+    "topic": "fruits"
+  },
+  {
+    "word": "papaya",
+    "translation": "木瓜",
+    "topic": "fruits"
+  },
+  {
+    "word": "passion fruit",
+    "translation": "百香果",
+    "topic": "fruits"
+  },
+  {
+    "word": "persimmon",
+    "translation": "柿子",
+    "topic": "fruits"
+  },
+  {
+    "word": "pomegranate",
+    "translation": "石榴",
+    "topic": "fruits"
+  },
+  {
+    "word": "tangerine",
+    "translation": "橘子",
+    "topic": "fruits"
+  }
+]

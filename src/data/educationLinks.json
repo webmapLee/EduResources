@@ -1,0 +1,100 @@
+{
+  "categories": [
+    {
+      "id": "official",
+      "name": "官方教育平台",
+      "links": [
+        {
+          "id": "moe",
+          "title": "教育部",
+          "url": "http://www.moe.gov.cn/",
+          "description": "中华人民共和国教育部官方网站"
+        },
+        {
+          "id": "neea",
+          "title": "教育考试网",
+          "url": "https://www.neea.edu.cn/",
+          "description": "中国教育考试网，提供各类考试信息"
+        },
+        {
+          "id": "smartedu",
+          "title": "国家中小学智慧教育平台",
+          "url": "https://basic.smartedu.cn/",
+          "description": "提供中小学各学科优质教育资源"
+        },
+        {
+          "id": "eol",
+          "title": "中国教育在线",
+          "url": "https://www.eol.cn/",
+          "description": "综合教育门户网站"
+        },
+        {
+          "id": "cse",
+          "title": "中国教育学会",
+          "url": "https://www.cse.edu.cn/",
+          "description": "教育学术研究与交流平台"
+        },
+        {
+          "id": "edu",
+          "title": "中国教育和科研计算机网",
+          "url": "https://www.edu.cn/",
+          "description": "教育科研网络平台"
+        }
+      ]
+    },
+    {
+      "id": "subjects",
+      "name": "学科资源",
+      "links": [
+        {
+          "id": "chinese",
+          "title": "小学语文资源网",
+          "url": "#",
+          "description": "小学语文教学资源、课件、习题"
+        },
+        {
+          "id": "math",
+          "title": "小学数学资源网",
+          "url": "#",
+          "description": "小学数学教学资源、课件、习题"
+        },
+        {
+          "id": "english",
+          "title": "小学英语资源网",
+          "url": "#",
+          "description": "小学英语教学资源、课件、习题"
+        },
+        {
+          "id": "science",
+          "title": "小学科学资源网",
+          "url": "#",
+          "description": "小学科学教学资源、实验、课件"
+        }
+      ]
+    },
+    {
+      "id": "learning",
+      "name": "学习平台",
+      "links": [
+        {
+          "id": "xueersi",
+          "title": "学而思",
+          "url": "https://www.xueersi.com/",
+          "description": "在线教育平台，提供各学科课程"
+        },
+        {
+          "id": "yuketang",
+          "title": "雨课堂",
+          "url": "https://www.yuketang.cn/",
+          "description": "智慧教学平台"
+        },
+        {
+          "id": "zuoyebang",
+          "title": "作业帮",
+          "url": "https://www.zybang.com/",
+          "description": "在线学习平台，提供题目解答和学习资源"
+        }
+      ]
+    }
+  ]
+}

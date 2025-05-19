@@ -1,0 +1,72 @@
+[
+  {
+    "id": "animal_1",
+    "word": "dog",
+    "phonetic": "/dɒɡ/",
+    "translation": "狗",
+    "example": "I have a pet dog."
+  },
+  {
+    "id": "animal_2",
+    "word": "cat",
+    "phonetic": "/kæt/",
+    "translation": "猫",
+    "example": "The cat is sleeping on the sofa."
+  },
+  {
+    "id": "animal_3",
+    "word": "bird",
+    "phonetic": "/bɜːd/",
+    "translation": "鸟",
+    "example": "I can hear birds singing in the morning."
+  },
+  {
+    "id": "animal_4",
+    "word": "fish",
+    "phonetic": "/fɪʃ/",
+    "translation": "鱼",
+    "example": "There are many colorful fish in the aquarium."
+  },
+  {
+    "id": "animal_5",
+    "word": "rabbit",
+    "phonetic": "/ˈræbɪt/",
+    "translation": "兔子",
+    "example": "The rabbit has long ears."
+  },
+  {
+    "id": "animal_6",
+    "word": "horse",
+    "phonetic": "/hɔːs/",
+    "translation": "马",
+    "example": "She loves riding horses."
+  },
+  {
+    "id": "animal_7",
+    "word": "elephant",
+    "phonetic": "/ˈelɪfənt/",
+    "translation": "大象",
+    "example": "Elephants have long trunks."
+  },
+  {
+    "id": "animal_8",
+    "word": "lion",
+    "phonetic": "/ˈlaɪən/",
+    "translation": "狮子",
+    "example": "The lion is the king of the jungle."
+  },
+  {
+    "id": "animal_9",
+    "word": "tiger",
+    "phonetic": "/ˈtaɪɡə/",
+    "translation": "老虎",
+    "example": "Tigers have striped fur."
+  },
+  {
+    "id": "animal_10",
+    "word": "monkey",
+    "phonetic": "/ˈmʌŋki/",
+    "translation": "猴子",
+    "example": "The monkey is climbing the tree."
+  }
+]

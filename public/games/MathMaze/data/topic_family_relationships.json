@@ -1,0 +1,342 @@
+[
+  {
+    "word": "family",
+    "translation": "家庭",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "parent",
+    "translation": "父母",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "father",
+    "translation": "父亲",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "mother",
+    "translation": "母亲",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "dad",
+    "translation": "爸爸",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "mom",
+    "translation": "妈妈",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "child",
+    "translation": "孩子",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "children",
+    "translation": "孩子们",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "son",
+    "translation": "儿子",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "daughter",
+    "translation": "女儿",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "baby",
+    "translation": "婴儿",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "sibling",
+    "translation": "兄弟姐妹",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "brother",
+    "translation": "兄弟",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "sister",
+    "translation": "姐妹",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "twin",
+    "translation": "双胞胎",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "grandparent",
+    "translation": "祖父母",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "grandfather",
+    "translation": "祖父",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "grandmother",
+    "translation": "祖母",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "grandpa",
+    "translation": "爷爷",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "grandma",
+    "translation": "奶奶",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "grandchild",
+    "translation": "孙子女",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "grandson",
+    "translation": "孙子",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "granddaughter",
+    "translation": "孙女",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "uncle",
+    "translation": "叔叔",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "aunt",
+    "translation": "阿姨",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "nephew",
+    "translation": "侄子",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "niece",
+    "translation": "侄女",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "cousin",
+    "translation": "堂兄弟姐妹",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "husband",
+    "translation": "丈夫",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "wife",
+    "translation": "妻子",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "spouse",
+    "translation": "配偶",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "partner",
+    "translation": "伴侣",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "fiancé",
+    "translation": "未婚夫",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "fiancée",
+    "translation": "未婚妻",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "boyfriend",
+    "translation": "男朋友",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "girlfriend",
+    "translation": "女朋友",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "parent-in-law",
+    "translation": "姻亲父母",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "father-in-law",
+    "translation": "公公/岳父",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "mother-in-law",
+    "translation": "婆婆/岳母",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "son-in-law",
+    "translation": "女婿",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "daughter-in-law",
+    "translation": "儿媳",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "brother-in-law",
+    "translation": "姐夫/妹夫",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "sister-in-law",
+    "translation": "嫂子/弟媳",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "stepfather",
+    "translation": "继父",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "stepmother",
+    "translation": "继母",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "stepchild",
+    "translation": "继子女",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "stepson",
+    "translation": "继子",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "stepdaughter",
+    "translation": "继女",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "stepbrother",
+    "translation": "继兄弟",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "stepsister",
+    "translation": "继姐妹",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "half-brother",
+    "translation": "同父异母/同母异父兄弟",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "half-sister",
+    "translation": "同父异母/同母异父姐妹",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "foster parent",
+    "translation": "寄养父母",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "foster child",
+    "translation": "寄养孩子",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "adoptive parent",
+    "translation": "养父母",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "adopted child",
+    "translation": "养子女",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "godparent",
+    "translation": "教父母",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "godfather",
+    "translation": "教父",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "godmother",
+    "translation": "教母",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "godchild",
+    "translation": "教子女",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "relative",
+    "translation": "亲戚",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "ancestor",
+    "translation": "祖先",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "descendant",
+    "translation": "后代",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "generation",
+    "translation": "一代",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "elder",
+    "translation": "长辈",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "firstborn",
+    "translation": "长子/长女",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "youngest",
+    "translation": "最小的孩子",
+    "topic": "family_relationships"
+  },
+  {
+    "word": "only child",
+    "translation": "独生子女",
+    "topic": "family_relationships"
+  }
+]

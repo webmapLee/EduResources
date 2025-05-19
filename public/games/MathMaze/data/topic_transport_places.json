@@ -1,0 +1,257 @@
+[
+  {
+    "word": "airport",
+    "translation": "机场",
+    "topic": "transport_places"
+  },
+  {
+    "word": "train station",
+    "translation": "火车站",
+    "topic": "transport_places"
+  },
+  {
+    "word": "bus stop",
+    "translation": "公交车站",
+    "topic": "transport_places"
+  },
+  {
+    "word": "subway station",
+    "translation": "地铁站",
+    "topic": "transport_places"
+  },
+  {
+    "word": "harbor",
+    "translation": "港口",
+    "topic": "transport_places"
+  },
+  {
+    "word": "port",
+    "translation": "港口",
+    "topic": "transport_places"
+  },
+  {
+    "word": "dock",
+    "translation": "码头",
+    "topic": "transport_places"
+  },
+  {
+    "word": "marina",
+    "translation": "游艇码头",
+    "topic": "transport_places"
+  },
+  {
+    "word": "highway",
+    "translation": "高速公路",
+    "topic": "transport_places"
+  },
+  {
+    "word": "freeway",
+    "translation": "高速公路",
+    "topic": "transport_places"
+  },
+  {
+    "word": "expressway",
+    "translation": "快速路",
+    "topic": "transport_places"
+  },
+  {
+    "word": "road",
+    "translation": "道路",
+    "topic": "transport_places"
+  },
+  {
+    "word": "street",
+    "translation": "街道",
+    "topic": "transport_places"
+  },
+  {
+    "word": "avenue",
+    "translation": "大道",
+    "topic": "transport_places"
+  },
+  {
+    "word": "lane",
+    "translation": "小路",
+    "topic": "transport_places"
+  },
+  {
+    "word": "path",
+    "translation": "小径",
+    "topic": "transport_places"
+  },
+  {
+    "word": "sidewalk",
+    "translation": "人行道",
+    "topic": "transport_places"
+  },
+  {
+    "word": "pavement",
+    "translation": "人行道",
+    "topic": "transport_places"
+  },
+  {
+    "word": "crosswalk",
+    "translation": "人行横道",
+    "topic": "transport_places"
+  },
+  {
+    "word": "zebra crossing",
+    "translation": "斑马线",
+    "topic": "transport_places"
+  },
+  {
+    "word": "traffic light",
+    "translation": "交通灯",
+    "topic": "transport_places"
+  },
+  {
+    "word": "stop sign",
+    "translation": "停止标志",
+    "topic": "transport_places"
+  },
+  {
+    "word": "roundabout",
+    "translation": "环岛",
+    "topic": "transport_places"
+  },
+  {
+    "word": "intersection",
+    "translation": "十字路口",
+    "topic": "transport_places"
+  },
+  {
+    "word": "junction",
+    "translation": "交叉路口",
+    "topic": "transport_places"
+  },
+  {
+    "word": "bridge",
+    "translation": "桥",
+    "topic": "transport_places"
+  },
+  {
+    "word": "tunnel",
+    "translation": "隧道",
+    "topic": "transport_places"
+  },
+  {
+    "word": "parking lot",
+    "translation": "停车场",
+    "topic": "transport_places"
+  },
+  {
+    "word": "car park",
+    "translation": "停车场",
+    "topic": "transport_places"
+  },
+  {
+    "word": "gas station",
+    "translation": "加油站",
+    "topic": "transport_places"
+  },
+  {
+    "word": "petrol station",
+    "translation": "加油站",
+    "topic": "transport_places"
+  },
+  {
+    "word": "charging station",
+    "translation": "充电站",
+    "topic": "transport_places"
+  },
+  {
+    "word": "car wash",
+    "translation": "洗车场",
+    "topic": "transport_places"
+  },
+  {
+    "word": "auto repair shop",
+    "translation": "汽车修理厂",
+    "topic": "transport_places"
+  },
+  {
+    "word": "garage",
+    "translation": "车库",
+    "topic": "transport_places"
+  },
+  {
+    "word": "toll booth",
+    "translation": "收费站",
+    "topic": "transport_places"
+  },
+  {
+    "word": "rest area",
+    "translation": "休息区",
+    "topic": "transport_places"
+  },
+  {
+    "word": "service area",
+    "translation": "服务区",
+    "topic": "transport_places"
+  },
+  {
+    "word": "terminal",
+    "translation": "航站楼",
+    "topic": "transport_places"
+  },
+  {
+    "word": "gate",
+    "translation": "登机口",
+    "topic": "transport_places"
+  },
+  {
+    "word": "platform",
+    "translation": "站台",
+    "topic": "transport_places"
+  },
+  {
+    "word": "track",
+    "translation": "轨道",
+    "topic": "transport_places"
+  },
+  {
+    "word": "railway",
+    "translation": "铁路",
+    "topic": "transport_places"
+  },
+  {
+    "word": "runway",
+    "translation": "跑道",
+    "topic": "transport_places"
+  },
+  {
+    "word": "helipad",
+    "translation": "直升机停机坪",
+    "topic": "transport_places"
+  },
+  {
+    "word": "canal",
+    "translation": "运河",
+    "topic": "transport_places"
+  },
+  {
+    "word": "waterway",
+    "translation": "水道",
+    "topic": "transport_places"
+  },
+  {
+    "word": "ferry terminal",
+    "translation": "渡轮码头",
+    "topic": "transport_places"
+  },
+  {
+    "word": "cruise terminal",
+    "translation": "邮轮码头",
+    "topic": "transport_places"
+  },
+  {
+    "word": "bicycle lane",
+    "translation": "自行车道",
+    "topic": "transport_places"
+  },
+  {
+    "word": "bike path",
+    "translation": "自行车道",
+    "topic": "transport_places"
+  }
+]

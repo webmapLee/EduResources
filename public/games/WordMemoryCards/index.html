@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单词记忆卡片游戏</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 自定义CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Canvas背景 -->
+    <canvas id="canvas-background"></canvas>
+    
+    <div class="container">
+        <header class="text-center my-5">
+            <h1 class="display-4 fw-bold">单词记忆卡片游戏</h1>
+            <p class="lead">提高你的词汇量，轻松学习英语单词！</p>
+            <a href="guide.html" class="btn btn-outline-primary mt-2">
+                <i class="fas fa-book-open me-2"></i>玩法指南
+            </a>
+        </header>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="card-title mb-0">按难度分类</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group difficulty-list">
+                            <li class="list-group-item d-flex justify-content-between align-items-center" data-category="beginner">
+                                入门100个常用单词
+                                <span class="badge bg-primary rounded-pill">100</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" data-category="basic">
+                                常用500个单词
+                                <span class="badge bg-primary rounded-pill">500</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" data-category="daily">
+                                日常1000个单词
+                                <span class="badge bg-primary rounded-pill">1000</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center" data-category="cet4">
+                                四级4000个单词
+                                <span class="badge bg-primary rounded-pill">4000</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card mb-4">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="card-title mb-0">按主题分类</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row category-cards">
+                            <div class="col-md-4 mb-3">
+                                <div class="card category-card" data-category="animals">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">动物</h5>
+                                        <p class="card-text">78张卡片</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card category-card" data-category="transport">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">交通与地点</h5>
+                                        <p class="card-text">72张卡片</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card category-card" data-category="body">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">身体与服装</h5>
+                                        <p class="card-text">72张卡片</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card category-card" data-category="time">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">时间数字颜色</h5>
+                                        <p class="card-text">71张卡片</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card category-card" data-category="fruits">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">蔬果</h5>
+                                        <p class="card-text">46张卡片</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card category-card" data-category="home">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">我的家</h5>
+                                        <p class="card-text">69张卡片</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card category-card" data-category="adjverb">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">形容词与动词</h5>
+                                        <p class="card-text">175张卡片</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card category-card" data-category="school">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">学校</h5>
+                                        <p class="card-text">44张卡片</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card category-card" data-category="sports">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">运动与爱好</h5>
+                                        <p class="card-text">42张卡片</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="card-title mb-0">游戏模式</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="card game-mode-card" data-mode="memory">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">单词记忆闯关</h5>
+                                        <p class="card-text">按照难度逐步学习单词</p>
+                                        <button class="btn btn-primary start-game" data-mode="memory">开始游戏</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card game-mode-card" data-mode="challenge">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">单词挑战</h5>
+                                        <p class="card-text">测试你的单词掌握程度</p>
+                                        <button class="btn btn-primary start-game" data-mode="challenge">开始游戏</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="card game-mode-card" data-mode="review">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">错误单词复习</h5>
+                                        <p class="card-text">重点复习错误单词</p>
+                                        <button class="btn btn-primary start-game" data-mode="review">开始游戏</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="card-title mb-0">学习进度</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                        </div>
+                        <div class="stats">
+                            <p>已掌握单词 <span id="mastered-count">0</span></p>
+                            <p>学习中单词 <span id="learning-count">0</span></p>
+                            <p>未学习单词 <span id="not-learned-count">0</span></p>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-warning" id="reset-progress">
+                                <i class="fas fa-redo-alt me-2"></i>重置学习进度
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 游戏界面模态框 -->
+    <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gameModalLabel">单词记忆卡片</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="game-container">
+                        <!-- 游戏内容将通过JavaScript动态加载 -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="next-word">下一个</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Lottie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+    <!-- Toastify -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.js"
+        integrity="sha512-ZHzbWDQKpcZxIT9l5KhcnwQTidZFzwK/c7gpUUsFvGjEsxPusdUCyFxjjpc7e/Wj7vLhfMujNx7COwOmzbn+2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- 自定义JS -->
+    <script src="js/canvas-background.js"></script>
+    <script src="js/canvas-icons.js"></script>
+    <script src="js/canvas-manager.js"></script>
+    <script src="js/tooltip-manager.js"></script>
+    <script src="js/animation-manager.js"></script>
+    <script src="js/data-manager.js"></script>
+    <script src="js/game-engine.js"></script>
+    <script src="js/user-progress.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+<!-- Toastify JS -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js@1.12.0/src/toastify.min.css">
+    <!-- 调试助手 -->
+    <script src="js/debug-helper.js"></script>
+    <script>
+        // 初始化调试助手
+        document.addEventListener('DOMContentLoaded', function() {
+            window.debugHelper = new DebugHelper();
+        });
+    </script>

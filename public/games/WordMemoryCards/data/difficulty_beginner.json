@@ -1,0 +1,72 @@
+[
+  {
+    "id": "beginner_1",
+    "word": "hello",
+    "phonetic": "/həˈləʊ/",
+    "translation": "你好",
+    "example": "Hello, how are you today?"
+  },
+  {
+    "id": "beginner_2",
+    "word": "goodbye",
+    "phonetic": "/ˌɡʊdˈbaɪ/",
+    "translation": "再见",
+    "example": "I have to go now, goodbye!"
+  },
+  {
+    "id": "beginner_3",
+    "word": "yes",
+    "phonetic": "/jes/",
+    "translation": "是的",
+    "example": "Yes, I agree with you."
+  },
+  {
+    "id": "beginner_4",
+    "word": "no",
+    "phonetic": "/nəʊ/",
+    "translation": "不",
+    "example": "No, I don't want to go."
+  },
+  {
+    "id": "beginner_5",
+    "word": "please",
+    "phonetic": "/pliːz/",
+    "translation": "请",
+    "example": "Please help me with this."
+  },
+  {
+    "id": "beginner_6",
+    "word": "thank you",
+    "phonetic": "/θæŋk juː/",
+    "translation": "谢谢",
+    "example": "Thank you for your help."
+  },
+  {
+    "id": "beginner_7",
+    "word": "sorry",
+    "phonetic": "/ˈsɒri/",
+    "translation": "对不起",
+    "example": "I'm sorry for being late."
+  },
+  {
+    "id": "beginner_8",
+    "word": "water",
+    "phonetic": "/ˈwɔːtə/",
+    "translation": "水",
+    "example": "I need a glass of water."
+  },
+  {
+    "id": "beginner_9",
+    "word": "food",
+    "phonetic": "/fuːd/",
+    "translation": "食物",
+    "example": "The food in this restaurant is delicious."
+  },
+  {
+    "id": "beginner_10",
+    "word": "time",
+    "phonetic": "/taɪm/",
+    "translation": "时间",
+    "example": "What time is it now?"
+  }
+]

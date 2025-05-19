@@ -1,0 +1,46 @@
+{
+  "tools": [
+    {
+      "id": 1,
+      "name": "Microsoft Office Online",
+      "description": "在线版Word、Excel、PowerPoint等办公软件",
+      "url": "https://www.office.com/",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-blue-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z\" /></svg>"
+    },
+    {
+      "id": 2,
+      "name": "腾讯文档",
+      "description": "多人协作的在线文档工具",
+      "url": "https://docs.qq.com/",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-green-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z\" /></svg>"
+    },
+    {
+      "id": 3,
+      "name": "PDF工具",
+      "description": "PDF转换、编辑、合并等功能",
+      "url": "https://smallpdf.com/cn",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-red-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z\" /></svg>"
+    },
+    {
+      "id": 4,
+      "name": "白板工具",
+      "description": "在线协作白板，支持多人实时编辑",
+      "url": "https://miro.com/",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-purple-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z\" /></svg>"
+    },
+    {
+      "id": 5,
+      "name": "思维导图",
+      "description": "在线思维导图工具，帮助整理思路",
+      "url": "https://www.mindmeister.com/",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-yellow-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M13 10V3L4 14h7v7l9-11h-7z\" /></svg>"
+    },
+    {
+      "id": 6,
+      "name": "在线表单",
+      "description": "创建问卷、调查和表单",
+      "url": "https://www.wjx.cn/",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-indigo-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2\" /></svg>"
+    }
+  ]
+}

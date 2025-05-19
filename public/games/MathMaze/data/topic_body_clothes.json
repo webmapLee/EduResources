@@ -1,0 +1,347 @@
+[
+  {
+    "word": "shirt",
+    "translation": "衬衫",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "t-shirt",
+    "translation": "T恤",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "blouse",
+    "translation": "女式衬衫",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "sweater",
+    "translation": "毛衣",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "pullover",
+    "translation": "套头衫",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "cardigan",
+    "translation": "开襟毛衣",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "hoodie",
+    "translation": "连帽衫",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "jacket",
+    "translation": "夹克",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "coat",
+    "translation": "外套",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "raincoat",
+    "translation": "雨衣",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "overcoat",
+    "translation": "大衣",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "trench coat",
+    "translation": "风衣",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "vest",
+    "translation": "背心",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "waistcoat",
+    "translation": "马甲",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "pants",
+    "translation": "裤子",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "trousers",
+    "translation": "长裤",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "jeans",
+    "translation": "牛仔裤",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "shorts",
+    "translation": "短裤",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "skirt",
+    "translation": "裙子",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "dress",
+    "translation": "连衣裙",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "suit",
+    "translation": "西装",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "tuxedo",
+    "translation": "燕尾服",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "uniform",
+    "translation": "制服",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "pajamas",
+    "translation": "睡衣",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "nightgown",
+    "translation": "睡袍",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "bathrobe",
+    "translation": "浴袍",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "underwear",
+    "translation": "内衣",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "bra",
+    "translation": "胸罩",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "panties",
+    "translation": "内裤",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "briefs",
+    "translation": "男士内裤",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "boxers",
+    "translation": "平角裤",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "socks",
+    "translation": "袜子",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "stockings",
+    "translation": "长袜",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "tights",
+    "translation": "连裤袜",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "leggings",
+    "translation": "紧身裤",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "shoes",
+    "translation": "鞋子",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "sneakers",
+    "translation": "运动鞋",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "boots",
+    "translation": "靴子",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "sandals",
+    "translation": "凉鞋",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "slippers",
+    "translation": "拖鞋",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "high heels",
+    "translation": "高跟鞋",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "flip-flops",
+    "translation": "人字拖",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "hat",
+    "translation": "帽子",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "cap",
+    "translation": "鸭舌帽",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "beanie",
+    "translation": "无檐帽",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "scarf",
+    "translation": "围巾",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "gloves",
+    "translation": "手套",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "mittens",
+    "translation": "连指手套",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "belt",
+    "translation": "腰带",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "tie",
+    "translation": "领带",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "bow tie",
+    "translation": "蝴蝶结领带",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "pocket",
+    "translation": "口袋",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "button",
+    "translation": "纽扣",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "zipper",
+    "translation": "拉链",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "sleeve",
+    "translation": "袖子",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "collar",
+    "translation": "衣领",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "cuff",
+    "translation": "袖口",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "hood",
+    "translation": "帽兜",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "jewelry",
+    "translation": "珠宝",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "necklace",
+    "translation": "项链",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "bracelet",
+    "translation": "手镯",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "ring",
+    "translation": "戒指",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "earrings",
+    "translation": "耳环",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "watch",
+    "translation": "手表",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "glasses",
+    "translation": "眼镜",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "sunglasses",
+    "translation": "太阳镜",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "swimsuit",
+    "translation": "泳衣",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "bikini",
+    "translation": "比基尼",
+    "topic": "body_clothes"
+  },
+  {
+    "word": "swimming trunks",
+    "translation": "游泳裤",
+    "topic": "body_clothes"
+  }
+]

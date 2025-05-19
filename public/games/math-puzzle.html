@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>数学拼图游戏</title>
+  <style>
+    body {
+      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background-color: #f0f9ff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .game-container {
+      max-width: 800px;
+      width: 100%;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 20px;
+    }
+    h1 {
+      color: #3b82f6;
+      text-align: center;
+    }
+    .puzzle-area {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .number-card {
+      width: 60px;
+      height: 60px;
+      background-color: #3b82f6;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .operator-card {
+      width: 60px;
+      height: 60px;
+      background-color: #f59e0b;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .equation-display {
+      height: 60px;
+      background-color: #f3f4f6;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin: 20px 0;
+      padding: 0 20px;
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    .message {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      color: #10b981;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>数学拼图游戏</h1>
+  
+  <div class="game-container">
+    <p>拖动数字和运算符，组成等式来解决数学难题！</p>
+    
+    <div class="equation-display" id="equation">请组成一个等式</div>
+    
+    <div class="puzzle-area">
+      <div class="number-card" draggable="true" data-value="1">1</div>
+      <div class="number-card" draggable="true" data-value="2">2</div>
+      <div class="number-card" draggable="true" data-value="3">3</div>
+      <div class="number-card" draggable="true" data-value="4">4</div>
+      <div class="number-card" draggable="true" data-value="5">5</div>
+      <div class="operator-card" draggable="true" data-value="+">+</div>
+      <div class="operator-card" draggable="true" data-value="-">-</div>
+      <div class="operator-card" draggable="true" data-value="×">×</div>
+      <div class="operator-card" draggable="true" data-value="=">=</div>
+    </div>
+    
+    <div class="controls">
+      <button id="check-btn">检查等式</button>
+      <button id="clear-btn">清除</button>
+    </div>
+    
+    <div class="message" id="message"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const equationDisplay = document.getElementById('equation');
+      const checkBtn = document.getElementById('check-btn');
+      const clearBtn = document.getElementById('clear-btn');
+      const messageDisplay = document.getElementById('message');
+      
+      let currentEquation = '';
+      
+      // 拖拽功能简化版
+      const cards = document.querySelectorAll('.number-card, .operator-card');
+      cards.forEach(card => {
+        card.addEventListener('click', function() {
+          const value = this.getAttribute('data-value');
+          currentEquation += value;
+          equationDisplay.textContent = currentEquation;
+        });
+      });
+      
+      // 检查等式
+      checkBtn.addEventListener('click', function() {
+        if (currentEquation.includes('=')) {
+          try {
+            const parts = currentEquation.split('=');
+            if (parts.length !== 2) {
+              messageDisplay.textContent = '等式格式不正确';
+              messageDisplay.style.color = '#ef4444';
+              return;
+            }
+            
+            let leftSide = parts[0].replace('×', '*');
+            let rightSide = parts[1].replace('×', '*');
+            
+            const leftResult = eval(leftSide);
+            const rightResult = eval(rightSide);
+            
+            if (leftResult === rightResult) {
+              messageDisplay.textContent = '恭喜！等式正确！';
+              messageDisplay.style.color = '#10b981';
+              
+              // 通知父窗口游戏完成
+              if (window.parent && window.parent.postMessage) {
+                window.parent.postMessage({ type: 'gameCompleted', game: 'math-puzzle' }, '*');
+              }
+            } else {
+              messageDisplay.textContent = '等式不正确，请重试';
+              messageDisplay.style.color = '#ef4444';
+            }
+          } catch (e) {
+            messageDisplay.textContent = '等式格式不正确';
+            messageDisplay.style.color = '#ef4444';
+          }
+        } else {
+          messageDisplay.textContent = '请输入一个完整的等式';
+          messageDisplay.style.color = '#ef4444';
+        }
+      });
+      
+      // 清除等式
+      clearBtn.addEventListener('click', function() {
+        currentEquation = '';
+        equationDisplay.textContent = '请组成一个等式';
+        messageDisplay.textContent = '';
+      });
+    });
+  </script>
+</body>
+</html>

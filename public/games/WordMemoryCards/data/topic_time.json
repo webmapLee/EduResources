@@ -1,0 +1,72 @@
+[
+  {
+    "id": "time_1",
+    "word": "hour",
+    "phonetic": "/ˈaʊə/",
+    "translation": "小时",
+    "example": "The meeting lasted for two hours."
+  },
+  {
+    "id": "time_2",
+    "word": "minute",
+    "phonetic": "/ˈmɪnɪt/",
+    "translation": "分钟",
+    "example": "I'll be ready in five minutes."
+  },
+  {
+    "id": "time_3",
+    "word": "second",
+    "phonetic": "/ˈsekənd/",
+    "translation": "秒",
+    "example": "The race was won by a fraction of a second."
+  },
+  {
+    "id": "time_4",
+    "word": "day",
+    "phonetic": "/deɪ/",
+    "translation": "天",
+    "example": "There are seven days in a week."
+  },
+  {
+    "id": "time_5",
+    "word": "week",
+    "phonetic": "/wiːk/",
+    "translation": "周",
+    "example": "I go swimming twice a week."
+  },
+  {
+    "id": "time_6",
+    "word": "month",
+    "phonetic": "/mʌnθ/",
+    "translation": "月",
+    "example": "January is the first month of the year."
+  },
+  {
+    "id": "time_7",
+    "word": "year",
+    "phonetic": "/jɪə/",
+    "translation": "年",
+    "example": "She is ten years old."
+  },
+  {
+    "id": "time_8",
+    "word": "one",
+    "phonetic": "/wʌn/",
+    "translation": "一",
+    "example": "I have one brother and two sisters."
+  },
+  {
+    "id": "time_9",
+    "word": "two",
+    "phonetic": "/tuː/",
+    "translation": "二",
+    "example": "There are two apples on the table."
+  },
+  {
+    "id": "time_10",
+    "word": "red",
+    "phonetic": "/red/",
+    "translation": "红色",
+    "example": "She wore a red dress to the party."
+  }
+]

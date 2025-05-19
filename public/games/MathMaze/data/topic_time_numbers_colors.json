@@ -1,0 +1,434 @@
+[
+  {
+    "word": "zero",
+    "translation": "零",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "one",
+    "translation": "一",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "two",
+    "translation": "二",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "three",
+    "translation": "三",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "four",
+    "translation": "四",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "five",
+    "translation": "五",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "six",
+    "translation": "六",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "seven",
+    "translation": "七",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "eight",
+    "translation": "八",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "nine",
+    "translation": "九",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "ten",
+    "translation": "十",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "eleven",
+    "translation": "十一",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "twelve",
+    "translation": "十二",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "thirteen",
+    "translation": "十三",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "fourteen",
+    "translation": "十四",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "fifteen",
+    "translation": "十五",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "sixteen",
+    "translation": "十六",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "seventeen",
+    "translation": "十七",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "eighteen",
+    "translation": "十八",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "nineteen",
+    "translation": "十九",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "twenty",
+    "translation": "二十",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "thirty",
+    "translation": "三十",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "forty",
+    "translation": "四十",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "fifty",
+    "translation": "五十",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "sixty",
+    "translation": "六十",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "seventy",
+    "translation": "七十",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "eighty",
+    "translation": "八十",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "ninety",
+    "translation": "九十",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "hundred",
+    "translation": "百",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "thousand",
+    "translation": "千",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "million",
+    "translation": "百万",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "billion",
+    "translation": "十亿",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "first",
+    "translation": "第一",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "second",
+    "translation": "第二",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "third",
+    "translation": "第三",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "fourth",
+    "translation": "第四",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "fifth",
+    "translation": "第五",
+    "topic": "time_numbers_colors",
+    "category": "numbers"
+  },
+  {
+    "word": "red",
+    "translation": "红色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "orange",
+    "translation": "橙色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "yellow",
+    "translation": "黄色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "green",
+    "translation": "绿色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "blue",
+    "translation": "蓝色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "purple",
+    "translation": "紫色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "pink",
+    "translation": "粉色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "brown",
+    "translation": "棕色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "black",
+    "translation": "黑色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "white",
+    "translation": "白色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "gray",
+    "translation": "灰色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "gold",
+    "translation": "金色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "silver",
+    "translation": "银色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "navy blue",
+    "translation": "深蓝色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "light blue",
+    "translation": "浅蓝色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "dark green",
+    "translation": "深绿色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "light green",
+    "translation": "浅绿色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "dark red",
+    "translation": "深红色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "light red",
+    "translation": "浅红色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "beige",
+    "translation": "米色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "turquoise",
+    "translation": "青绿色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "violet",
+    "translation": "紫罗兰色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "indigo",
+    "translation": "靛蓝色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "magenta",
+    "translation": "洋红色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "cyan",
+    "translation": "青色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "maroon",
+    "translation": "栗色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "olive",
+    "translation": "橄榄色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "teal",
+    "translation": "蓝绿色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "lime",
+    "translation": "青柠色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "aqua",
+    "translation": "水蓝色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "coral",
+    "translation": "珊瑚色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "crimson",
+    "translation": "深红色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "lavender",
+    "translation": "薰衣草色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "salmon",
+    "translation": "鲑鱼色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  },
+  {
+    "word": "tan",
+    "translation": "棕褐色",
+    "topic": "time_numbers_colors",
+    "category": "colors"
+  }
+]

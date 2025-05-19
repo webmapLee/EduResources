@@ -1,0 +1,62 @@
+[
+  {
+    "id": "g6_1",
+    "question": "解方程: 3x + 15 = 45, x = ?",
+    "answer": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "g6_2",
+    "question": "长方形的长为 12 米，宽为 8 米，面积是多少平方米？",
+    "answer": 96,
+    "difficulty": "hard"
+  },
+  {
+    "id": "g6_3",
+    "question": "一辆车以 60 千米/小时的速度行驶了 2.5 小时，行驶了多少千米？",
+    "answer": 150,
+    "difficulty": "hard"
+  },
+  {
+    "id": "g6_4",
+    "question": "100 按 3:2 分配，第一部分是多少？",
+    "answer": 60,
+    "difficulty": "hard"
+  },
+  {
+    "id": "g6_5",
+    "question": "解方程: 4x + 12 = 52, x = ?",
+    "answer": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "g6_6",
+    "question": "长方形的长为 15 米，宽为 6 米，面积是多少平方米？",
+    "answer": 90,
+    "difficulty": "hard"
+  },
+  {
+    "id": "g6_7",
+    "question": "一辆车以 75 千米/小时的速度行驶了 2 小时，行驶了多少千米？",
+    "answer": 150,
+    "difficulty": "hard"
+  },
+  {
+    "id": "g6_8",
+    "question": "120 按 4:2 分配，第一部分是多少？",
+    "answer": 80,
+    "difficulty": "hard"
+  },
+  {
+    "id": "g6_9",
+    "question": "解方程: 5x + 10 = 60, x = ?",
+    "answer": 10,
+    "difficulty": "hard"
+  },
+  {
+    "id": "g6_10",
+    "question": "长方形的长为 9 米，宽为 7 米，面积是多少平方米？",
+    "answer": 63,
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,387 @@
+[
+  {
+    "word": "computer",
+    "translation": "电脑",
+    "topic": "technology"
+  },
+  {
+    "word": "laptop",
+    "translation": "笔记本电脑",
+    "topic": "technology"
+  },
+  {
+    "word": "desktop",
+    "translation": "台式电脑",
+    "topic": "technology"
+  },
+  {
+    "word": "tablet",
+    "translation": "平板电脑",
+    "topic": "technology"
+  },
+  {
+    "word": "smartphone",
+    "translation": "智能手机",
+    "topic": "technology"
+  },
+  {
+    "word": "mobile phone",
+    "translation": "手机",
+    "topic": "technology"
+  },
+  {
+    "word": "keyboard",
+    "translation": "键盘",
+    "topic": "technology"
+  },
+  {
+    "word": "mouse",
+    "translation": "鼠标",
+    "topic": "technology"
+  },
+  {
+    "word": "monitor",
+    "translation": "显示器",
+    "topic": "technology"
+  },
+  {
+    "word": "screen",
+    "translation": "屏幕",
+    "topic": "technology"
+  },
+  {
+    "word": "touchscreen",
+    "translation": "触摸屏",
+    "topic": "technology"
+  },
+  {
+    "word": "printer",
+    "translation": "打印机",
+    "topic": "technology"
+  },
+  {
+    "word": "scanner",
+    "translation": "扫描仪",
+    "topic": "technology"
+  },
+  {
+    "word": "webcam",
+    "translation": "网络摄像头",
+    "topic": "technology"
+  },
+  {
+    "word": "microphone",
+    "translation": "麦克风",
+    "topic": "technology"
+  },
+  {
+    "word": "speaker",
+    "translation": "扬声器",
+    "topic": "technology"
+  },
+  {
+    "word": "headphones",
+    "translation": "耳机",
+    "topic": "technology"
+  },
+  {
+    "word": "earbuds",
+    "translation": "耳塞",
+    "topic": "technology"
+  },
+  {
+    "word": "charger",
+    "translation": "充电器",
+    "topic": "technology"
+  },
+  {
+    "word": "battery",
+    "translation": "电池",
+    "topic": "technology"
+  },
+  {
+    "word": "cable",
+    "translation": "线缆",
+    "topic": "technology"
+  },
+  {
+    "word": "USB",
+    "translation": "USB接口",
+    "topic": "technology"
+  },
+  {
+    "word": "memory card",
+    "translation": "存储卡",
+    "topic": "technology"
+  },
+  {
+    "word": "hard drive",
+    "translation": "硬盘",
+    "topic": "technology"
+  },
+  {
+    "word": "SSD",
+    "translation": "固态硬盘",
+    "topic": "technology"
+  },
+  {
+    "word": "flash drive",
+    "translation": "闪存盘",
+    "topic": "technology"
+  },
+  {
+    "word": "router",
+    "translation": "路由器",
+    "topic": "technology"
+  },
+  {
+    "word": "modem",
+    "translation": "调制解调器",
+    "topic": "technology"
+  },
+  {
+    "word": "Wi-Fi",
+    "translation": "无线网络",
+    "topic": "technology"
+  },
+  {
+    "word": "Bluetooth",
+    "translation": "蓝牙",
+    "topic": "technology"
+  },
+  {
+    "word": "internet",
+    "translation": "互联网",
+    "topic": "technology"
+  },
+  {
+    "word": "website",
+    "translation": "网站",
+    "topic": "technology"
+  },
+  {
+    "word": "browser",
+    "translation": "浏览器",
+    "topic": "technology"
+  },
+  {
+    "word": "search engine",
+    "translation": "搜索引擎",
+    "topic": "technology"
+  },
+  {
+    "word": "email",
+    "translation": "电子邮件",
+    "topic": "technology"
+  },
+  {
+    "word": "password",
+    "translation": "密码",
+    "topic": "technology"
+  },
+  {
+    "word": "username",
+    "translation": "用户名",
+    "topic": "technology"
+  },
+  {
+    "word": "account",
+    "translation": "账户",
+    "topic": "technology"
+  },
+  {
+    "word": "login",
+    "translation": "登录",
+    "topic": "technology"
+  },
+  {
+    "word": "logout",
+    "translation": "登出",
+    "topic": "technology"
+  },
+  {
+    "word": "download",
+    "translation": "下载",
+    "topic": "technology"
+  },
+  {
+    "word": "upload",
+    "translation": "上传",
+    "topic": "technology"
+  },
+  {
+    "word": "software",
+    "translation": "软件",
+    "topic": "technology"
+  },
+  {
+    "word": "hardware",
+    "translation": "硬件",
+    "topic": "technology"
+  },
+  {
+    "word": "app",
+    "translation": "应用程序",
+    "topic": "technology"
+  },
+  {
+    "word": "application",
+    "translation": "应用程序",
+    "topic": "technology"
+  },
+  {
+    "word": "program",
+    "translation": "程序",
+    "topic": "technology"
+  },
+  {
+    "word": "system",
+    "translation": "系统",
+    "topic": "technology"
+  },
+  {
+    "word": "operating system",
+    "translation": "操作系统",
+    "topic": "technology"
+  },
+  {
+    "word": "update",
+    "translation": "更新",
+    "topic": "technology"
+  },
+  {
+    "word": "install",
+    "translation": "安装",
+    "topic": "technology"
+  },
+  {
+    "word": "uninstall",
+    "translation": "卸载",
+    "topic": "technology"
+  },
+  {
+    "word": "restart",
+    "translation": "重启",
+    "topic": "technology"
+  },
+  {
+    "word": "shut down",
+    "translation": "关机",
+    "topic": "technology"
+  },
+  {
+    "word": "power on",
+    "translation": "开机",
+    "topic": "technology"
+  },
+  {
+    "word": "file",
+    "translation": "文件",
+    "topic": "technology"
+  },
+  {
+    "word": "folder",
+    "translation": "文件夹",
+    "topic": "technology"
+  },
+  {
+    "word": "document",
+    "translation": "文档",
+    "topic": "technology"
+  },
+  {
+    "word": "image",
+    "translation": "图像",
+    "topic": "technology"
+  },
+  {
+    "word": "video",
+    "translation": "视频",
+    "topic": "technology"
+  },
+  {
+    "word": "audio",
+    "translation": "音频",
+    "topic": "technology"
+  },
+  {
+    "word": "data",
+    "translation": "数据",
+    "topic": "technology"
+  },
+  {
+    "word": "cloud",
+    "translation": "云",
+    "topic": "technology"
+  },
+  {
+    "word": "backup",
+    "translation": "备份",
+    "topic": "technology"
+  },
+  {
+    "word": "virus",
+    "translation": "病毒",
+    "topic": "technology"
+  },
+  {
+    "word": "malware",
+    "translation": "恶意软件",
+    "topic": "technology"
+  },
+  {
+    "word": "firewall",
+    "translation": "防火墙",
+    "topic": "technology"
+  },
+  {
+    "word": "security",
+    "translation": "安全",
+    "topic": "technology"
+  },
+  {
+    "word": "encryption",
+    "translation": "加密",
+    "topic": "technology"
+  },
+  {
+    "word": "virtual reality",
+    "translation": "虚拟现实",
+    "topic": "technology"
+  },
+  {
+    "word": "augmented reality",
+    "translation": "增强现实",
+    "topic": "technology"
+  },
+  {
+    "word": "artificial intelligence",
+    "translation": "人工智能",
+    "topic": "technology"
+  },
+  {
+    "word": "robot",
+    "translation": "机器人",
+    "topic": "technology"
+  },
+  {
+    "word": "drone",
+    "translation": "无人机",
+    "topic": "technology"
+  },
+  {
+    "word": "3D printer",
+    "translation": "3D打印机",
+    "topic": "technology"
+  },
+  {
+    "word": "smartwatch",
+    "translation": "智能手表",
+    "topic": "technology"
+  },
+  {
+    "word": "wearable",
+    "translation": "可穿戴设备",
+    "topic": "technology"
+  }
+]

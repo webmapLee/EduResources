@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乘法口诀表</title>
+  <style>
+    body {
+      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background-color: #f0f9ff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .tool-container {
+      max-width: 800px;
+      width: 100%;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 20px;
+    }
+    h1 {
+      color: #3b82f6;
+      text-align: center;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin: 20px 0;
+    }
+    .multiplication-table {
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    .multiplication-table td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: center;
+      min-width: 60px;
+    }
+    .multiplication-table tr:first-child td,
+    .multiplication-table td:first-child {
+      background-color: #e5edff;
+      font-weight: bold;
+    }
+    .multiplication-table tr:nth-child(even) td:not(:first-child) {
+      background-color: #f9fafb;
+    }
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    .practice-mode {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .question {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+    .answer-input {
+      padding: 10px;
+      border: 2px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 18px;
+      width: 100px;
+      text-align: center;
+    }
+    .result {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .correct {
+      color: #10b981;
+    }
+    .incorrect {
+      color: #ef4444;
+    }
+    .print-button {
+      background-color: #10b981;
+    }
+    .print-button:hover {
+      background-color: #059669;
+    }
+    @media print {
+      .controls, .practice-mode {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>乘法口诀表</h1>
+  
+  <div class="tool-container">
+    <div class="table-container">
+      <table class="multiplication-table" id="multiplication-table">
+        <tr>
+          <td>×</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>2</td>
+          <td>4</td>
+          <td>6</td>
+          <td>8</td>
+          <td>10</td>
+          <td>12</td>
+          <td>14</td>
+          <td>16</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>3</td>
+          <td>6</td>
+          <td>9</td>
+          <td>12</td>
+          <td>15</td>
+          <td>18</td>
+          <td>21</td>
+          <td>24</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>4</td>
+          <td>8</td>
+          <td>12</td>
+          <td>16</td>
+          <td>20</td>
+          <td>24</td>
+          <td>28</td>
+          <td>32</td>
+          <td>36</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>5</td>
+          <td>10</td>
+          <td>15</td>
+          <td>20</td>
+          <td>25</td>
+          <td>30</td>
+          <td>35</td>
+          <td>40</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>6</td>
+          <td>12</td>
+          <td>18</td>
+          <td>24</td>
+          <td>30</td>
+          <td>36</td>
+          <td>42</td>
+          <td>48</td>
+          <td>54</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>7</td>
+          <td>14</td>
+          <td>21</td>
+          <td>28</td>
+          <td>35</td>
+          <td>42</td>
+          <td>49</td>
+          <td>56</td>
+          <td>63</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>8</td>
+          <td>16</td>
+          <td>24</td>
+          <td>32</td>
+          <td>40</td>
+          <td>48</td>
+          <td>56</td>
+          <td>64</td>
+          <td>72</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>9</td>
+          <td>18</td>
+          <td>27</td>
+          <td>36</td>
+          <td>45</td>
+          <td>54</td>
+          <td>63</td>
+          <td>72</td>
+          <td>81</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="controls">
+      <button id="print-btn" class="print-button">打印口诀表</button>
+      <button id="practice-btn">练习模式</button>
+    </div>
+    
+    <div class="practice-mode" id="practice-mode" style="display: none;">
+      <h2>口算练习</h2>
+      <div class="question" id="question"></div>
+      <input type="number" class="answer-input" id="answer-input">
+      <button id="check-btn">检查答案</button>
+      <button id="next-btn">下一题</button>
+      <div class="result" id="result"></div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const printBtn = document.getElementById('print-btn');
+      const practiceBtn = document.getElementById('practice-btn');
+      const practiceMode = document.getElementById('practice-mode');
+      const questionDisplay = document.getElementById('question');
+      const answerInput = document.getElementById('answer-input');
+      const checkBtn = document.getElementById('check-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const resultDisplay = document.getElementById('result');
+      
+      let currentQuestion = {};
+      
+      // 打印功能
+      printBtn.addEventListener('click', function() {
+        window.print();
+      });
+      
+      // 练习模式
+      practiceBtn.addEventListener('click', function() {
+        practiceMode.style.display = practiceMode.style.display === 'none' ? 'block' : 'none';
+        if (practiceMode.style.display === 'block') {
+          generateQuestion();
+        }
+      });
+      
+      // 生成随机乘法题
+      function generateQuestion() {
+        const a = Math.floor(Math.random() * 9) + 1;
+        const b = Math.floor(Math.random() * 9) + 1;
+        currentQuestion = { a, b, answer: a * b };
+        questionDisplay.textContent = `${a} × ${b} = ?`;
+        answerInput.value = '';
+        resultDisplay.textContent = '';
+        answerInput.focus();
+      }
+      
+      // 检查答案
+      checkBtn.addEventListener('click', checkAnswer);
+      answerInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          checkAnswer();
+        }
+      });
+      
+      function checkAnswer() {
+        const userAnswer = parseInt(answerInput.value);
+        if (isNaN(userAnswer)) {
+          resultDisplay.textContent = '请输入一个数字';
+          resultDisplay.className = 'result incorrect';
+          return;
+        }
+        
+        if (userAnswer === currentQuestion.answer) {
+          resultDisplay.textContent = '正确！';
+          resultDisplay.className = 'result correct';
+          
+          // 通知父窗口工具使用完成
+          if (window.parent && window.parent.postMessage) {
+            window.parent.postMessage({ type: 'toolUsed', tool: 'multiplication-table' }, '*');
+          }
+        } else {
+          resultDisplay.textContent = `错误，正确答案是 ${currentQuestion.answer}`;
+          resultDisplay.className = 'result incorrect';
+        }
+      }
+      
+      // 下一题
+      nextBtn.addEventListener('click', generateQuestion);
+    });
+  </script>
+</body>
+</html>

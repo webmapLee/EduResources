@@ -1,0 +1,387 @@
+[
+  {
+    "word": "happy",
+    "translation": "快乐的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "sad",
+    "translation": "悲伤的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "angry",
+    "translation": "生气的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "scared",
+    "translation": "害怕的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "surprised",
+    "translation": "惊讶的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "excited",
+    "translation": "兴奋的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "tired",
+    "translation": "疲倦的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "bored",
+    "translation": "无聊的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "confused",
+    "translation": "困惑的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "worried",
+    "translation": "担心的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "nervous",
+    "translation": "紧张的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "calm",
+    "translation": "平静的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "relaxed",
+    "translation": "放松的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "proud",
+    "translation": "自豪的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "embarrassed",
+    "translation": "尴尬的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "ashamed",
+    "translation": "羞愧的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "guilty",
+    "translation": "内疚的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "jealous",
+    "translation": "嫉妒的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "envious",
+    "translation": "羡慕的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "disappointed",
+    "translation": "失望的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "frustrated",
+    "translation": "沮丧的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "annoyed",
+    "translation": "恼怒的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "irritated",
+    "translation": "烦躁的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "furious",
+    "translation": "暴怒的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "content",
+    "translation": "满足的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "satisfied",
+    "translation": "满意的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "delighted",
+    "translation": "高兴的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "joyful",
+    "translation": "欢乐的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "cheerful",
+    "translation": "愉快的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "gloomy",
+    "translation": "忧郁的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "depressed",
+    "translation": "沮丧的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "miserable",
+    "translation": "痛苦的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "hopeful",
+    "translation": "充满希望的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "optimistic",
+    "translation": "乐观的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "pessimistic",
+    "translation": "悲观的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "confident",
+    "translation": "自信的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "insecure",
+    "translation": "不安的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "anxious",
+    "translation": "焦虑的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "stressed",
+    "translation": "压力大的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "overwhelmed",
+    "translation": "不知所措的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "shocked",
+    "translation": "震惊的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "astonished",
+    "translation": "惊讶的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "amazed",
+    "translation": "惊奇的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "curious",
+    "translation": "好奇的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "interested",
+    "translation": "感兴趣的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "bored",
+    "translation": "无聊的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "indifferent",
+    "translation": "冷漠的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "apathetic",
+    "translation": "冷淡的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "enthusiastic",
+    "translation": "热情的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "passionate",
+    "translation": "热情的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "eager",
+    "translation": "渴望的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "motivated",
+    "translation": "有动力的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "inspired",
+    "translation": "受启发的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "grateful",
+    "translation": "感激的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "thankful",
+    "translation": "感谢的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "appreciative",
+    "translation": "感谢的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "loving",
+    "translation": "有爱的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "caring",
+    "translation": "关心的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "affectionate",
+    "translation": "深情的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "compassionate",
+    "translation": "富有同情心的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "sympathetic",
+    "translation": "同情的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "empathetic",
+    "translation": "有同理心的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "lonely",
+    "translation": "孤独的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "homesick",
+    "translation": "想家的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "nostalgic",
+    "translation": "怀旧的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "regretful",
+    "translation": "后悔的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "remorseful",
+    "translation": "懊悔的",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "grief",
+    "translation": "悲伤",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "sorrow",
+    "translation": "悲痛",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "joy",
+    "translation": "喜悦",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "happiness",
+    "translation": "幸福",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "anger",
+    "translation": "愤怒",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "fear",
+    "translation": "恐惧",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "surprise",
+    "translation": "惊讶",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "disgust",
+    "translation": "厌恶",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "love",
+    "translation": "爱",
+    "topic": "emotions_feelings"
+  },
+  {
+    "word": "hate",
+    "translation": "恨",
+    "topic": "emotions_feelings"
+  }
+]

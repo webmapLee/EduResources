@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>词语接龙游戏</title>
+  <style>
+    body {
+      font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background-color: #f0f9ff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .game-container {
+      max-width: 800px;
+      width: 100%;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-top: 20px;
+    }
+    h1 {
+      color: #3b82f6;
+      text-align: center;
+    }
+    .word-chain {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+      justify-content: center;
+    }
+    .word-card {
+      background-color: #3b82f6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .input-area {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+      justify-content: center;
+    }
+    input {
+      padding: 10px;
+      border: 2px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 200px;
+    }
+    button {
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #2563eb;
+    }
+    .message {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .success {
+      color: #10b981;
+    }
+    .error {
+      color: #ef4444;
+    }
+    .rules {
+      background-color: #f3f4f6;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>词语接龙游戏</h1>
+  
+  <div class="game-container">
+    <div class="rules">
+      <h3>游戏规则：</h3>
+      <p>1. 根据上一个词语的最后一个字，输入一个以该字开头的新词语</p>
+      <p>2. 词语必须是2个或以上的汉字组成</p>
+      <p>3. 不能重复使用已经出现过的词语</p>
+      <p>4. 成功接龙5次即可获胜</p>
+    </div>
+    
+    <div class="word-chain" id="word-chain">
+      <div class="word-card">开始</div>
+    </div>
+    
+    <div class="input-area">
+      <input type="text" id="word-input" placeholder="请输入词语">
+      <button id="submit-btn">提交</button>
+    </div>
+    
+    <div class="message" id="message"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const wordChain = document.getElementById('word-chain');
+      const wordInput = document.getElementById('word-input');
+      const submitBtn = document.getElementById('submit-btn');
+      const messageDisplay = document.getElementById('message');
+      
+      // 简单的词语库
+      const commonWords = {
+        '开': ['开心', '开放', '开始', '开门', '开发'],
+        '心': ['心情', '心态', '心理', '心动', '心愿'],
+        '情': ['情感', '情绪', '情景', '情节', '情人'],
+        '感': ['感觉', '感动', '感谢', '感恩', '感情'],
+        '觉': ['觉得', '觉悟', '觉察', '觉醒', '觉得'],
+        '得': ['得意', '得失', '得到', '得力', '得分'],
+        '意': ['意义', '意见', '意图', '意识', '意外'],
+        '义': ['义务', '义气', '义工', '义诊', '义卖'],
+        '务': ['务实', '务必', '务工', '务农', '务虚'],
+        '实': ['实际', '实在', '实力', '实现', '实践'],
+        '际': ['际遇', '际会', '际遇', '际遇', '际遇'],
+        '遇': ['遇见', '遇到', '遇事', '遇难', '遇险'],
+        '见': ['见解', '见面', '见识', '见闻', '见证'],
+        '解': ['解释', '解决', '解放', '解除', '解析'],
+        '释': ['释放', '释义', '释然', '释怀', '释疑'],
+        '放': ['放心', '放弃', '放松', '放手', '放下']
+      };
+      
+      let usedWords = ['开始'];
+      let currentRound = 0;
+      
+      // 提交词语
+      submitBtn.addEventListener('click', submitWord);
+      wordInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          submitWord();
+        }
+      });
+      
+      function submitWord() {
+        const word = wordInput.value.trim();
+        
+        if (word.length < 2) {
+          showMessage('请输入至少两个汉字的词语', 'error');
+          return;
+        }
+        
+        const lastWord = usedWords[usedWords.length - 1];
+        const lastChar = lastWord.charAt(lastWord.length - 1);
+        
+        if (word.charAt(0) !== lastChar) {
+          showMessage(`词语必须以"${lastChar}"字开头`, 'error');
+          return;
+        }
+        
+        if (usedWords.includes(word)) {
+          showMessage('该词语已经使用过了', 'error');
+          return;
+        }
+        
+        // 添加到词链
+        usedWords.push(word);
+        addWordToChain(word);
+        wordInput.value = '';
+        
+        currentRound++;
+        
+        // 检查是否获胜
+        if (currentRound >= 5) {
+          showMessage('恭喜你成功完成词语接龙！', 'success');
+          
+          // 通知父窗口游戏完成
+          if (window.parent && window.parent.postMessage) {
+            window.parent.postMessage({ type: 'gameCompleted', game: 'word-chain' }, '*');
+          }
+          
+          // 禁用输入
+          wordInput.disabled = true;
+          submitBtn.disabled = true;
+        } else {
+          // 提示下一个词
+          const nextChar = word.charAt(word.length - 1);
+          let hint = '';
+          
+          if (commonWords[nextChar]) {
+            const randomWord = commonWords[nextChar][Math.floor(Math.random() * commonWords[nextChar].length)];
+            hint = `提示：可以用"${randomWord}"等词语`;
+          }
+          
+          showMessage(`请继续接以"${nextChar}"开头的词语！${hint}`, '');
+        }
+      }
+      
+      function addWordToChain(word) {
+        const wordCard = document.createElement('div');
+        wordCard.className = 'word-card';
+        wordCard.textContent = word;
+        wordChain.appendChild(wordCard);
+      }
+      
+      function showMessage(text, type) {
+        messageDisplay.textContent = text;
+        messageDisplay.className = 'message ' + type;
+      }
+      
+      // 初始提示
+      showMessage('请接以"始"字开头的词语！', '');
+    });
+  </script>
+</body>
+</html>
