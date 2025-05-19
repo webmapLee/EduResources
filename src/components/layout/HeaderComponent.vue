@@ -24,7 +24,7 @@
               </svg>
             </button>
             <div v-if="moreMenuOpen" class="absolute left-0 mt-2 w-48 bg-white rounded-xl shadow-cute overflow-hidden z-100">
-              <router-link v-for="(item, index) in hiddenNavItems" :key="item.path" 
+              <router-link v-for="(item) in hiddenNavItems" :key="item.path" 
                           :to="item.path" 
                           class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-500 hover:text-white"
                           @click="moreMenuOpen = false">

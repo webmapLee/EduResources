@@ -117,11 +117,13 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue';
 import { useUserStore } from '@/store/user';
-import { sendPhoneCode, loginWithPhoneCode, getWechatLoginUrl, loginWithWechat } from '@/services/authService';
+import { sendPhoneCode, loginWithPhoneCode, getWechatLoginUrl } from '@/services/authService';
 
-const props = defineProps<{
-  isOpen: boolean;
+// 定义 isOpen 作为 prop
+defineProps<{
+  isOpen: boolean
 }>();
+
 
 const emit = defineEmits<{
   (e: 'close'): void;

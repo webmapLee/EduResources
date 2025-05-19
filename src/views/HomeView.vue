@@ -131,7 +131,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 import ModuleCard from '@/components/modules/ModuleCard.vue';
 import ResourceCard from '@/components/modules/ResourceCard.vue';
 import LottieAnimation from '@/components/LottieAnimation.vue';
