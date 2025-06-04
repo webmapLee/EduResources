@@ -8,7 +8,7 @@
           "id": "edu1",
           "title": "教育：创造无限可能",
           "author": "肯·罗宾逊",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s33965588.jpg",
+          "cover": "/images/books/edu1.jpg",
           "description": "探讨教育的本质与可能性",
           "doubanLink": "https://book.douban.com/subject/35155342/",
           "wechatLink": "https://weread.qq.com/web/reader/1a83255071ef04ed1a8841c"
@@ -17,7 +17,7 @@
           "id": "edu2",
           "title": "教育观以科学的方式提升孩子的学习能力",
           "author": "芭芭拉·奥克利",
-          "cover": "https://img2.doubanio.com/view/subject/l/public/s34938031.jpg",
+          "cover": "/images/books/edu2.jpg",
           "description": "科学方法提升孩子学习能力",
           "doubanLink": "https://book.douban.com/subject/36973430/",
           "wechatLink": "https://weread.qq.com/web/reader/20132e20813ab91d5g0120cf"
@@ -26,7 +26,7 @@
           "id": "edu3",
           "title": "爱和自由",
           "author": "孙瑞雪",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s27282909.jpg",
+          "cover": "/images/books/edu3.jpg",
           "description": "关于教育中爱与自由的重要性",
           "doubanLink": "https://book.douban.com/subject/24708326/",
           "wechatLink": "https://weread.qq.com/web/reader/86c32cc0813ab7e7ag013b5a"
@@ -35,7 +35,7 @@
           "id": "edu4",
           "title": "教育的本质",
           "author": "赫尔巴特",
-          "cover": "https://img3.doubanio.com/view/subject/l/public/s33463347.jpg",
+          "cover": "/images/books/edu4.jpg",
           "description": "探索教育的根本意义",
           "doubanLink": "https://book.douban.com/subject/34802586/",
           "wechatLink": "https://weread.qq.com/web/reader/e9b32d00813ab6c69g016b4b"
@@ -44,7 +44,7 @@
           "id": "edu5",
           "title": "超实用儿童心理学",
           "author": "托德老师",
-          "cover": "https://img9.doubanio.com/view/subject/l/public/s33451894.jpg",
+          "cover": "/images/books/edu5.jpg",
           "description": "理解儿童心理的实用指南",
           "doubanLink": "https://book.douban.com/subject/34786958/",
           "wechatLink": "https://weread.qq.com/web/reader/36f32b50718bd79836f3919"
@@ -59,7 +59,7 @@
           "id": "pri1",
           "title": "陪孩子走过小学六年",
           "author": "刘称莲",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s24407979.jpg",
+          "cover": "/images/books/pri1.jpg",
           "description": "小学阶段家庭教育指南",
           "doubanLink": "https://book.douban.com/subject/19977117/",
           "wechatLink": "https://weread.qq.com/web/reader/e1f32ff05d236ce1f6b18ed"
@@ -68,7 +68,7 @@
           "id": "pri2",
           "title": "中小学必背古诗文",
           "author": "教育部",
-          "cover": "https://img3.doubanio.com/view/subject/l/public/s29840263.jpg",
+          "cover": "/images/books/pri2.jpg",
           "description": "精选中小学必背的经典古诗文",
           "doubanLink": "https://book.douban.com/subject/30294553/",
           "wechatLink": "https://weread.qq.com/web/reader/63032080715e273a630f71a"
@@ -77,7 +77,7 @@
           "id": "pri3",
           "title": "小学生漫画高情商",
           "author": "读客小学生阅读研究社·心理组",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s34366959.jpg",
+          "cover": "/images/books/pri3.jpg",
           "description": "通过漫画培养孩子情商",
           "doubanLink": "https://book.douban.com/subject/36175493/",
           "wechatLink": "https://weread.qq.com/web/reader/1d332620813ab77ddg014c7a"
@@ -86,7 +86,7 @@
           "id": "pri4",
           "title": "小学数学与数学思想方法",
           "author": "王永春",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s29641758.jpg",
+          "cover": "/images/books/pri4.jpg",
           "description": "小学数学思维培养",
           "doubanLink": "https://book.douban.com/subject/26854541/",
           "wechatLink": "https://weread.qq.com/web/reader/54f32730813ab8bf4g015e0a"
@@ -101,7 +101,7 @@
           "id": "his1",
           "title": "半小时漫画历史系列",
           "author": "陈磊·二混子",
-          "cover": "https://img3.doubanio.com/view/subject/l/public/s33635653.jpg",
+          "cover": "/images/books/his1.jpg",
           "description": "通过漫画轻松了解历史",
           "doubanLink": "https://book.douban.com/subject/35054477/",
           "wechatLink": "https://weread.qq.com/web/reader/5c832be07254c98f5c8923d"
@@ -110,7 +110,7 @@
           "id": "his2",
           "title": "漫画上下五千年-上篇",
           "author": "电子工业出版社",
-          "cover": "https://img9.doubanio.com/view/subject/l/public/s33535294.jpg",
+          "cover": "/images/books/his2.jpg",
           "description": "漫画版中国历史",
           "doubanLink": "https://book.douban.com/subject/30716734/",
           "wechatLink": "https://weread.qq.com/web/reader/c523221071eeee8ac527fcb"
@@ -128,7 +128,7 @@
           "id": "his3",
           "title": "了不起的春秋",
           "author": "贾志刚",
-          "cover": "https://img9.doubanio.com/view/subject/l/public/s34286354.jpg",
+          "cover": "/images/books/his3.jpg",
           "description": "讲述春秋时期的历史故事",
           "doubanLink": "https://book.douban.com/subject/36057424/",
           "wechatLink": "https://weread.qq.com/web/bookDetail/b9c32b40813ab7177g0189c0"
@@ -137,7 +137,7 @@
           "id": "his4",
           "title": "凯叔讲历史",
           "author": "凯叔",
-          "cover": "https://img3.doubanio.com/view/subject/l/public/s33298023.jpg",
+          "cover": "/images/books/his4.jpg",
           "description": "儿童历史启蒙读物",
           "doubanLink": "https://book.douban.com/subject/34431959/",
           "wechatLink": ""
@@ -146,7 +146,7 @@
           "id": "geo1",
           "title": "半小时漫画中国地理",
           "author": "陈磊·二混子",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s34654489.jpg",
+          "cover": "/images/books/geo1.jpg",
           "description": "通过漫画了解中国地理",
           "doubanLink": "https://book.douban.com/subject/36531660/",
           "wechatLink": "https://weread.qq.com/web/reader/72a32c50813ab8286g01220c"
@@ -155,7 +155,7 @@
           "id": "geo2",
           "title": "给孩子的中国国家地理",
           "author": "中国国家地理",
-          "cover": "https://img9.doubanio.com/view/subject/l/public/s33904856.jpg",
+          "cover": "/images/books/geo2.jpg",
           "description": "儿童版中国地理知识",
           "doubanLink": "https://book.douban.com/subject/35468099/",
           "wechatLink": ""
@@ -170,7 +170,7 @@
           "id": "sci1",
           "title": "神奇校车",
           "author": "乔安娜·柯尔",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s35097278.jpg",
+          "cover": "/images/books/sci1.jpg",
           "description": "经典科普绘本系列",
           "doubanLink": "https://book.douban.com/subject/25969064/",
           "wechatLink": "https://weread.qq.com/web/reader/99132280813ab9a15g01353c"
@@ -179,7 +179,7 @@
           "id": "sci2",
           "title": "昆虫记",
           "author": "法布尔",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s29487918.jpg",
+          "cover": "/images/books/sci2.jpg",
           "description": "经典昆虫科普著作",
           "doubanLink": "https://book.douban.com/subject/27082018/",
           "wechatLink": "https://weread.qq.com/web/reader/432321505ca5fd432e6b9c8"
@@ -188,7 +188,7 @@
           "id": "sci3",
           "title": "DK儿童自然大百科",
           "author": "DK出版社",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s34121169.jpg",
+          "cover": "/images/books/sci3.jpg",
           "description": "全面的自然科学知识",
           "doubanLink": "https://book.douban.com/subject/25854579/",
           "wechatLink": ""
@@ -197,7 +197,7 @@
           "id": "sci4",
           "title": "DK了不起的数学思维",
           "author": "DK出版社",
-          "cover": "https://img9.doubanio.com/view/subject/l/public/s34836054.jpg",
+          "cover": "/images/books/sci4.jpg",
           "description": "培养数学思维能力",
           "doubanLink": "https://book.douban.com/subject/35238473/",
           "wechatLink": "https://weread.qq.com/web/reader/3ce32e30811e73ca9g013a5e"
@@ -206,7 +206,7 @@
           "id": "sci5",
           "title": "万物简史（儿童版）",
           "author": "比尔·布莱森",
-          "cover": "https://img2.doubanio.com/view/subject/l/public/s10124471.jpg",
+          "cover": "/images/books/sci5.jpg",
           "description": "适合儿童的科学启蒙读物",
           "doubanLink": "https://book.douban.com/subject/2122352/",
           "wechatLink": "https://weread.qq.com/web/reader/66332030811e3b835g013092"
@@ -215,7 +215,7 @@
           "id": "sci7",
           "title": "我们的身体",
           "author": "露丝·马丁",
-          "cover": "https://img3.doubanio.com/view/subject/l/public/s34049417.jpg",
+          "cover": "/images/books/sci7.jpg",
           "description": "人体科学知识启蒙",
           "doubanLink": "https://book.douban.com/subject/10831090/",
           "wechatLink": "https://weread.qq.com/web/reader/dd5326e0723425bddd5b335"
@@ -224,7 +224,7 @@
           "id": "sci8",
           "title": "BBC科普三部曲",
           "author": "BBC",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s27084900.jpg",
+          "cover": "/images/books/sci8.jpg",
           "description": "BBC出品的科普系列",
           "doubanLink": "https://book.douban.com/subject/25743165/",
           "wechatLink": "https://weread.qq.com/web/reader/18d325a0813ab88a7g014898"
@@ -233,7 +233,7 @@
           "id": "sci9",
           "title": "十万个为什么",
           "author": "少年儿童出版社",
-          "cover": "https://img1.doubanio.com/view/subject/l/public/s2619779.jpg",
+          "cover": "/images/books/sci9.jpg",
           "description": "经典科普问答读物",
           "doubanLink": "https://book.douban.com/subject/2160556/",
           "wechatLink": "https://weread.qq.com/web/reader/37932250719bdc7937988ac"

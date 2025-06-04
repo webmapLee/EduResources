@@ -63,37 +63,12 @@
     
     <!-- 游戏弹窗 -->
     <div v-if="activeGame" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div class="bg-white rounded-lg w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col" :class="{ 'max-w-none h-screen': isFullscreen }">
-        <div class="flex justify-between items-center p-4 border-b">
-          <h3 class="text-xl font-bold">{{ activeGame.title }}</h3>
-          <div class="flex items-center">
-            <button @click="toggleFullscreen" class="text-gray-500 hover:text-gray-700 mr-2">
-              <svg v-if="!isFullscreen" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5" />
-              </svg>
-              <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 9L4 4m0 0h5m-5 0v5m16-5l-5 5m5 0v-5m0 5h-5m-11 5l5 5m0 0h-5m5 0v-5m5 5l5-5m0 0v5m0-5h-5" />
-              </svg>
-            </button>
-            <button @click="closeGame" class="text-gray-500 hover:text-gray-700">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        
-        <div class="flex-grow p-4 overflow-auto">
-          <iframe 
-            v-if="activeGame" 
-            :src="activeGame.url" 
-            class="w-full border-0 rounded-lg"
-            :class="isFullscreen ? 'h-[calc(100vh-80px)]' : 'h-[60vh]'"
-            ref="gameFrame"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
+      <FullscreenFrame 
+        :src="activeGame.url" 
+        :title="activeGame.title" 
+        v-model:isFullscreen="isFullscreen"
+        @close="closeGame"
+      />
     </div>
   </div>
 </template>
@@ -102,6 +77,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { usePointsStore } from '../store/points';
 import gamesData from '../data/games.json';
+import FullscreenFrame from '../components/FullscreenFrame.vue';
 
 const pointsStore = usePointsStore();
 
@@ -138,11 +114,6 @@ const startGame = (game: any) => {
 const closeGame = () => {
   activeGame.value = null;
   isFullscreen.value = false;
-};
-
-// 切换全屏模式
-const toggleFullscreen = () => {
-  isFullscreen.value = !isFullscreen.value;
 };
 
 // 监听游戏完成消息

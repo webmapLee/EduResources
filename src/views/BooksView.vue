@@ -36,16 +36,17 @@
         >
           <!-- 书籍封面 -->
           <div class="h-48 bg-gray-200 relative">
-            <div class="absolute inset-0 flex items-center justify-center text-gray-400">
+            <!-- <div class="absolute inset-0 flex items-center justify-center text-gray-400">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
               </svg>
-            </div>
+            </div> -->
             <img 
-              v-if="false" 
-              :src="book.cover" 
+              v-if="book.cover" 
+              :src="getCompressedImage(book.cover)" 
               :alt="book.title" 
               class="w-full h-full object-cover"
+              @error="handleImageError"
             />
           </div>
           
@@ -112,6 +113,7 @@ interface Category {
 // 数据
 const categories = ref<Category[]>(booksData.categories);
 const selectedCategory = ref('all');
+const imageCache = ref<Map<string, string>>(new Map());
 
 // 根据选择的分类过滤书籍
 const filteredCategories = computed(() => {
@@ -121,4 +123,71 @@ const filteredCategories = computed(() => {
     return categories.value.filter(category => category.id === selectedCategory.value);
   }
 });
+
+// 处理图片加载错误
+function handleImageError(event: Event) {
+  const target = event.target as HTMLImageElement;
+  target.src = '/images/placeholder.png'; // 替换为本地占位图
+}
+
+// 获取压缩后的图片，优先从缓存获取
+function getCompressedImage(url: string): string {
+  // 如果已经缓存，直接返回
+  if (imageCache.value.has(url)) {
+    return imageCache.value.get(url)!;
+  }
+  
+  // 否则开始压缩并缓存
+  compressImage(url)
+    .then(compressedUrl => {
+      imageCache.value.set(url, compressedUrl);
+      return compressedUrl;
+    })
+    .catch(() => url); // 压缩失败时返回原图
+  
+  // 在压缩完成前先返回原图
+  return url;
+}
+
+// 图片压缩函数
+function compressImage(url: string, maxWidth = 400, quality = 0.7): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.crossOrigin = 'Anonymous'; // 处理跨域图片
+    img.onload = () => {
+      // 计算新的尺寸，保持宽高比
+      let width = img.width;
+      let height = img.height;
+      
+      if (width > maxWidth) {
+        height = (height * maxWidth) / width;
+        width = maxWidth;
+      }
+      
+      // 创建canvas并绘制压缩后的图片
+      const canvas = document.createElement('canvas');
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext('2d');
+      
+      if (!ctx) {
+        reject(new Error('无法创建canvas上下文'));
+        return;
+      }
+      
+      ctx.drawImage(img, 0, 0, width, height);
+      
+      // 转换为压缩后的DataURL
+      const compressedUrl = canvas.toDataURL('image/jpeg', quality);
+      resolve(compressedUrl);
+    };
+    
+    img.onerror = () => {
+      reject(new Error('图片加载失败'));
+    };
+    
+    img.src = url;
+  });
+}
+
 </script>

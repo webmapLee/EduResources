@@ -215,7 +215,7 @@ $(document).ready(function() {
             ]
         }
         
-        请确保返回的是有效的JSON格式，不要包含任何额外的文本说明。`;
+        请确保返回的是有效的JSON格式，不要使用markdown代码块格式，不要包含任何额外的文本说明。`;
     }
     
     // 调用Jina AI API
@@ -256,7 +256,16 @@ $(document).ready(function() {
                 
                 // 尝试解析返回的内容为JSON
                 try {
-                    return JSON.parse(data.choices[0].message.content);
+                    const content = data.choices[0].message.content;
+                    debugger;
+                    // 处理可能的markdown代码块格式
+                    const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
+                    if (jsonMatch) {
+                        return JSON.parse(jsonMatch[1]);
+                    }
+
+                    // 如果不是代码块格式，直接尝试解析
+                    return JSON.parse(content);
                 } catch (e) {
                     console.warn('API返回内容解析失败，使用模拟数据');
                     return getMockExamData({subject: 'math', grade: '3', difficulty: 'easy', count: 5});
@@ -354,17 +363,17 @@ $(document).ready(function() {
         `;
         
         // 根据题型渲染不同的答题区域
-        switch (question.type) {
+        switch (question.type.toLowerCase()) {
             case 'choice':
             case 'vocabulary':
             case 'grammar':
+            case 'character':  // 字形题通常也是选择题
                 // 选择题
                 questionHtml += renderChoiceQuestion(question);
                 break;
             case 'fill':
             case 'fill_word':
             case 'pinyin':
-            case 'character':
                 // 填空题
                 questionHtml += renderFillQuestion(question);
                 break;
@@ -378,8 +387,27 @@ $(document).ready(function() {
                 // 应用题/阅读理解
                 questionHtml += renderApplicationQuestion(question);
                 break;
+            case '拼音':  // 处理中文题型名称
+                questionHtml += renderFillQuestion(question);
+                break;
+            case '字形':  // 处理中文题型名称
+                questionHtml += renderChoiceQuestion(question);
+                break;
+            case '选字填空':  // 处理中文题型名称
+                questionHtml += renderFillQuestion(question);
+                break;
+            case '阅读理解':  // 处理中文题型名称
+                questionHtml += renderApplicationQuestion(question);
+                break;
             default:
-                questionHtml += `<div class="alert alert-warning">未知题型</div>`;
+                // 如果题型未知但有选项，按选择题处理
+                if (question.options && question.options.length > 0) {
+                    questionHtml += renderChoiceQuestion(question);
+                } 
+                // 如果题型未知且没有选项，按填空题处理
+                else {
+                    questionHtml += renderFillQuestion(question);
+                }
         }
         
         questionHtml += `
