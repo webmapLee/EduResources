@@ -76,7 +76,6 @@ const toolCategories = ref(toolsData.categories);
 const tools = ref(toolsData.tools);
 
 const activeTool = ref<any>(null);
-const toolFrame = ref<HTMLIFrameElement | null>(null);
 const selectedCategory = ref('all');
 const isFullscreen = ref(false);
 

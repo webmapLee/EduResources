@@ -87,7 +87,6 @@ const games = ref(gamesData.games);
 
 const selectedCategory = ref('all');
 const activeGame = ref<any>(null);
-const gameFrame = ref<HTMLIFrameElement | null>(null);
 const isFullscreen = ref(false);
 
 // 根据选择的分类过滤游戏
