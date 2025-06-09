@@ -19,7 +19,7 @@
       "name": "汉字拼音查询",
       "description": "查询汉字的拼音、部首和笔画",
       "category": "语文工具",
-      "url": "#",
+      "url": "/games/NotFound.html",
       "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-blue-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129\" /></svg>"
     },
     {
@@ -51,7 +51,7 @@
       "name": "英语单词卡片",
       "description": "常用英语单词卡片，帮助记忆单词",
       "category": "英语工具",
-      "url": "#",
+      "url": "/games/NotFound.html",
       "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-yellow-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129\" /></svg>"
     },
     {
@@ -59,7 +59,7 @@
       "name": "课程表生成器",
       "description": "创建和打印个性化课程表",
       "category": "综合工具",
-      "url": "#",
+      "url": "/games/NotFound.html",
       "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"h-6 w-6 text-indigo-500\" fill=\"none\" viewBox=\"0 0 24 24\" stroke=\"currentColor\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z\" /></svg>"
     }
   ]

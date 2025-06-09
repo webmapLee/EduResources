@@ -202,7 +202,8 @@ function buildGradingPrompt(exam, userAnswers) {
     4. 对于选择题，只有选择完全正确才得分
     5. 对于填空题和计算题，答案必须准确
     6. 对于应用题和阅读理解，根据答案的完整性和准确性评分
-    7. 对于拼音题，声调错误扣一部分分数
+    7. 对于拼音题，只要拼写正确即可得满分，不需要判断声调是否正确
+    8. 对于语文和英语题目，请特别注意答案的实质内容是否正确，不要过于严格地要求格式
     
     题目和答案详情：
     ${JSON.stringify(questionsWithAnswers, null, 2)}
@@ -439,7 +440,30 @@ function getMockGradingResult(exam, userAnswers) {
     let correctCount = 0;
     exam.questions.forEach(question => {
         const userAnswer = userAnswers[question.id] || '';
-        const isCorrect = userAnswer.trim().toLowerCase() === question.answer.trim().toLowerCase();
+        let isCorrect = false;
+        
+        // 对拼音题进行特殊处理
+        if (question.type === 'pinyin' || 
+            (question.content && question.content.includes('拼音'))) {
+            // 移除声调，只比较拼写
+            const normalizeAnswer = (ans) => ans.replace(/[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/g, match => {
+                const base = 'aeiouv'['āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ'.indexOf(match) % 4];
+                return base || match;
+            }).replace(/\s+/g, ''); // 移除空格
+            
+            const normalizedUser = normalizeAnswer(userAnswer.trim().toLowerCase());
+            const normalizedCorrect = normalizeAnswer(question.answer.trim().toLowerCase());
+            isCorrect = normalizedUser === normalizedCorrect;
+        } 
+        // 对语文和英语题目更宽松的比较
+        else if (exam.title.includes('语文') || exam.title.includes('英语')) {
+            // 移除多余空格，不区分大小写
+            const cleanAnswer = (ans) => ans.trim().toLowerCase().replace(/\s+/g, ' ');
+            isCorrect = cleanAnswer(userAnswer) === cleanAnswer(question.answer);
+        }
+        else {
+            isCorrect = userAnswer.trim().toLowerCase() === question.answer.trim().toLowerCase();
+        }
         
         if (isCorrect) correctCount++;
         

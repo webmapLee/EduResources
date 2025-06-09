@@ -5,11 +5,13 @@
     </div>
     
     <!-- 页面过渡效果 -->
-    <router-view v-slot="{ Component }">
-      <transition name="page" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view>
+    <div class="router-view-container">
+      <router-view v-slot="{ Component }">
+        <transition name="page" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </div>
     
     <!-- 装饰性动画元素 -->
     <div class="fixed bottom-10 right-10 z-10 hidden md:block">
@@ -63,6 +65,7 @@ onMounted(() => {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 
 .header-container {
@@ -73,11 +76,18 @@ onMounted(() => {
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.3s, transform 0.3s;
+  position: relative;
 }
 
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
   transform: translateY(20px);
+}
+
+/* 确保路由视图内容可滚动 */
+.router-view-container {
+  flex: 1;
+  overflow-y: auto;
 }
 </style>

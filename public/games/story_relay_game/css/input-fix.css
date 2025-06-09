@@ -1,0 +1,17 @@
+/* 修复故事续写输入框无法编辑的问题 */
+#story-continuation {
+  pointer-events: auto !important;
+  opacity: 1 !important;
+  user-select: auto !important;
+  -webkit-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  background-color: white !important;
+  z-index: 100 !important;
+  position: relative !important;
+}
+
+.story-input {
+  position: relative;
+  z-index: 10;
+}

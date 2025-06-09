@@ -54,8 +54,18 @@ class Character {
         // 设置初始位置
         this.updatePosition();
         
-        // 显示角色
+        // 显示角色（确保移除hidden类并设置样式）
         this.element.classList.remove('hidden');
+        this.element.style.display = 'block';
+        this.element.style.position = 'absolute';
+        this.element.style.zIndex = '100';
+        console.log('显示角色', this.element);
+        
+        // 将角色元素移动到迷宫容器内
+        const mazeContainer = document.querySelector('.maze-container');
+        if (mazeContainer && this.element.parentElement !== mazeContainer) {
+            mazeContainer.appendChild(this.element);
+        }
         
         // 设置键盘控制
         this.setupControls();
@@ -226,7 +236,18 @@ class Character {
      * 更新DOM元素位置
      */
     updateElementPosition() {
-        this.element.style.transform = `translate(${this.pixelPosition.x}px, ${this.pixelPosition.y}px)`;
+        // 计算角色位置，使其居中显示在单元格中
+        this.element.style.transform = `translate(${this.pixelPosition.x - this.element.clientWidth/2}px, ${this.pixelPosition.y - this.element.clientHeight/2}px)`;
+        
+        // 确保角色可见
+        this.element.style.display = 'block';
+        this.element.style.zIndex = '100';
+        
+        // 将角色元素移动到迷宫容器内
+        const mazeContainer = document.querySelector('.maze-container');
+        if (mazeContainer && this.element.parentElement !== mazeContainer) {
+            mazeContainer.appendChild(this.element);
+        }
     }
     
     /**

@@ -238,20 +238,26 @@ document.addEventListener('DOMContentLoaded', async () => {
             // 应用主题
             document.body.className = `theme-${gameState.selectedTheme}`;
 
+            // 显示游戏屏幕
+            showScreen('maze-game');
+
             // 创建迷宫
             maze = new Maze(elements.game.mazeCanvas, gameState.currentLevel, gameState.selectedTheme);
 
-            // 创建角色
-            character = new Character(elements.game.character, maze);
+            // 监听迷宫准备完成事件
+            document.addEventListener('maze-ready', function onMazeReady(e) {
+                // 移除事件监听器，避免重复触发
+                document.removeEventListener('maze-ready', onMazeReady);
+                
+                // 创建角色
+                character = new Character(elements.game.character, maze);
 
-            // 记录开始时间
-            gameState.gameStartTime = Date.now();
+                // 记录开始时间
+                gameState.gameStartTime = Date.now();
 
-            // 重置关卡统计
-            resetLevelStats();
-
-            // 显示游戏屏幕
-            showScreen('maze-game');
+                // 重置关卡统计
+                resetLevelStats();
+            }, { once: true });
         }
 
         /**

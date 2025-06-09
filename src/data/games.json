@@ -46,7 +46,7 @@
       "description": "翻开卡片，找到配对的图案！",
       "categoryId": "memory",
       "ageRange": "6-10岁",
-      "url": "#"
+      "url": "/games/NotFound.html"
     },
     {
       "id": "maze",
@@ -62,7 +62,7 @@
       "description": "将打乱的图片拼回原样！",
       "categoryId": "logic",
       "ageRange": "6-12岁",
-      "url": "#"
+      "url": "/games/NotFound.html"
     },
     {
       "id": "riddle",
@@ -70,7 +70,7 @@
       "description": "猜猜这些有趣的谜语！",
       "categoryId": "language",
       "ageRange": "7-12岁",
-      "url": "#"
+      "url": "/games/NotFound.html"
     },
     {
       "id": "englishCard",

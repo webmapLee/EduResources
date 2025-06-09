@@ -1,0 +1,84 @@
+/* 打印样式 */
+@media print {
+  /* 隐藏不需要打印的元素 */
+  nav, 
+  #exam-form,
+  #submit-exam,
+  #submit-exam-bottom,
+  .modal,
+  button.print-button {
+    display: none !important;
+  }
+  
+  /* 确保内容完整显示 */
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* 调整卡片样式 */
+  .card {
+    border: none;
+    box-shadow: none;
+    margin-bottom: 10px;
+  }
+  
+  .card-header {
+    background-color: white !important;
+    color: black !important;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* 确保问题显示完整 */
+  .question-container {
+    page-break-inside: avoid;
+    border-left: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  /* 隐藏用户输入区域，显示答案区域 */
+  .question-body input,
+  .question-body textarea {
+    border: 1px solid #ddd;
+    min-height: 24px;
+  }
+  
+  /* 显示页眉页脚 */
+  @page {
+    margin: 1cm;
+  }
+  
+  /* 添加页码 */
+  .page-number:after {
+    content: counter(page);
+  }
+  
+  /* 确保结果区域正确显示 */
+  #result-container {
+    page-break-before: always;
+  }
+  
+  /* 打印时显示答案区域 */
+  .print-answer {
+    display: block !important;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px dashed #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  /* 显示打印页眉 */
+  #print-header {
+    display: block !important;
+    margin-bottom: 20px;
+  }
+}

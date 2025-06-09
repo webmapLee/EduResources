@@ -1,27 +1,31 @@
+
 $(document).ready(function() {
     // 加载中模态框
     const loadingModal = new bootstrap.Modal(document.getElementById('loadingModal'));
     const jina_api = 'jina_38d0f1ef8018441a8b2f89cad79cfc56L6nYIVOgKW3DbM8IVgvDe-cWzhaq';
     
+    // 初始化打印功能
+    initPrintFunctionality();
+    
     // 科目对应的题型
     const questionTypes = {
         math: [
-            { id: 'choice', name: '选择题' },
-            { id: 'calculation', name: '算术题' },
-            { id: 'fill', name: '填空题' },
-            { id: 'application', name: '应用题' }
+            { id: 'choice', name: '选择题' ,code: 'choice'},
+            { id: 'calculation', name: '算术题' ,code: 'calculation'},
+            { id: 'fill', name: '填空题' ,code: 'fill'},
+            { id: 'application', name: '应用题' ,code: 'application'}
         ],
         chinese: [
-            { id: 'pinyin', name: '拼音' },
-            { id: 'character', name: '字形' },
-            { id: 'fill_word', name: '选字填空' },
-            { id: 'comprehension', name: '阅读理解' }
+            { id: 'pinyin', name: '拼音' ,code: 'pinyin'},
+            { id: 'character', name: '字形' ,code: 'character'},
+            { id: 'fill_word', name: '选字填空' ,code: 'fill_word'},
+            { id: 'comprehension', name: '阅读理解' ,code: 'comprehension'}
         ],
         english: [
-            { id: 'vocabulary', name: '词汇' },
-            { id: 'grammar', name: '语法' },
-            { id: 'reading', name: '阅读' },
-            { id: 'listening', name: '听力' }
+            { id: 'vocabulary', name: '词汇' ,code: 'vocabulary'},
+            { id: 'grammar', name: '语法' ,code: 'grammar'},
+            { id: 'reading', name: '阅读' ,code: 'reading'},
+            { id: 'listening', name: '听力' ,code: 'listening'}
         ]
     };
 
@@ -164,7 +168,7 @@ $(document).ready(function() {
         } else if (examData.subject === 'chinese') {
             subjectSpecificPrompt = `
             对于语文题目，请注意：
-            1. 拼音：提供汉字，要求写出正确拼音，包括声调
+            1. 拼音：提供汉字，要求写出正确拼音，声调不考虑
             2. 字形：识别汉字的正确写法或读音
             3. 选字填空：在句子中选择合适的词语填空
             4. 阅读理解：提供短文，回答相关问题
@@ -257,7 +261,6 @@ $(document).ready(function() {
                 // 尝试解析返回的内容为JSON
                 try {
                     const content = data.choices[0].message.content;
-                    debugger;
                     // 处理可能的markdown代码块格式
                     const jsonMatch = content.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
                     if (jsonMatch) {
@@ -350,14 +353,29 @@ $(document).ready(function() {
             const questionHtml = renderQuestion(question, index + 1);
             examContainer.append(questionHtml);
         });
+        
+        // 添加提交按钮到试卷底部
+        examContainer.append(`
+            <div class="d-grid gap-2 mt-4">
+                <button id="submit-exam-bottom" class="btn btn-primary">提交答案</button>
+            </div>
+        `);
+        
+        // 绑定底部提交按钮事件
+        $('#submit-exam-bottom').on('click', function() {
+            if (confirm('确定要提交答案吗？提交后将无法修改。')) {
+                submitAnswers();
+            }
+        });
     }
     
     // 渲染单个题目
     function renderQuestion(question, number) {
+        const questionType = getQuestionTypeByName(question.type);
         let questionHtml = `
-            <div class="question-container" data-id="${question.id}" data-type="${question.type}">
+            <div class="question-container" data-id="${question.id}" data-type="${questionType}">
                 <div class="question-header mb-3">
-                    <strong>${number}. [${getQuestionTypeName(question.type)}]</strong> ${question.content}
+                    <strong>${number}. [${question.type}]</strong> ${question.content}
                 </div>
                 <div class="question-body">
         `;
@@ -420,12 +438,12 @@ $(document).ready(function() {
     }
     
     // 获取题型名称
-    function getQuestionTypeName(typeId) {
+    function getQuestionTypeByName(typeName) {
         for (const subject in questionTypes) {
-            const type = questionTypes[subject].find(t => t.id === typeId);
-            if (type) return type.name;
+            const type = questionTypes[subject].find(t => t.name === typeName);
+            if (type) return type.code;
         }
-        return typeId;
+        return typeName;
     }
     
     // 渲染选择题
@@ -475,8 +493,8 @@ $(document).ready(function() {
         `;
     }
     
-    // 提交答案
-    $('#submit-exam').click(function() {
+    // 提交答案函数
+    function submitAnswers() {
         if (!currentExam) {
             alert('请先生成试卷');
             return;
@@ -506,6 +524,13 @@ $(document).ready(function() {
                 alert('判卷失败，请重试');
                 loadingModal.hide();
             });
+    }
+    
+    // 顶部提交按钮点击事件
+    $('#submit-exam').click(function() {
+        if (confirm('确定要提交答案吗？提交后将无法修改。')) {
+            submitAnswers();
+        }
     });
     
     // 收集用户答案
@@ -514,27 +539,28 @@ $(document).ready(function() {
         
         $('.question-container').each(function() {
             const questionId = $(this).data('id');
-            const questionType = $(this).data('type');
+            let questionType = $(this).data('type');
             let answer = '';
             
             switch (questionType) {
                 case 'choice':
                 case 'vocabulary':
                 case 'grammar':
+                case 'character':
+                case 'reading':
+                case 'listening':
                     // 选择题
                     answer = $(this).find('input[type="radio"]:checked').val() || '';
                     break;
                 case 'fill':
                 case 'fill_word':
                 case 'pinyin':
-                case 'character':
                 case 'calculation':
                     // 填空题和计算题
                     answer = $(this).find('input[type="text"]').val() || '';
                     break;
                 case 'application':
                 case 'comprehension':
-                case 'reading':
                     // 应用题/阅读理解
                     answer = $(this).find('textarea').val() || '';
                     break;
@@ -589,7 +615,8 @@ $(document).ready(function() {
         4. 对于选择题，只有选择完全正确才得分
         5. 对于填空题和计算题，答案必须准确
         6. 对于应用题和阅读理解，根据答案的完整性和准确性评分
-        7. 对于拼音题，声调错误扣一部分分数
+        7. 对于拼音题，只要拼写正确即可得满分，不需要判断声调是否正确
+        8. 对于语文和英语题目，请特别注意答案的实质内容是否正确，不要过于严格地要求格式
         
         题目和答案详情：
         ${JSON.stringify(questionsWithAnswers, null, 2)}
@@ -683,7 +710,22 @@ $(document).ready(function() {
         let correctCount = 0;
         exam.questions.forEach(question => {
             const userAnswer = userAnswers[question.id] || '';
-            const isCorrect = userAnswer.trim().toLowerCase() === question.answer.trim().toLowerCase();
+            let isCorrect = false;
+            
+            // 对拼音题进行特殊处理
+            if (question.type === 'pinyin' || 
+                (question.content && question.content.includes('拼音'))) {
+                // 移除声调，只比较拼写
+                const normalizeAnswer = (ans) => ans.replace(/[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/g, match => {
+                    const base = 'aeiouv'['āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ'.indexOf(match) % 4];
+                    return base || match;
+                });
+                isCorrect = normalizeAnswer(userAnswer.trim().toLowerCase()) === 
+                           normalizeAnswer(question.answer.trim().toLowerCase());
+            } else {
+                // 对语文和英语题目更宽松的比较
+                isCorrect = userAnswer.trim().toLowerCase() === question.answer.trim().toLowerCase();
+            }
             
             if (isCorrect) correctCount++;
             
@@ -826,6 +868,54 @@ $(document).ready(function() {
         } catch (error) {
             console.error('API调用错误:', error);
             throw error;
+        }
+    }
+    
+    // 初始化打印功能
+    function initPrintFunctionality() {
+        // 添加打印按钮点击事件
+        $('#print-exam').on('click', function() {
+            console.log('打印按钮被点击');
+            preparePrintExam();
+            window.print();
+        });
+    }
+    
+    // 准备打印试卷
+    function preparePrintExam() {
+        if (!currentExam) return;
+        
+        console.log('准备打印试卷', currentExam);
+        
+        // 添加答案区域（打印时显示）
+        $('.question-container').each(function() {
+            const questionId = $(this).data('id');
+            const question = currentExam.questions.find(q => q.id === questionId);
+            
+            if (question) {
+                // 如果已经有答案区域，先移除
+                $(this).find('.print-answer').remove();
+                
+                // 创建答案区域
+                const answerHtml = `
+                    <div class="print-answer" style="display: none;">
+                        <strong>答案:</strong> ${question.answer}
+                        ${question.explanation ? `<br><strong>解析:</strong> ${question.explanation}` : ''}
+                    </div>
+                `;
+                
+                $(this).append(answerHtml);
+            }
+        });
+        
+        // 添加页眉
+        if ($('#print-header').length === 0) {
+            $('body').prepend(`
+                <div id="print-header" class="d-none d-print-block text-center mb-4">
+                    <h2>${currentExam.title || '智能考试系统试卷'}</h2>
+                    <p>姓名: _________________ 班级: _________________ 日期: _________________</p>
+                </div>
+            `);
         }
     }
 });

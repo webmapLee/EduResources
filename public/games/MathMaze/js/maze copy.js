@@ -88,64 +88,53 @@ class Maze {
      * 初始化迷宫
      */
     init() {
-        // 调整画布大小，并在完成后执行后续初始化
-        this.resizeCanvas(() => {
-            console.log('初始化迷宫', this.rows, this.cols, this.cellSize);
-            // 加载主题图像
-            this.loadImages();
-
-            // 生成迷宫
-            this.generateMaze();
-
-            // 添加问题点
-            this.addQuestionPoints();
-
-            // 渲染迷宫
-            this.render();
-            
-            // 触发迷宫准备完成事件
-            const event = new CustomEvent('maze-ready', { detail: { maze: this } });
-            document.dispatchEvent(event);
-        });
-
+        // 调整画布大小
+        this.resizeCanvas();
+        
+        // 加载主题图像
+        this.loadImages();
+        
+        // 生成迷宫
+        this.generateMaze();
+        
+        // 添加问题点
+        this.addQuestionPoints();
+        
+        // 渲染迷宫
+        this.render();
+        
         // 监听窗口大小变化
         window.addEventListener('resize', () => {
-            this.resizeCanvas(() => {
-                this.render();
-            });
+            this.resizeCanvas();
+            this.render();
         });
     }
     
     /**
      * 调整画布大小
      */
-    resizeCanvas(callback) {
+    resizeCanvas() {
         const container = this.canvas.parentElement;
-        console.log('调整画布大小', container.clientWidth, container.clientHeight);
-
+        
         // 确保容器已加载完毕并有有效尺寸
         if (container.clientWidth === 0) {
             // 如果容器尚未加载完毕，使用requestAnimationFrame等待DOM更新
-            requestAnimationFrame(() => this.resizeCanvas(callback));
+            requestAnimationFrame(() => this.resizeCanvas());
             return;
         }
-
+        
         const containerWidth = container.clientWidth || 600;
         const containerHeight = container.clientHeight || 600;
-
+        
         // 保持正方形单元格
         this.cellSize = Math.min(
             Math.floor(containerWidth / this.cols),
             Math.floor(containerHeight / this.rows)
         );
-
+        
         // 设置画布大小
         this.canvas.width = this.cellSize * this.cols;
         this.canvas.height = this.cellSize * this.rows;
-
-        if(typeof callback === 'function') {
-            callback();
-        }
     }
     
     /**
@@ -344,7 +333,7 @@ class Maze {
     render() {
         const colors = this.themeColors[this.theme];
         
-        // 清空画布
+        // 清空画布并设置背景色
         this.ctx.fillStyle = colors.background;
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
         

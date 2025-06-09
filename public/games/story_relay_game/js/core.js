@@ -1,3 +1,8 @@
+/**
+ * 故事接力棒游戏核心功能模块
+ * 提供游戏的核心功能和状态管理
+ */
+
 // 游戏状态管理
 const gameState = {
     participants: [],
@@ -10,31 +15,53 @@ const gameState = {
     votes: {}
 };
 
-// DOM 元素
-const elements = {
-    storyDisplay: document.getElementById('story-display'),
-    storyContinuation: document.getElementById('story-continuation'),
-    participantList: document.getElementById('participant-list'),
-    newParticipant: document.getElementById('new-participant'),
-    addParticipantBtn: document.getElementById('add-participant-btn'),
-    submitBtn: document.getElementById('submit-btn'),
-    passBtn: document.getElementById('pass-btn'),
-    timer: document.getElementById('timer'),
-    votingSection: document.querySelector('.voting-section'),
-    votingOptions: document.getElementById('voting-options'),
-    finishVotingBtn: document.getElementById('finish-voting'),
-    resultsSection: document.querySelector('.results-section'),
-    votingResults: document.getElementById('voting-results'),
-    completeStory: document.getElementById('complete-story'),
-    saveStoryBtn: document.getElementById('save-story'),
-    newGameBtn: document.getElementById('new-game'),
-    randomStoryBtn: document.getElementById('random-story-btn')
-};
+// DOM 元素缓存
+const elements = {};
 
-// 初始化游戏
+/**
+ * 初始化DOM元素引用
+ */
+function initElements() {
+    const elementIds = [
+        'story-display', 'story-continuation', 'participant-list', 
+        'new-participant', 'add-participant-btn', 'submit-btn', 
+        'pass-btn', 'timer', 'finish-voting', 'voting-results', 
+        'complete-story', 'save-story', 'new-game', 'random-story-btn',
+        'voting-options'
+    ];
+    
+    elementIds.forEach(id => {
+        elements[id] = document.getElementById(id);
+    });
+    
+    elements.votingSection = document.querySelector('.voting-section');
+    elements.resultsSection = document.querySelector('.results-section');
+}
+
+/**
+ * 安全获取DOM元素
+ * @param {string} id - 元素ID
+ * @returns {HTMLElement|null} - DOM元素或null
+ */
+function getElement(id) {
+    // 如果元素已缓存，直接返回
+    if (elements[id]) return elements[id];
+    
+    // 否则尝试获取并缓存
+    const element = document.getElementById(id);
+    if (element) elements[id] = element;
+    return element;
+}
+
+/**
+ * 初始化游戏
+ */
 function initGame() {
+    // 初始化DOM元素引用
+    initElements();
+    
     // 随机选择一个故事开头
-    const randomStarter = allStoryStarters[Math.floor(Math.random() * allStoryStarters.length)];
+    const randomStarter = getRandomStoryStarter();
     
     // 更新页面上的故事开头
     const storyStarterElement = document.querySelector('.story-starter');
@@ -50,65 +77,136 @@ function initGame() {
     });
 
     // 设置事件监听器
-    elements.addParticipantBtn.addEventListener('click', addParticipant);
-    elements.submitBtn.addEventListener('click', submitStory);
-    elements.passBtn.addEventListener('click', passStory);
-    elements.finishVotingBtn.addEventListener('click', showResults);
-    elements.saveStoryBtn.addEventListener('click', saveStory);
-    elements.newGameBtn.addEventListener('click', resetGame);
-    
-    // 如果存在随机故事按钮，添加事件监听
-    if (elements.randomStoryBtn) {
-        elements.randomStoryBtn.addEventListener('click', generateRandomStory);
-    }
-    
-    // 按回车键添加参与者
-    elements.newParticipant.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            addParticipant();
-        }
-    });
+    setupEventListeners();
     
     // 初始禁用提交和传递按钮，直到有参与者加入
-    elements.submitBtn.disabled = true;
-    elements.passBtn.disabled = true;
+    disableGameButtons();
     
     // 确保故事续写输入框不被禁用
-    elements.storyContinuation.disabled = false;
+    enableTextarea();
 }
 
-// 添加参与者
+/**
+ * 设置事件监听器
+ */
+function setupEventListeners() {
+    const addBtn = getElement('add-participant-btn');
+    const submitBtn = getElement('submit-btn');
+    const passBtn = getElement('pass-btn');
+    const finishVotingBtn = getElement('finish-voting');
+    const saveStoryBtn = getElement('save-story');
+    const newGameBtn = getElement('new-game');
+    const randomStoryBtn = getElement('random-story-btn');
+    const newParticipant = getElement('new-participant');
+    
+    if (addBtn) addBtn.addEventListener('click', addParticipant);
+    if (submitBtn) submitBtn.addEventListener('click', submitStory);
+    if (passBtn) passBtn.addEventListener('click', passStory);
+    if (finishVotingBtn) finishVotingBtn.addEventListener('click', showResults);
+    if (saveStoryBtn) saveStoryBtn.addEventListener('click', saveStory);
+    if (newGameBtn) newGameBtn.addEventListener('click', resetGame);
+    if (randomStoryBtn) randomStoryBtn.addEventListener('click', generateRandomStory);
+    
+    // 按回车键添加参与者
+    if (newParticipant) {
+        newParticipant.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                addParticipant();
+            }
+        });
+    }
+}
+
+/**
+ * 获取随机故事开头
+ * @returns {string} 随机故事开头
+ */
+function getRandomStoryStarter() {
+    // 确保全局变量allStoryStarters存在
+    if (typeof allStoryStarters === 'undefined' || !Array.isArray(allStoryStarters) || allStoryStarters.length === 0) {
+        return "从前，在一座神秘的森林里，有一棵会说话的大树...";
+    }
+    
+    return allStoryStarters[Math.floor(Math.random() * allStoryStarters.length)];
+}
+
+/**
+ * 启用文本输入框
+ */
+function enableTextarea() {
+    const textarea = getElement('story-continuation');
+    if (textarea) {
+        textarea.disabled = false;
+        textarea.readOnly = false;
+    }
+}
+
+/**
+ * 禁用游戏按钮
+ */
+function disableGameButtons() {
+    const submitBtn = getElement('submit-btn');
+    const passBtn = getElement('pass-btn');
+    
+    if (submitBtn) submitBtn.disabled = true;
+    if (passBtn) passBtn.disabled = true;
+}
+
+/**
+ * 启用游戏按钮
+ */
+function enableGameButtons() {
+    const submitBtn = getElement('submit-btn');
+    const passBtn = getElement('pass-btn');
+    
+    if (submitBtn) submitBtn.disabled = false;
+    if (passBtn) passBtn.disabled = false;
+}
+
+/**
+ * 添加参与者
+ */
 function addParticipant() {
-    const name = elements.newParticipant.value.trim();
+    const newParticipant = getElement('new-participant');
+    const name = newParticipant ? newParticipant.value.trim() : '';
+    
     if (name) {
         // 添加动画效果
-        const addButton = elements.addParticipantBtn;
-        addButton.innerHTML = '<i class="fas fa-check"></i>';
-        addButton.style.backgroundColor = '#28a745';
+        const addButton = getElement('add-participant-btn');
+        if (addButton) {
+            addButton.innerHTML = '<i class="fas fa-check"></i>';
+            addButton.style.backgroundColor = '#28a745';
+        }
         
         gameState.participants.push(name);
         updateParticipantList();
-        elements.newParticipant.value = '';
+        if (newParticipant) newParticipant.value = '';
         
         // 如果这是第一个参与者，启用提交按钮
         if (gameState.participants.length === 1) {
-            elements.submitBtn.disabled = false;
-            elements.passBtn.disabled = false;
+            enableGameButtons();
             startTimer();
             gameState.gameStarted = true;
         }
         
         // 重置按钮样式
-        setTimeout(() => {
-            addButton.innerHTML = '<i class="fas fa-plus"></i>';
-            addButton.style.backgroundColor = '';
-        }, 1000);
+        if (addButton) {
+            setTimeout(() => {
+                addButton.innerHTML = '<i class="fas fa-plus"></i>';
+                addButton.style.backgroundColor = '';
+            }, 1000);
+        }
     }
 }
 
-// 更新参与者列表
+/**
+ * 更新参与者列表
+ */
 function updateParticipantList() {
-    elements.participantList.innerHTML = '';
+    const participantList = getElement('participant-list');
+    if (!participantList) return;
+    
+    participantList.innerHTML = '';
     gameState.participants.forEach((participant, index) => {
         const li = document.createElement('li');
         
@@ -119,11 +217,13 @@ function updateParticipantList() {
             li.textContent = participant;
         }
         
-        elements.participantList.appendChild(li);
+        participantList.appendChild(li);
     });
 }
 
-// 提交故事片段
+/**
+ * 提交故事片段
+ */
 function submitStory() {
     // 重新获取textarea元素以确保获取最新内容
     const textarea = document.getElementById('story-continuation');
@@ -155,7 +255,9 @@ function submitStory() {
     }
 }
 
-// 传递故事接力棒
+/**
+ * 传递故事接力棒
+ */
 function passStory() {
     if (gameState.participants.length > 0) {
         // 记录跳过
@@ -173,7 +275,9 @@ function passStory() {
     }
 }
 
-// 移动到下一个参与者
+/**
+ * 移动到下一个参与者
+ */
 function moveToNextParticipant() {
     // 停止当前计时器
     clearInterval(gameState.timerInterval);
@@ -200,9 +304,14 @@ function moveToNextParticipant() {
     startTimer();
 }
 
-// 更新故事显示
+/**
+ * 更新故事显示
+ */
 function updateStoryDisplay() {
-    elements.storyDisplay.innerHTML = '';
+    const storyDisplay = getElement('story-display');
+    if (!storyDisplay) return;
+    
+    storyDisplay.innerHTML = '';
     
     gameState.storySegments.forEach((segment, index) => {
         const p = document.createElement('p');
@@ -222,14 +331,16 @@ function updateStoryDisplay() {
             p.classList.add('fade-in');
         }
         
-        elements.storyDisplay.appendChild(p);
+        storyDisplay.appendChild(p);
     });
     
     // 滚动到底部
-    elements.storyDisplay.scrollTop = elements.storyDisplay.scrollHeight;
+    storyDisplay.scrollTop = storyDisplay.scrollHeight;
 }
 
-// 开始计时器
+/**
+ * 开始计时器
+ */
 function startTimer() {
     updateTimerDisplay();
     gameState.timerInterval = setInterval(() => {
@@ -237,7 +348,8 @@ function startTimer() {
         updateTimerDisplay();
         
         if (gameState.timeLeft <= 30) {
-            elements.timer.classList.add('timer-warning');
+            const timer = getElement('timer');
+            if (timer) timer.classList.add('timer-warning');
         }
         
         if (gameState.timeLeft <= 0) {
@@ -247,48 +359,63 @@ function startTimer() {
     }, 1000);
 }
 
-// 更新计时器显示
+/**
+ * 更新计时器显示
+ */
 function updateTimerDisplay() {
+    const timer = getElement('timer');
+    if (!timer) return;
+    
     const minutes = Math.floor(gameState.timeLeft / 60);
     const seconds = gameState.timeLeft % 60;
-    elements.timer.innerHTML = `<i class="fas fa-hourglass-half"></i> ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    timer.innerHTML = `<i class="fas fa-hourglass-half"></i> ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     
     if (gameState.timeLeft > 30) {
-        elements.timer.classList.remove('timer-warning');
+        timer.classList.remove('timer-warning');
     }
 }
 
-// 完成游戏，开始投票
+/**
+ * 完成游戏，开始投票
+ */
 function finishGame() {
     gameState.gameFinished = true;
     clearInterval(gameState.timerInterval);
     
     // 禁用按钮但保持输入框可用
-    elements.submitBtn.disabled = true;
-    elements.passBtn.disabled = true;
+    disableGameButtons();
     
     // 显示投票区域
     setupVoting();
     
-    // 添加过渡动画
-    elements.votingSection.style.opacity = '0';
-    elements.votingSection.style.display = 'block';
-    
-    // 淡入动画
-    setTimeout(() => {
-        elements.votingSection.style.opacity = '1';
-    }, 50);
+    const votingSection = getElement('votingSection');
+    if (votingSection) {
+        // 添加过渡动画
+        votingSection.style.opacity = '0';
+        votingSection.style.display = 'block';
+        
+        // 淡入动画
+        setTimeout(() => {
+            votingSection.style.opacity = '1';
+        }, 50);
+    }
     
     // 禁用完成投票按钮，直到选择了一个选项
-    elements.finishVotingBtn.disabled = true;
+    const finishVotingBtn = getElement('finish-voting');
+    if (finishVotingBtn) finishVotingBtn.disabled = true;
     
     // 添加烟花效果
     createFireworks();
 }
 
-// 设置投票
+/**
+ * 设置投票
+ */
 function setupVoting() {
-    elements.votingOptions.innerHTML = '';
+    const votingOptions = getElement('voting-options');
+    if (!votingOptions) return;
+    
+    votingOptions.innerHTML = '';
     
     // 过滤掉跳过的片段和初始故事
     const validSegments = gameState.storySegments.filter(segment => !segment.skipped && !segment.isStarter);
@@ -315,54 +442,68 @@ function setupVoting() {
             gameState.votes.selectedText = segment.text;
             
             // 启用完成投票按钮
-            elements.finishVotingBtn.disabled = false;
+            const finishVotingBtn = getElement('finish-voting');
+            if (finishVotingBtn) finishVotingBtn.disabled = false;
         });
         
-        elements.votingOptions.appendChild(card);
+        votingOptions.appendChild(card);
     });
 }
 
-// 显示结果
+/**
+ * 显示结果
+ */
 function showResults() {
+    const votingSection = getElement('votingSection');
+    const resultsSection = getElement('resultsSection');
+    
     // 添加过渡动画
-    elements.votingSection.style.opacity = '0';
+    if (votingSection) votingSection.style.opacity = '0';
     
     setTimeout(() => {
-        elements.votingSection.style.display = 'none';
-        elements.resultsSection.style.display = 'block';
+        if (votingSection) votingSection.style.display = 'none';
+        if (resultsSection) resultsSection.style.display = 'block';
         
         // 淡入动画
         setTimeout(() => {
-            elements.resultsSection.style.opacity = '1';
+            if (resultsSection) resultsSection.style.opacity = '1';
         }, 50);
         
         // 显示投票结果
-        if (gameState.votes.selectedAuthor) {
-            elements.votingResults.innerHTML = `
-                <div class="result-item winner">
-                    <span>最佳创意奖: ${gameState.votes.selectedAuthor}</span>
-                </div>
-                <div class="winning-segment">
-                    <p><em>"${gameState.votes.selectedText}"</em></p>
-                </div>
-            `;
-        } else {
-            elements.votingResults.innerHTML = '<p>没有投票结果</p>';
+        const votingResults = getElement('voting-results');
+        if (votingResults) {
+            if (gameState.votes.selectedAuthor) {
+                votingResults.innerHTML = `
+                    <div class="result-item winner">
+                        <span>最佳创意奖: ${gameState.votes.selectedAuthor}</span>
+                    </div>
+                    <div class="winning-segment">
+                        <p><em>"${gameState.votes.selectedText}"</em></p>
+                    </div>
+                `;
+            } else {
+                votingResults.innerHTML = '<p>没有投票结果</p>';
+            }
         }
         
         // 显示完整故事
-        elements.completeStory.innerHTML = '';
-        gameState.storySegments.forEach(segment => {
-            if (!segment.skipped) {
-                const p = document.createElement('p');
-                p.textContent = segment.text;
-                elements.completeStory.appendChild(p);
-            }
-        });
+        const completeStory = getElement('complete-story');
+        if (completeStory) {
+            completeStory.innerHTML = '';
+            gameState.storySegments.forEach(segment => {
+                if (!segment.skipped) {
+                    const p = document.createElement('p');
+                    p.textContent = segment.text;
+                    completeStory.appendChild(p);
+                }
+            });
+        }
     }, 300);
 }
 
-// 保存故事
+/**
+ * 保存故事
+ */
 function saveStory() {
     // 创建完整故事文本
     let storyText = '故事接力棒 - 创意写作游戏\n\n';
@@ -397,14 +538,16 @@ function saveStory() {
     document.body.removeChild(a);
 }
 
-// 重置游戏
+/**
+ * 重置游戏
+ */
 function resetGame() {
     // 重置游戏状态
     gameState.participants = [];
     gameState.currentParticipantIndex = 0;
     
     // 随机选择一个新的故事开头
-    const randomStarter = allStoryStarters[Math.floor(Math.random() * allStoryStarters.length)];
+    const randomStarter = getRandomStoryStarter();
     
     gameState.storySegments = [{
         text: randomStarter,
@@ -424,12 +567,19 @@ function resetGame() {
     gameState.votes = {};
     
     // 重置UI
-    elements.storyContinuation.disabled = false;
-    elements.storyContinuation.value = '';
-    elements.submitBtn.disabled = true;
-    elements.passBtn.disabled = true;
-    elements.votingSection.style.display = 'none';
-    elements.resultsSection.style.display = 'none';
+    const textarea = getElement('story-continuation');
+    if (textarea) {
+        textarea.disabled = false;
+        textarea.value = '';
+    }
+    
+    disableGameButtons();
+    
+    const votingSection = getElement('votingSection');
+    const resultsSection = getElement('resultsSection');
+    
+    if (votingSection) votingSection.style.display = 'none';
+    if (resultsSection) resultsSection.style.display = 'none';
     
     // 更新显示
     updateStoryDisplay();
@@ -440,12 +590,12 @@ function resetGame() {
     clearInterval(gameState.timerInterval);
 }
 
-// 页面加载完成后初始化游戏
-document.addEventListener('DOMContentLoaded', initGame);
-// 生成随机故事
+/**
+ * 生成随机故事
+ */
 function generateRandomStory() {
     // 随机选择一个故事开头
-    const randomStarter = allStoryStarters[Math.floor(Math.random() * allStoryStarters.length)];
+    const randomStarter = getRandomStoryStarter();
     
     // 更新页面上的故事开头
     const storyStarterElement = document.querySelector('.story-starter');
@@ -467,7 +617,10 @@ function generateRandomStory() {
     // 更新故事显示
     updateStoryDisplay();
 }
-// 添加烟花效果函数
+
+/**
+ * 添加烟花效果
+ */
 function createFireworks() {
     const fireworks = document.createElement('div');
     fireworks.className = 'fireworks';
@@ -505,23 +658,9 @@ function createFireworks() {
     }, 3000);
 }
 
-// 添加打字机效果
-function typewriterEffect(element, text, speed = 50) {
-    let i = 0;
-    element.textContent = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
-}
-
-// 添加故事开头的魔法效果
+/**
+ * 添加故事开头的魔法效果
+ */
 function addMagicToStoryStarter() {
     const storyStarter = document.querySelector('.story-starter');
     if (storyStarter) {
@@ -539,27 +678,10 @@ function addMagicToStoryStarter() {
     }
 }
 
-// 生成随机故事时添加特效
-const originalGenerateRandomStory = generateRandomStory;
-generateRandomStory = function() {
-    // 添加加载动画
-    const storyDisplay = document.getElementById('story-display');
-    storyDisplay.classList.add('loading');
-    
-    // 短暂延迟以显示加载效果
-    setTimeout(() => {
-        originalGenerateRandomStory();
-        storyDisplay.classList.remove('loading');
-        
-        // 添加魔法效果
-        addMagicToStoryStarter();
-        
-        // 添加音效
-        playSound('magic');
-    }, 500);
-};
-
-// 播放音效
+/**
+ * 播放音效
+ * @param {string} type - 音效类型
+ */
 function playSound(type) {
     // 如果浏览器支持，可以添加简单的音效
     if (window.AudioContext || window.webkitAudioContext) {
@@ -594,26 +716,22 @@ function playSound(type) {
     }
 }
 
-// 增强提交故事功能
-const originalSubmitStory = submitStory;
-submitStory = function() {
-    const text = elements.storyContinuation.value.trim();
-    if (text && gameState.participants.length > 0) {
-        // 播放提交音效
-        playSound('submit');
-        
-        // 添加提交动画
-        elements.submitBtn.classList.add('button-pulse');
-        setTimeout(() => {
-            elements.submitBtn.classList.remove('button-pulse');
-            originalSubmitStory();
-        }, 300);
-    } else {
-        originalSubmitStory();
-    }
+// 导出公共方法
+window.gameCore = {
+    initGame,
+    addParticipant,
+    submitStory,
+    passStory,
+    updateStoryDisplay,
+    generateRandomStory,
+    saveStory,
+    resetGame,
+    addMagicToStoryStarter,
+    playSound,
+    getElement
 };
 
-// 页面加载完成后初始化游戏并添加额外效果
+// 页面加载完成后初始化游戏
 document.addEventListener('DOMContentLoaded', function() {
     initGame();
     

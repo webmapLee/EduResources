@@ -11,7 +11,8 @@
         <nav class="hidden lg:flex space-x-4 lg:space-x-6 flex-1 justify-center">
           <router-link v-for="item in visibleNavItems" :key="item.path" 
                       :to="item.path" 
-                      class="hover:text-accent-300 transition-colors text-sm lg:text-base">
+                      class="transition-colors text-sm lg:text-base"
+                      :class="{ 'text-accent-300 font-medium': isActiveRoute(item.path), 'hover:text-accent-300': !isActiveRoute(item.path) }">
             {{ item.name }}
           </router-link>
           
@@ -26,7 +27,8 @@
             <div v-if="moreMenuOpen" class="absolute left-0 mt-2 w-48 bg-white rounded-xl shadow-cute overflow-hidden z-100">
               <router-link v-for="(item) in hiddenNavItems" :key="item.path" 
                           :to="item.path" 
-                          class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-500 hover:text-white"
+                          class="block px-4 py-2 text-sm"
+                          :class="{ 'bg-primary-500 text-white': isActiveRoute(item.path), 'text-gray-700 hover:bg-primary-500 hover:text-white': !isActiveRoute(item.path) }"
                           @click="moreMenuOpen = false">
                 {{ item.name }}
               </router-link>
@@ -106,7 +108,8 @@
       <div v-if="mobileMenuOpen" class="lg:hidden mt-4 pb-4">
         <router-link v-for="item in navItems" :key="item.path" 
                     :to="item.path" 
-                    class="block py-2 hover:text-accent-300 transition-colors"
+                    class="block py-2 transition-colors"
+                    :class="{ 'text-accent-300 font-medium': isActiveRoute(item.path), 'hover:text-accent-300': !isActiveRoute(item.path) }"
                     @click="mobileMenuOpen = false">
           {{ item.name }}
         </router-link>
@@ -136,6 +139,7 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue';
 import { usePointsStore } from '@/store/points';
 import { useUserStore } from '@/store/user';
+import { useRoute } from 'vue-router';
 import LoginModal from '@/components/auth/LoginModal.vue';
 
 const mobileMenuOpen = ref(false);
@@ -146,6 +150,7 @@ const windowWidth = ref(window.innerWidth);
 
 const pointsStore = usePointsStore();
 const userStore = useUserStore();
+const route = useRoute();
 
 const toggleMobileMenu = () => {
   mobileMenuOpen.value = !mobileMenuOpen.value;
@@ -237,6 +242,11 @@ const visibleNavItems = computed(() => {
 const hiddenNavItems = computed(() => {
   return navItems.slice(visibleItemCount.value);
 });
+
+// 判断当前路由是否激活
+const isActiveRoute = (path: string) => {
+  return route.path === path;
+};
 </script>
 
 <style scoped>

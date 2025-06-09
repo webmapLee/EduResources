@@ -1,0 +1,10 @@
+/* 全局样式 */
+html, body {
+  overflow-y: auto !important;
+  min-height: 100vh;
+}
+
+/* 确保滚动条始终显示 */
+body {
+  overflow-y: scroll !important;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>故事接力棒 - 创意写作游戏</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -112,6 +112,37 @@
     <script src="js/story_starters_part4.js"></script>
     <script src="js/story_starters_part5.js"></script>
     <script src="js/story_starters.js"></script>
-    <script src="js/script.js"></script>
+    
+    <!-- 引入核心游戏逻辑 -->
+    <script src="js/core.js"></script>
+    
+    <!-- 引入UI修复模块 -->
+    <script src="js/ui-fix.js"></script>
+    
+    <!-- 确保输入框和按钮可用 -->
+    <script>
+      // 页面加载完成后确保UI元素可用
+      window.onload = function() {
+        setTimeout(function() {
+          // 启用输入框
+          const textarea = document.getElementById('story-continuation');
+          if (textarea) {
+            textarea.disabled = false;
+            textarea.readOnly = false;
+            textarea.focus();
+          }
+          
+          // 启用按钮
+          const submitBtn = document.getElementById('submit-btn');
+          const passBtn = document.getElementById('pass-btn');
+          if (submitBtn && passBtn) {
+            submitBtn.disabled = false;
+            passBtn.disabled = false;
+          }
+          
+          console.log('UI元素已强制启用');
+        }, 500);
+      };
+    </script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+/* 修复提交和传递按钮的样式和交互问题 */
+#submit-btn, #pass-btn {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  opacity: 1 !important;
+  user-select: auto !important;
+  -webkit-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  position: relative !important;
+  z-index: 100 !important;
+}
+
+.button-group {
+  position: relative;
+  z-index: 10;
+}
+
+/* 增强按钮的视觉反馈 */
+#submit-btn:hover, #pass-btn:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 20px rgba(106, 48, 147, 0.3) !important;
+}
+
+#submit-btn:active, #pass-btn:active {
+  transform: translateY(1px) !important;
+}
+
+/* 确保按钮在禁用状态下的样式正确 */
+#submit-btn:disabled, #pass-btn:disabled {
+  background: #cccccc !important;
+  cursor: not-allowed !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
