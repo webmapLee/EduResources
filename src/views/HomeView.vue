@@ -18,8 +18,8 @@
               <router-link to="/education-links" class="cute-button bg-accent-500 hover:bg-accent-600">
                 浏览资源
               </router-link>
-              <router-link to="/office-tools" class="cute-button bg-white text-primary-600 hover:bg-gray-100">
-                使用工具
+              <router-link to="/edu-tools" class="cute-button bg-white text-primary-600 hover:bg-gray-100">
+                教育工具
               </router-link>
             </div>
           </div>
@@ -144,14 +144,14 @@ const featuredModules = [
     link: '/education-links'
   },
   {
-    title: '办公工具',
-    description: '提供常用办公工具，如文档处理、表格制作、幻灯片设计等，提高工作效率。',
-    link: '/office-tools'
+    title: '教育工具',
+    description: '提供各类教育工具和应用，包括在线作业、课堂互动、学习管理等，提升教学效率。',
+    link: '/edu-tools'
   },
   {
-    title: '考试资源',
-    description: '汇集各类考试资源，包括试卷、练习题、答案解析等，帮助学生备考和提高成绩。',
-    link: '/exam-resources'
+    title: '益智游戏',
+    description: '精选适合小学生的益智游戏，帮助学生在轻松愉快的氛围中提高思维能力和学习兴趣。',
+    link: '/games'
   }
 ];
 
