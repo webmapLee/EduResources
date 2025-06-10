@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>词语接龙游戏</title>
   <style>
     body {
@@ -14,6 +14,8 @@
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
+      box-sizing: border-box;
+      overflow-x: hidden;
     }
     .game-container {
       max-width: 800px;
@@ -23,10 +25,12 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       padding: 20px;
       margin-top: 20px;
+      box-sizing: border-box;
     }
     h1 {
       color: #3b82f6;
       text-align: center;
+      font-size: 1.8rem;
     }
     .word-chain {
       display: flex;
@@ -48,6 +52,7 @@
       gap: 10px;
       margin: 20px 0;
       justify-content: center;
+      flex-wrap: wrap;
     }
     input {
       padding: 10px;
@@ -55,6 +60,7 @@
       border-radius: 8px;
       font-size: 16px;
       width: 200px;
+      max-width: 100%;
     }
     button {
       background-color: #3b82f6;
@@ -86,6 +92,61 @@
       padding: 15px;
       border-radius: 8px;
       margin-bottom: 20px;
+    }
+    
+    /* 响应式设计 */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      .game-container {
+        padding: 15px;
+        margin-top: 10px;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .rules {
+        padding: 10px;
+      }
+      .rules h3 {
+        font-size: 1.2rem;
+        margin-top: 5px;
+      }
+      .rules p {
+        font-size: 14px;
+        margin: 8px 0;
+      }
+      .word-card {
+        padding: 8px 15px;
+        font-size: 16px;
+      }
+      .input-area {
+        flex-direction: column;
+        width: 100%;
+      }
+      input {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      button {
+        width: 100%;
+      }
+      .message {
+        font-size: 16px;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      .word-card {
+        padding: 6px 12px;
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
     }
   </style>
 </head>
@@ -119,6 +180,17 @@
       const wordInput = document.getElementById('word-input');
       const submitBtn = document.getElementById('submit-btn');
       const messageDisplay = document.getElementById('message');
+      
+      // 检测移动设备并调整输入框焦点行为
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobile) {
+        // 在移动设备上，点击按钮后自动聚焦输入框
+        submitBtn.addEventListener('click', function() {
+          setTimeout(() => {
+            wordInput.focus();
+          }, 100);
+        });
+      }
       
       // 简单的词语库
       const commonWords = {

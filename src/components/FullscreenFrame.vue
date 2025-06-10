@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div v-if="isFullscreen" class="fixed inset-0 bg-black w-screen h-screen z-50">
       <div class="absolute top-4 right-4 flex space-x-2 z-10">
         <button @click="toggleFullscreen" class="bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70">
@@ -15,7 +14,7 @@
       </div>
       <iframe 
         :src="src" 
-        class="w-full h-full border-0 min-w-[600px]"
+        class="w-full h-full border-0 min-w-[300px]"
         ref="frame"
         allowfullscreen
       ></iframe>
@@ -40,13 +39,12 @@
       <div class="flex-grow p-4 overflow-auto">
         <iframe 
           :src="src" 
-          class="w-full border-0 rounded-lg h-[60vh] min-w-[600px]"
+          class="w-full border-0 rounded-lg h-[60vh] min-w-[300px]"
           ref="frame"
           allowfullscreen
         ></iframe>
       </div>
     </div>
-  </div>
 </template>
 
 <script setup lang="ts">

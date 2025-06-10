@@ -1,0 +1,111 @@
+/* 响应式设计 - 确保在移动设备上正常显示 */
+@media (max-width: 992px) {
+  /* 调整布局为垂直排列 */
+  .row {
+    flex-direction: column;
+  }
+  
+  /* 调整难度分类和主题分类卡片 */
+  .col-md-3, .col-md-9 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  
+  /* 调整游戏模式卡片 */
+  .col-md-4 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+  
+  /* 确保卡片内容可见 */
+  .card {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* 调整容器内边距 */
+  .container {
+    padding: 10px;
+  }
+  
+  /* 调整标题大小 */
+  h1.display-4 {
+    font-size: 2rem;
+  }
+  
+  /* 调整单词卡片大小 */
+  .word-card {
+    height: 250px;
+  }
+  
+  /* 调整单词文本大小 */
+  .word-text {
+    font-size: 1.8rem;
+  }
+  
+  .word-translation {
+    font-size: 1.5rem;
+  }
+  
+  /* 调整游戏控制按钮 */
+  .game-controls {
+    flex-direction: column;
+  }
+  
+  .btn-know, .btn-dont-know {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* 调整模态框 */
+  .modal-dialog {
+    margin: 0.5rem;
+  }
+  
+  .modal-content {
+    padding: 15px;
+  }
+  
+  /* 调整统计信息 */
+  .stats {
+    flex-direction: column;
+  }
+  
+  .stats p {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* 确保内容不会溢出屏幕 */
+body {
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+/* 确保所有内容在小屏幕上可见 */
+.category-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 修复模态框在移动设备上的显示 */
+@media (max-width: 576px) {
+  #gameModal .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  #gameModal .modal-content {
+    border-radius: 10px;
+  }
+  
+  #gameModal .modal-body {
+    padding: 10px;
+  }
+}

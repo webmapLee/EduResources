@@ -9,6 +9,9 @@
   -ms-user-select: auto !important;
   position: relative !important;
   z-index: 100 !important;
+  width: 100% !important; /* 确保按钮在移动设备上占满宽度 */
+  margin: 5px 0 !important; /* 增加垂直间距 */
+  padding: 12px 15px !important; /* 增加按钮大小，更易于触摸 */
 }
 
 .button-group {

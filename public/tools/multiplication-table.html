@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>乘法口诀表</title>
   <style>
     body {
@@ -14,6 +14,7 @@
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
+      box-sizing: border-box;
     }
     .tool-container {
       max-width: 800px;
@@ -23,14 +24,17 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       padding: 20px;
       margin-top: 20px;
+      box-sizing: border-box;
     }
     h1 {
       color: #3b82f6;
       text-align: center;
+      font-size: 1.8rem;
     }
     .table-container {
       overflow-x: auto;
       margin: 20px 0;
+      -webkit-overflow-scrolling: touch;
     }
     .multiplication-table {
       border-collapse: collapse;
@@ -55,6 +59,7 @@
       justify-content: center;
       gap: 10px;
       margin-top: 20px;
+      flex-wrap: wrap;
     }
     button {
       background-color: #3b82f6;
@@ -105,6 +110,55 @@
     @media print {
       .controls, .practice-mode {
         display: none;
+      }
+    }
+    
+    /* 响应式设计 */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      .tool-container {
+        padding: 15px;
+        margin-top: 10px;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .multiplication-table td {
+        padding: 8px;
+        min-width: 40px;
+        font-size: 14px;
+      }
+      .controls {
+        flex-direction: column;
+        width: 100%;
+      }
+      button {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      .practice-mode h2 {
+        font-size: 1.3rem;
+      }
+      .question {
+        font-size: 20px;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      .multiplication-table td {
+        padding: 5px;
+        min-width: 30px;
+        font-size: 12px;
+      }
+      body {
+        padding: 5px;
+      }
+      .tool-container {
+        padding: 10px;
       }
     }
   </style>
@@ -263,6 +317,24 @@
       const checkBtn = document.getElementById('check-btn');
       const nextBtn = document.getElementById('next-btn');
       const resultDisplay = document.getElementById('result');
+      
+      // 检测移动设备
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobile) {
+        // 确保表格可以水平滚动
+        const tableContainer = document.querySelector('.table-container');
+        if (tableContainer) {
+          tableContainer.style.webkitOverflowScrolling = 'touch';
+        }
+        
+        // 调整输入框焦点行为
+        answerInput.addEventListener('focus', function() {
+          // 滚动到可见区域
+          setTimeout(() => {
+            this.scrollIntoView({behavior: 'smooth', block: 'center'});
+          }, 300);
+        });
+      }
       
       let currentQuestion = {};
       

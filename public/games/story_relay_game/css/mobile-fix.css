@@ -1,0 +1,114 @@
+/**
+ * 故事接力棒游戏移动端适配样式
+ * 提供额外的移动端样式修复和增强
+ */
+
+/* 移动设备通用样式 */
+.mobile-device .container {
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+/* 确保内容不会溢出屏幕 */
+.mobile-device .game-area,
+.mobile-device .story-container,
+.mobile-device .participants,
+.mobile-device .voting-section,
+.mobile-device .results-section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 改善移动端按钮体验 */
+.mobile-device button {
+  min-height: 44px; /* 确保触摸目标足够大 */
+  margin: 5px 0;
+}
+
+/* 改善移动端输入体验 */
+.mobile-device .story-input textarea {
+  font-size: 16px !important; /* 防止iOS自动缩放 */
+}
+
+/* 确保移动端的滚动区域可用 */
+.mobile-device #story-display {
+  -webkit-overflow-scrolling: touch; /* 提供iOS流畅滚动 */
+}
+
+/* 调整移动端的参与者列表 */
+.mobile-device #participant-list {
+  max-height: 200px;
+}
+
+/* 调整移动端的投票卡片 */
+.mobile-device .vote-card {
+  margin-bottom: 15px;
+}
+
+/* 确保移动端的按钮组垂直排列 */
+.mobile-device .button-group,
+.mobile-device .story-actions {
+  flex-direction: column;
+  width: 100%;
+}
+
+/* 调整移动端的控制面板 */
+.mobile-device .controls {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* 调整移动端的计时器 */
+.mobile-device #timer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* 调整移动端的添加参与者区域 */
+.mobile-device .add-participant {
+  flex-direction: column;
+}
+
+.mobile-device .add-participant input {
+  margin-bottom: 10px;
+}
+
+/* 小屏幕手机特殊处理 */
+@media (max-width: 360px) {
+  .mobile-device .story-input textarea {
+    height: 100px;
+    padding: 10px;
+  }
+  
+  .mobile-device #story-display {
+    max-height: 200px;
+    padding: 10px;
+  }
+  
+  .mobile-device header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .mobile-device .subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* 确保所有内容在屏幕上可见 */
+.mobile-device {
+  overflow-x: hidden;
+}
+
+/* 修复iOS上的输入问题 */
+.mobile-device input,
+.mobile-device textarea {
+  -webkit-appearance: none;
+  border-radius: var(--border-radius);
+}
+
+/* 增强移动端的触摸反馈 */
+.mobile-device button:active {
+  transform: scale(0.98);
+  opacity: 0.9;
+}

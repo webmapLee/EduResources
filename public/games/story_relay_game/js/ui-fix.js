@@ -7,6 +7,20 @@
     /**
      * 修复输入框
      */
+    /**
+     * 检测是否为移动设备
+     */
+    function isMobileDevice() {
+        return (window.innerWidth <= 768) || 
+               (navigator.userAgent.match(/Android/i)) || 
+               (navigator.userAgent.match(/webOS/i)) || 
+               (navigator.userAgent.match(/iPhone/i)) || 
+               (navigator.userAgent.match(/iPad/i)) || 
+               (navigator.userAgent.match(/iPod/i)) || 
+               (navigator.userAgent.match(/BlackBerry/i)) || 
+               (navigator.userAgent.match(/Windows Phone/i));
+    }
+    
     function fixTextarea() {
         const textarea = document.getElementById('story-continuation');
         if (!textarea) return;
@@ -28,6 +42,12 @@
         newTextarea.style.position = 'relative';
         newTextarea.style.zIndex = '100';
         
+        // 设置字体大小为16px，防止iOS上自动缩放
+        if (isMobileDevice()) {
+            newTextarea.style.fontSize = '16px';
+            document.body.classList.add('mobile-device');
+        }
+        
         // 重新添加必要的事件监听器
         newTextarea.addEventListener('click', function(e) {
             e.stopPropagation();
@@ -38,6 +58,19 @@
         newTextarea.addEventListener('keydown', function(e) {
             e.stopPropagation();
         });
+        
+        // 移动设备上添加触摸事件
+        if (isMobileDevice()) {
+            newTextarea.addEventListener('touchstart', function(e) {
+                e.stopPropagation();
+            });
+            
+            // 防止iOS上的双击缩放
+            newTextarea.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                this.focus();
+            });
+        }
         
         // 尝试自动聚焦
         setTimeout(function() {
@@ -71,6 +104,14 @@
             btn.style.opacity = '1';
             btn.style.position = 'relative';
             btn.style.zIndex = '100';
+            
+            // 移动设备上增强按钮样式
+            if (isMobileDevice()) {
+                btn.style.width = '100%';
+                btn.style.margin = '5px 0';
+                btn.style.padding = '12px 15px';
+                btn.style.minHeight = '44px'; // 确保触摸目标足够大
+            }
         });
         
         // 重新添加点击事件
@@ -97,6 +138,27 @@
                 window.passStory();
             }
         });
+        
+        // 移动设备上添加触摸事件
+        if (isMobileDevice()) {
+            [newSubmitBtn, newPassBtn].forEach(btn => {
+                btn.addEventListener('touchstart', function(e) {
+                    e.stopPropagation();
+                });
+                
+                btn.addEventListener('touchend', function(e) {
+                    e.preventDefault();
+                    this.click();
+                });
+            });
+            
+            // 调整按钮容器样式
+            const buttonGroup = document.querySelector('.button-group');
+            if (buttonGroup) {
+                buttonGroup.style.flexDirection = 'column';
+                buttonGroup.style.width = '100%';
+            }
+        }
         
         console.log('按钮已修复');
     }
@@ -153,10 +215,62 @@
     /**
      * 初始化UI修复
      */
+    /**
+     * 修复移动设备上的布局
+     */
+    function fixMobileLayout() {
+        if (!isMobileDevice()) return;
+        
+        // 添加移动设备标识类
+        document.body.classList.add('mobile-device');
+        
+        // 调整游戏区域布局
+        const gameArea = document.querySelector('.game-area');
+        if (gameArea) {
+            gameArea.style.flexDirection = 'column';
+        }
+        
+        // 调整控制面板布局
+        const controls = document.querySelector('.controls');
+        if (controls) {
+            controls.style.flexDirection = 'column';
+            controls.style.alignItems = 'stretch';
+        }
+        
+        // 调整按钮组布局
+        const buttonGroup = document.querySelector('.button-group');
+        if (buttonGroup) {
+            buttonGroup.style.flexDirection = 'column';
+            buttonGroup.style.width = '100%';
+        }
+        
+        // 调整添加参与者区域
+        const addParticipant = document.querySelector('.add-participant');
+        if (addParticipant) {
+            addParticipant.style.flexDirection = 'column';
+        }
+        
+        // 调整故事显示区域高度
+        const storyDisplay = document.getElementById('story-display');
+        if (storyDisplay) {
+            storyDisplay.style.maxHeight = '300px';
+        }
+        
+        // 监听屏幕方向变化
+        window.addEventListener('orientationchange', function() {
+            setTimeout(fixMobileLayout, 300);
+        });
+        
+        console.log('移动设备布局已修复');
+    }
+    
     function init() {
         // 修复输入框和按钮
         fixTextarea();
         fixButtons();
+        
+        // 修复移动设备布局
+        fixMobileLayout();
         
         // 设置DOM变化监听器
         setupMutationObserver();
@@ -175,6 +289,16 @@
                 fixButtons();
             }
         }, 2000);
+        
+        // 监听窗口大小变化
+        window.addEventListener('resize', function() {
+            if (isMobileDevice()) {
+                document.body.classList.add('mobile-device');
+                fixMobileLayout();
+            } else {
+                document.body.classList.remove('mobile-device');
+            }
+        });
         
         console.log('UI修复模块已初始化');
     }

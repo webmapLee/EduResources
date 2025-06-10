@@ -2,9 +2,10 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>故事接力棒 - 创意写作游戏</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile-fix.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -140,9 +141,38 @@
             passBtn.disabled = false;
           }
           
+          // 检测移动设备并应用额外样式
+          if (window.innerWidth <= 768) {
+            document.body.classList.add('mobile-device');
+            
+            // 确保按钮组在移动设备上正确显示
+            const buttonGroup = document.querySelector('.button-group');
+            if (buttonGroup) {
+              buttonGroup.style.display = 'flex';
+              buttonGroup.style.flexDirection = 'column';
+              buttonGroup.style.width = '100%';
+            }
+            
+            // 调整计时器和控制面板布局
+            const controls = document.querySelector('.controls');
+            if (controls) {
+              controls.style.flexDirection = 'column';
+              controls.style.alignItems = 'stretch';
+            }
+          }
+          
           console.log('UI元素已强制启用');
         }, 500);
       };
+      
+      // 监听窗口大小变化，动态调整布局
+      window.addEventListener('resize', function() {
+        if (window.innerWidth <= 768) {
+          document.body.classList.add('mobile-device');
+        } else {
+          document.body.classList.remove('mobile-device');
+        }
+      });
     </script>
 </body>
 </html>

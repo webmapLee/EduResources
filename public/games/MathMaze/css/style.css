@@ -481,6 +481,83 @@ input:checked + .slider:before {
         width: 90%;
         padding: 1.5rem;
     }
+    
+    .menu-screen {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .game-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+    
+    .level-info, .score-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    #pause-btn {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    
+    .maze-container {
+        height: calc(100vh - 150px);
+    }
+    
+    .pause-content, .level-complete-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .complete-text {
+        font-size: 40px !important;
+    }
+}
+
+/* 小屏幕手机适配 */
+@media (max-width: 480px) {
+    .game-title {
+        font-size: 2rem;
+    }
+    
+    button {
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
+    }
+    
+    .theme-card {
+        width: 120px;
+        height: 150px;
+    }
+    
+    .theme-card img {
+        height: 100px;
+    }
+    
+    #question-text {
+        font-size: 1.2rem;
+    }
+    
+    #answer-input {
+        width: 120px;
+    }
+    
+    .maze-container {
+        height: calc(100vh - 130px);
+    }
+    
+    .character {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .complete-text {
+        font-size: 30px !important;
+    }
 }
 
 /* 主题样式 */
