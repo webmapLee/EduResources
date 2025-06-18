@@ -88,6 +88,5 @@ onMounted(() => {
 /* 确保路由视图内容可滚动 */
 .router-view-container {
   flex: 1;
-  overflow-y: auto;
 }
 </style>

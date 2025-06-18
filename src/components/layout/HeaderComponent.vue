@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-primary-600 text-white shadow-cute sticky top-0 z-50">
+  <header class="fixed w-full bg-primary-600 text-white shadow-cute top-0 z-50">
     <div class="container mx-auto px-4 py-3">
       <div class="flex justify-between items-center">
         <!-- 左侧：Logo和网站名称 -->
