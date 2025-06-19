@@ -7,9 +7,13 @@ import { checkAnswer } from './checkAnswer.js';
 
 // 本地判卷函数
 function gradeExamLocally(exam, userAnswers) {
+    // 计算每道题的分值，确保满分为100分
+    const scorePerQuestion = Math.round(100 / exam.questions.length);
+    const lastQuestionScore = 100 - (scorePerQuestion * (exam.questions.length - 1));
+    
     const result = {
         totalScore: 0,
-        maxScore: exam.questions.length * 20,
+        maxScore: 100,
         percentage: 0,
         feedback: "",
         questions: []
@@ -17,16 +21,19 @@ function gradeExamLocally(exam, userAnswers) {
     
     // 计算每道题的得分
     let correctCount = 0;
-    exam.questions.forEach(question => {
+    exam.questions.forEach((question, index) => {
         const userAnswer = userAnswers[question.id] || '';
         const isCorrect = checkAnswer(question, userAnswer);
         
         if (isCorrect) correctCount++;
         
+        // 最后一道题使用调整后的分值，确保总分为100
+        const questionScore = (index === exam.questions.length - 1) ? lastQuestionScore : scorePerQuestion;
+        
         result.questions.push({
             id: question.id,
-            score: isCorrect ? 20 : 0,
-            maxScore: 20,
+            score: isCorrect ? questionScore : 0,
+            maxScore: questionScore,
             isCorrect: isCorrect,
             feedback: isCorrect ? 
                 "回答正确！很好！" : 
@@ -35,8 +42,8 @@ function gradeExamLocally(exam, userAnswers) {
     });
     
     // 计算总分和百分比
-    result.totalScore = correctCount * 20;
-    result.percentage = (correctCount / exam.questions.length) * 100;
+    result.totalScore = result.questions.reduce((sum, q) => sum + q.score, 0);
+    result.percentage = result.totalScore;
     
     // 生成总体评价
     if (result.percentage >= 90) {

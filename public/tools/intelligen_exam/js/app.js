@@ -609,7 +609,7 @@ $(document).ready(function() {
         题目数量：${exam.questions.length}
         
         判卷规则：
-        1. 每道题满分为20分
+        1. 试卷满分必须为100分，每道题的分值根据题目总数平均分配
         2. 答案完全正确得满分，部分正确可给部分分数
         3. 未作答的题目得0分
         4. 对于选择题，只有选择完全正确才得分
@@ -624,14 +624,14 @@ $(document).ready(function() {
         请详细分析每道题的答案，并以JSON格式返回判卷结果：
         {
             "totalScore": 总分,
-            "maxScore": 满分,
+            "maxScore": 100,
             "percentage": 得分百分比,
             "feedback": "总体评价",
             "questions": [
                 {
                     "id": "题目ID",
                     "score": 得分,
-                    "maxScore": 20,
+                    "maxScore": 该题分值,
                     "isCorrect": true/false,
                     "feedback": "详细评语，包括错误分析和改进建议"
                 }
@@ -698,9 +698,13 @@ $(document).ready(function() {
     
     // 获取模拟判卷结果
     function getMockGradingResult(exam, userAnswers) {
+        // 计算每道题的分值，确保满分为100分
+        const scorePerQuestion = Math.round(100 / exam.questions.length);
+        const lastQuestionScore = 100 - (scorePerQuestion * (exam.questions.length - 1));
+        
         const result = {
             totalScore: 0,
-            maxScore: exam.questions.length * 20,
+            maxScore: 100,
             percentage: 0,
             feedback: "",
             questions: []
@@ -708,7 +712,7 @@ $(document).ready(function() {
         
         // 计算每道题的得分
         let correctCount = 0;
-        exam.questions.forEach(question => {
+        exam.questions.forEach((question, index) => {
             const userAnswer = userAnswers[question.id] || '';
             let isCorrect = false;
             
@@ -729,10 +733,13 @@ $(document).ready(function() {
             
             if (isCorrect) correctCount++;
             
+            // 最后一道题使用调整后的分值，确保总分为100
+            const questionScore = (index === exam.questions.length - 1) ? lastQuestionScore : scorePerQuestion;
+            
             result.questions.push({
                 id: question.id,
-                score: isCorrect ? 20 : 0,
-                maxScore: 20,
+                score: isCorrect ? questionScore : 0,
+                maxScore: questionScore,
                 isCorrect: isCorrect,
                 feedback: isCorrect ? 
                     "回答正确！很好！" : 
@@ -741,8 +748,8 @@ $(document).ready(function() {
         });
         
         // 计算总分和百分比
-        result.totalScore = correctCount * 20;
-        result.percentage = (correctCount / exam.questions.length) * 100;
+        result.totalScore = result.questions.reduce((sum, q) => sum + q.score, 0);
+        result.percentage = result.totalScore;
         
         // 生成总体评价
         if (result.percentage >= 90) {

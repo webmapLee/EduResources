@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100分满分测试</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-case { margin: 20px 0; padding: 15px; border: 1px solid #ddd; }
+        .result { margin: 10px 0; padding: 10px; background: #f0f0f0; }
+    </style>
+</head>
+<body>
+    <h1>智能出题判卷系统 - 100分满分测试</h1>
+    
+    <div class="test-case">
+        <h3>测试用例1：5道题</h3>
+        <div id="test1-result" class="result"></div>
+    </div>
+    
+    <div class="test-case">
+        <h3>测试用例2：3道题</h3>
+        <div id="test2-result" class="result"></div>
+    </div>
+    
+    <div class="test-case">
+        <h3>测试用例3：7道题</h3>
+        <div id="test3-result" class="result"></div>
+    </div>
+    
+    <div class="test-case">
+        <h3>测试用例4：10道题</h3>
+        <div id="test4-result" class="result"></div>
+    </div>
+
+    <script>
+        // 模拟判卷函数
+        function gradeExamWith100Score(exam, userAnswers) {
+            // 计算每道题的分值，确保满分为100分
+            const scorePerQuestion = Math.round(100 / exam.questions.length);
+            const lastQuestionScore = 100 - (scorePerQuestion * (exam.questions.length - 1));
+            
+            const result = {
+                totalScore: 0,
+                maxScore: 100,
+                percentage: 0,
+                feedback: "",
+                questions: []
+            };
+            
+            // 计算每道题的得分
+            exam.questions.forEach((question, index) => {
+                const userAnswer = userAnswers[question.id] || '';
+                const isCorrect = userAnswer.toLowerCase() === question.answer.toLowerCase();
+                
+                // 最后一道题使用调整后的分值，确保总分为100
+                const questionScore = (index === exam.questions.length - 1) ? lastQuestionScore : scorePerQuestion;
+                
+                result.questions.push({
+                    id: question.id,
+                    score: isCorrect ? questionScore : 0,
+                    maxScore: questionScore,
+                    isCorrect: isCorrect
+                });
+            });
+            
+            // 计算总分和百分比
+            result.totalScore = result.questions.reduce((sum, q) => sum + q.score, 0);
+            result.percentage = result.totalScore;
+            
+            return result;
+        }
+        
+        // 测试用例
+        function runTests() {
+            // 测试用例1：5道题
+            const exam1 = {
+                questions: [
+                    {id: "1", answer: "A"},
+                    {id: "2", answer: "B"},
+                    {id: "3", answer: "C"},
+                    {id: "4", answer: "D"},
+                    {id: "5", answer: "E"}
+                ]
+            };
+            const answers1 = {"1": "A", "2": "B", "3": "C", "4": "D", "5": "E"};
+            const result1 = gradeExamWith100Score(exam1, answers1);
+            
+            document.getElementById('test1-result').innerHTML = `
+                <strong>5道题全对：</strong><br>
+                总分：${result1.totalScore}/100<br>
+                各题分值：${result1.questions.map(q => q.maxScore).join(', ')}<br>
+                分值总和：${result1.questions.reduce((sum, q) => sum + q.maxScore, 0)}
+            `;
+            
+            // 测试用例2：3道题
+            const exam2 = {
+                questions: [
+                    {id: "1", answer: "A"},
+                    {id: "2", answer: "B"},
+                    {id: "3", answer: "C"}
+                ]
+            };
+            const answers2 = {"1": "A", "2": "B", "3": "C"};
+            const result2 = gradeExamWith100Score(exam2, answers2);
+            
+            document.getElementById('test2-result').innerHTML = `
+                <strong>3道题全对：</strong><br>
+                总分：${result2.totalScore}/100<br>
+                各题分值：${result2.questions.map(q => q.maxScore).join(', ')}<br>
+                分值总和：${result2.questions.reduce((sum, q) => sum + q.maxScore, 0)}
+            `;
+            
+            // 测试用例3：7道题
+            const exam3 = {
+                questions: [
+                    {id: "1", answer: "A"}, {id: "2", answer: "B"}, {id: "3", answer: "C"},
+                    {id: "4", answer: "D"}, {id: "5", answer: "E"}, {id: "6", answer: "F"},
+                    {id: "7", answer: "G"}
+                ]
+            };
+            const answers3 = {"1": "A", "2": "B", "3": "C", "4": "D", "5": "E", "6": "F", "7": "G"};
+            const result3 = gradeExamWith100Score(exam3, answers3);
+            
+            document.getElementById('test3-result').innerHTML = `
+                <strong>7道题全对：</strong><br>
+                总分：${result3.totalScore}/100<br>
+                各题分值：${result3.questions.map(q => q.maxScore).join(', ')}<br>
+                分值总和：${result3.questions.reduce((sum, q) => sum + q.maxScore, 0)}
+            `;
+            
+            // 测试用例4：10道题
+            const exam4 = {
+                questions: Array.from({length: 10}, (_, i) => ({id: String(i+1), answer: "A"}))
+            };
+            const answers4 = Object.fromEntries(Array.from({length: 10}, (_, i) => [String(i+1), "A"]));
+            const result4 = gradeExamWith100Score(exam4, answers4);
+            
+            document.getElementById('test4-result').innerHTML = `
+                <strong>10道题全对：</strong><br>
+                总分：${result4.totalScore}/100<br>
+                各题分值：${result4.questions.map(q => q.maxScore).join(', ')}<br>
+                分值总和：${result4.questions.reduce((sum, q) => sum + q.maxScore, 0)}
+            `;
+        }
+        
+        // 页面加载后运行测试
+        window.onload = runTests;
+    </script>
+</body>
+</html>

@@ -39,6 +39,18 @@
           "title": "中国教育和科研计算机网",
           "url": "https://www.edu.cn/",
           "description": "教育科研网络平台"
+        },
+        {
+          "id": "chinese-4",
+          "title": "中国国家图书馆",
+          "url": "https://www.nlc.cn/web/index.shtml",
+          "description": "中国国家图书馆网站资源丰富，有中华古籍资源库、民国图书等。特色服务多样，如国图公开课、馆藏音视频等，重点推荐的就是娃们的文学宝地——少儿馆。"
+        },
+        {
+          "id": "yuyanwenxue",
+          "title": "中国语言文字数字博物馆",
+          "url": "https://szyb.smartedu.cn/",
+          "description": "这个数字博物馆中包含了 1945 万个汉语语料字符、 7000 万个古籍语料、 15 万个汉字词语…… "
         }
       ]
     },
@@ -47,28 +59,34 @@
       "name": "学科资源",
       "links": [
         {
-          "id": "chinese",
-          "title": "小学语文资源网",
-          "url": "#",
-          "description": "小学语文教学资源、课件、习题"
+          "id": "chinese-2",
+          "title": "语文谜",
+          "url": "https://www.yuwenmi.com/",
+          "description": "这个网站堪称语文知识的宝藏库，里面包含了语文知识、唐诗宋词、学习工具、常用熟语等，应有尽有，可以学习详细的语文基础知识。"
         },
         {
-          "id": "math",
-          "title": "小学数学资源网",
-          "url": "#",
-          "description": "小学数学教学资源、课件、习题"
+          "id": "chinese-3",
+          "title": "语文试题中心",
+          "url": "https://www.yuwenmi.com/shiti/",
+          "description": "包含海量的语文免费试题。"
         },
         {
-          "id": "english",
-          "title": "小学英语资源网",
-          "url": "#",
-          "description": "小学英语教学资源、课件、习题"
+          "id": "all",
+          "title": "小学资源网",
+          "url": "https://www.xj5u.com/",
+          "description": "小学资源网，在国内小学类网站中首屈一指。内容包括小学人教版,北师大版,新人教版,苏教版等百种版本的教案、试卷、课件及视频，考试大纲解读、小学名师辅导、名校试题、名校小考模拟试卷、奥数考点分析、心理辅导、小考应试技巧等。网站还有各版本学案、备课素材、测试练习等资源。"
         },
         {
-          "id": "science",
-          "title": "小学科学资源网",
-          "url": "#",
-          "description": "小学科学教学资源、实验、课件"
+          "id": "jiaoxi",
+          "title": "教习网",
+          "url": "https://www.51jiaoxi.com/1-3/versions/",
+          "description": "小教习网精选小学数学教学备课资料，涵盖小学数学PPT课件、教案、教学设计、单元试卷等优质资料，多版本提供选择，全册图文并茂，无水印可打印、编辑，是数学老师获取2025年最新教材不错的资源网站。"
+        },
+        {
+          "id": "xueke",
+          "title": "学科网",
+          "url": "https://www.zxxk.com/",
+          "description": "中学学科网,学科网,新高考,中考,教学资源,教学视频,试卷,试题,课件,PPT,教案,学案,作文,素材,范文,英语,语文,数学,物理,化学,生物,政治,历史,地理,科学,理综,文综,课后服务,中职资源,教师研修,课程教学,专题教育,教改经验"
         }
       ]
     },
@@ -76,6 +94,24 @@
       "id": "learning",
       "name": "学习平台",
       "links": [
+        {
+          "id": "tuxingjisuanqi",
+          "title": "在线图形计算器",
+          "url": "https://www.desmos.com/?lang=zh-CN",
+          "description": "这是一款直观的在线图形计算器，只需打开浏览器就能使用。它能轻松应对从基础函数到复杂动态动画的绘制，特别是为教师设计的互动课程"
+        },
+        {
+          "id": "tuxingjisuanqi",
+          "title": "GeoGebra",
+          "url": "https://www.geogebra.org/",
+          "description": "GeoGebra 并非仅仅是一套免费的数学工具, 它更是一个平台. 这个平台旨在连接满怀热情的教师与学生, 为他们提供一种崭新的数学探索与学习方式。"
+        },
+        {
+          "id": "math",
+          "title": "数学乐",
+          "url": "https://www.shuxuele.com/index.html",
+          "description": "包括数据、几何、代数、微积分等数学知识。"
+        },
         {
           "id": "xueersi",
           "title": "学而思",
@@ -93,6 +129,47 @@
           "title": "作业帮",
           "url": "https://www.zybang.com/",
           "description": "在线学习平台，提供题目解答和学习资源"
+        }
+      ]
+    },{
+      "id": "english",
+      "name": "英语学习",
+      "links": [
+        {
+          "id": "seussville",
+          "title": "seussville",
+          "url": "https://www.seussville.com/activities/recipes/",
+          "description": "Seussville就是苏斯博士官网——苏斯山庄，孩子们可以在苏斯博士的作品场景里游览山庄，通过自己的探索发现山庄里的宝藏。"
+        },
+        {
+          "id": "starfall",
+          "title": "starfall",
+          "url": "https://www.starfall.com/h/#",
+          "description": "学习26个字母和发音，配有单词和图片演示；再通过大量的音视频磨耳朵积累原始词汇；单词与实物、指令的对应，培养孩子的英文思维；学习自然拼读基本规则；绘本阅读，有意识地练习高频词汇"
+        },
+        {
+          "id": "storynory",
+          "title": "storynory",
+          "url": "https://www.storynory.com/",
+          "description": "Storynory是一个免费的儿童音频故事网站，里面的音频由专业的配音演员录制，故事包含原创故事、神话故事和古典小说，涵盖面广，适合不同年龄层。"
+        },
+        {
+          "id": "learnenglishkids",
+          "title": "learnenglishkids",
+          "url": "https://learnenglishkids.britishcouncil.org/",
+          "description": "LearnEnglish Kids是由英国文化教育协会（British Council）推出的免费儿童英语学习平台，专为5-12岁儿童设计，涵盖游戏、歌曲、故事、语法练习等互动内容，帮助孩子在趣味中提升英语能力。"
+        },
+        {
+          "id": "kizclub",
+          "title": "kizclub",
+          "url": "https://www.kizclub.com/index.html#gsc.tab=0",
+          "description": "Kizclub提供的30多本制作精良的在线儿童英语故事书"
+        },
+        {
+          "id": "starfall",
+          "title": "starfall",
+          "url": "https://www.starfall.com/h/index.php",
+          "description": "Starfall是美国专为启蒙阶段孩子办的一个网站，适合零基础学习英语，内涵大量美国原版文本、游戏、视频、自然拼读教材，内容丰富有趣，非常吸引孩子的兴趣。"
         }
       ]
     }
