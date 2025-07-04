@@ -31,11 +31,11 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import { onMounted, ref, defineAsyncComponent } from 'vue';
 import HeaderComponent from './components/layout/HeaderComponent.vue';
 import FooterComponent from './components/layout/FooterComponent.vue';
 import { usePointsStore } from './store/points';
-import LottieAnimation from './components/LottieAnimation.vue';
+const LottieAnimation = defineAsyncComponent(() => import('./components/LottieAnimation.vue'));
 import educationAnimationData from './assets/animations/education-animation.json';
 
 const pointsStore = usePointsStore();
