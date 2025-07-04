@@ -6,3 +6,17 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+
+// Custom Vite env variables augmentation
+interface ImportMetaEnv {
+  /** Base public path when served in development or production. */
+  readonly BASE_URL: string
+  /** Example: API endpoint */
+  readonly VITE_API_URL?: string
+  // More env variables can be declared here...
+  [key: string]: string | undefined
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv
+}
