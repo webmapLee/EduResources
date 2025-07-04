@@ -1,10 +1,4 @@
 declare module 'vite-plugin-compression' {
-  import { Plugin } from 'vite'
-  interface CompressionOptions {
-    algorithm?: 'gzip' | 'brotliCompress' | string
-    ext?: string
-    [key: string]: any
-  }
-  function viteCompression(options?: CompressionOptions): Plugin
-  export default viteCompression
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  export default function viteCompression(options?: any): any
 }
