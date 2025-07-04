@@ -50,11 +50,11 @@
     },
     {
       "id": "maze",
-      "title": "数学迷宫",
-      "description": "解决数学问题，找到迷宫的出口！",
+      "title": "数独",
+      "description": "数独游戏，锻炼思维能力！",
       "categoryId": "math",
       "ageRange": "8-12岁",
-      "url": "/games/MathMaze/index.html"
+      "url": "/games/shudu.html"
     },
     {
       "id": "puzzle",
