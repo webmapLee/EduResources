@@ -133,7 +133,8 @@
 <script setup lang="ts">
 import ModuleCard from '@/components/modules/ModuleCard.vue';
 import ResourceCard from '@/components/modules/ResourceCard.vue';
-import LottieAnimation from '@/components/LottieAnimation.vue';
+import { defineAsyncComponent } from 'vue';
+const LottieAnimation = defineAsyncComponent(() => import('@/components/LottieAnimation.vue'));
 import educationAnimationData from '@/assets/animations/education-animation.json';
 
 // 特色模块数据
