@@ -38,13 +38,16 @@
               <router-link to="/education-links" class="text-gray-200 hover:text-accent-300 transition-colors">教育链接</router-link>
             </li>
             <li>
+              <router-link to="/video-learning" class="text-gray-200 hover:text-accent-300 transition-colors">视频学习</router-link>
+            </li>
+            <li>
               <router-link to="/office-tools" class="text-gray-200 hover:text-accent-300 transition-colors">办公工具</router-link>
             </li>
             <li>
-              <router-link to="/exam-resources" class="text-gray-200 hover:text-accent-300 transition-colors">考试资源</router-link>
+              <router-link to="/books" class="text-gray-200 hover:text-accent-300 transition-colors">书籍推荐</router-link>
             </li>
             <li>
-              <router-link to="/books" class="text-gray-200 hover:text-accent-300 transition-colors">书籍推荐</router-link>
+              <router-link to="/exam-resources" class="text-gray-200 hover:text-accent-300 transition-colors">考试资源</router-link>
             </li>
           </ul>
         </div>

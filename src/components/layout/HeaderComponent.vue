@@ -217,6 +217,7 @@ onUnmounted(() => {
 const navItems = [
   { name: '首页', path: '/' },
   { name: '教育链接', path: '/education-links' },
+  { name: '视频学习', path: '/video-learning' },
   { name: '书籍推荐', path: '/books' },
   { name: '教育工具', path: '/edu-tools' },
   { name: '益智游戏', path: '/games' },

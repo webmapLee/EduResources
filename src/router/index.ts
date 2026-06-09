@@ -50,6 +50,11 @@ const router = createRouter({
       component: () => import('../views/GamesView.vue')
     },
     {
+      path: '/video-learning',
+      name: 'videoLearning',
+      component: () => import('../views/VideoLearningView.vue')
+    },
+    {
       path: '/wechat-callback',
       name: 'wechatCallback',
       component: () => import('../views/WechatCallback.vue')
